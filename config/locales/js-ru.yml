@@ -132,6 +132,7 @@ ru:
       assigned_to: "Назначенный"
       assigned_to_role: "Роль назначенного"
       author: "Автор"
+      category: "Категория"
       created_at: "Создано"
       done_ratio: "% выполнено"
       due_date: "Дата выполнения"
@@ -178,9 +179,9 @@ ru:
     select2:
       input_too_short:
         one: "Пожалуйста, введите еще один  символ"
-        other: "Пожалуйста, введите еще {{count}} символов"
+        other: "Пожалуйста, введите на {{count}} больше символов"
         zero: Please enter more characters
-        few: "Пожалуйста, введите еще {{count}} символов"
+        few: Please enter {{count}} more characters
       load_more: "Загрузка дополнительных результатов ..."
       no_matches: "Совпадения не найдены"
       searching: "Поиск ..."
