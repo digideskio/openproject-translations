@@ -2,7 +2,7 @@
 fr:
   account:
     delete: Supprimer le compte
-    delete_confirmation: "Êtes-vous sûr de vouloir supprimer le compte?"
+    delete_confirmation: "Êtes-vous sûr de vouloir supprimer le compte ?"
     deleted: Compte supprimé avec succès
     deletion_info:
       data_consequences:
@@ -82,7 +82,7 @@ fr:
         from: Lot de Travaux
         to: Lots de Travaux associés
       status:
-        is_closed: Lot de Travaux fermé
+        is_closed: Lot de travaux clôturé
       journal:
         notes: Notes
       member:
@@ -186,7 +186,7 @@ fr:
         equal_to: doit être égal à %{count}
         even: doit être le même
         exclusion: est réservé
-        file_too_large: is too large (maximum size is %{count} Bytes)
+        file_too_large: est trop volumineux (la taille maximale est de %{count} octets)
         greater_than: doit être supérieur à %{count}
         greater_than_or_equal_to: doit être supérieur ou égal à %{count}
         smaller_than_or_equal_to_max_length: Doit être plus petit ou égal à la longueur
@@ -262,7 +262,7 @@ fr:
       template:
         body: 'Veuillez vérifier les champs suivants:'
         header:
-          one: une erreur empêche ce %{model} d'être sauvegardé
+          one: 1 erreur empêche ce %{model} d'être sauvegardé
           other: "%{count} erreurs empêchent ce %{model} d'être sauvegardé"
     models:
       attachment: Fichier
@@ -298,7 +298,7 @@ fr:
     active: Actif
     assigned_to: Assignée à
     assignee: Assignée à
-    attachments: Pièces jointes
+    attachments: Fichiers
     author: Auteur
     base: 'Erreur générale:'
     blocks_ids: Blocs
@@ -517,7 +517,7 @@ fr:
   default_status_tested: testé
   default_status_on_hold: en attente
   default_status_rejected: rejeté
-  default_status_closed: fermé
+  default_status_closed: clôturé
   default_priority_low: Faible
   default_priority_normal: Normal
   default_priority_high: Haut
@@ -586,8 +586,8 @@ fr:
     supprimé.
   error_can_not_delete_standard_type: Les types standards ne peuvent pas être supprimés.
   error_can_not_remove_role: Ce rôle est utilisé et ne peut être supprimé.
-  error_can_not_reopen_work_package_on_closed_version: Un Lot de Travaux assigné à
-    une version fermée ne peut être réouvert
+  error_can_not_reopen_work_package_on_closed_version: Un lot de travaux assigné à
+    une version fermée ne peut être ré-ouvert
   error_can_t_load_default_data: 'La configuration par défaut n''a pu être chargée:
     %{value}'
   error_check_user_and_role: Veuillez choisir un utilisateur et un rôle.
@@ -607,11 +607,11 @@ fr:
   error_scm_command_failed: 'Une erreur s''est produite en essayant d''accéder au
     dépôt: %{value}'
   error_scm_not_found: L'entrée ou la révision n'a pas été trouvée dans le dépôt.
-  error_unable_delete_status: Impossible de supprimer le statut du module de travail
-    car il contient des modules de travail.
-  error_unable_delete_default_status: Impossible de supprimer le statut de lot de
-    travaux par défaut. Veuillez sélectionner un autre statut de lot de travaux par
-    défaut avant de supprimer l'actuel.
+  error_unable_delete_status: Le statut de lot de travaux ne peut pas être supprimé
+    tant qu'il est utilisé par au moins un lot de travaux.
+  error_unable_delete_default_status: Impossible de supprimer le statut par défaut
+    des lots de travaux. Veuillez sélectionner un autre statut par défaut avant de
+    supprimer l'actuel.
   error_unable_to_connect: Impossible de se connecter (%{value})
   error_workflow_copy_source: Veuillez sélectioner un type de source ou rôle
   error_workflow_copy_target: Veuillez sélectioner une cible type(s) et rôle(s)
@@ -627,7 +627,7 @@ fr:
     reply: Y a-t-il eu une réponse
     time_entry: Journal horaire édité
     wiki_page: Page Wiki éditée
-    work_package_closed: Lot de Travaux fermé
+    work_package_closed: Lot de travaux clôturé
     work_package_edit: Lot de Travaux édité
     work_package_note: Note de Lot de Travaux ajoutée
   general_csv_decimal_separator: ","
@@ -708,7 +708,7 @@ fr:
   label_checked: vérifié
   label_chronological_order: Dans l'ordre chronologique
   label_close_versions: Fermer les versions complètes
-  label_closed_work_packages: fermé
+  label_closed_work_packages: clôturé
   label_collapse: Regrouper
   label_configuration: configuration
   label_comment_add: Ajouter un commentaire
@@ -896,7 +896,7 @@ fr:
   label_options: Options
   label_overall_activity: Activité totale
   label_overall_spent_time: Total du temps passé
-  label_overview: Vue d'ensemble
+  label_overview: Vue globale
   label_password_lost: Mot de passe oublié
   label_password_rule_lowercase: Minuscules
   label_password_rule_numeric: Caractères numériques
@@ -1002,7 +1002,7 @@ fr:
   label_this_week: cette semaine
   label_this_year: cette année
   label_time_entry_plural: Temps passé
-  label_time_sheet_menu: Time sheet
+  label_time_sheet_menu: Feuille de temps
   label_time_tracking: Suivi du temps
   label_today: aujourd'hui
   label_top_menu: Menu du haut
@@ -1020,14 +1020,13 @@ fr:
   label_user_activity: Activité de %{value}
   label_user_anonymous: Anonyme
   label_user_mail_no_self_notified: Je ne veux pas être notifié de mes propres changements
-  label_user_mail_option_all: Pour tout évènement sur tous mes projets
+  label_user_mail_option_all: Tout évènement dans tous mes projets
   label_user_mail_option_none: Aucun évènement
-  label_user_mail_option_only_assigned: Seulement pour les tâches qui me sont assignées
-  label_user_mail_option_only_my_events: Uniquement pour les tâches auxquelles je
-    suis abonné ou participe
-  label_user_mail_option_only_owner: Seulement pour les tâches dont je suis le possesseur
-  label_user_mail_option_selected: Pour tous les événements sur le projet selectionné
-    seulement...
+  label_user_mail_option_only_assigned: Les éléments qui me sont assignés
+  label_user_mail_option_only_my_events: Les éléments que je surveille ou auxquels
+    je participe
+  label_user_mail_option_only_owner: Les éléments dont je suis le propriétaire
+  label_user_mail_option_selected: Tout événement dans les projets sélectionnés …
   label_user_new: Nouvel utilisateur
   label_user_plural: Utilisateurs
   label_user_search: Recherche d'Utilisateurs
@@ -1064,7 +1063,7 @@ fr:
   label_workflow_summary: Résumé
   label_x_closed_work_packages_abbr:
     one: 1 clôturé
-    other: "%{count} clôturés"
+    other: "%{count} clôturé(s)"
     zero: 0 closed
   label_x_comments:
     one: 1 commentaire
@@ -1299,6 +1298,7 @@ fr:
   project_module_news: Actualités
   project_module_repository: Dépôt
   project_module_time_tracking: Suivi du temps
+  project_module_timelines: Chronologie
   project_module_wiki: Wiki
   query_fields:
     assigned_to_role: Rôle du Destinataire
@@ -1663,11 +1663,11 @@ fr:
     outline: Réinitialiser le contour
     outlines:
       aggregation: Ne montrer que les agrégations
-      level1: Etendre niveau 1
-      level2: Etendre niveau 2
-      level3: Etendre niveau 3
-      level4: Etendre niveau 4
-      level5: Etendre niveau 5
+      level1: Déplier 1 niveau
+      level2: Déplier 2 niveaux
+      level3: Déplier 3 niveaux
+      level4: Déplier 4 niveaux
+      level5: Déplier 5 niveaux
       all: Tout montrer
     reporting_for_project:
       show: 'Statut signalé au projet: %{title}'
@@ -1696,12 +1696,13 @@ fr:
       ?
     really_delete_project_type: Voulez-vous vraiment supprimer le projet type suivant?
       Les projets utilisant ce type ne seront pas supprimés.
-    really_delete_timeline: Voulez-vous vraiment supprimer le calendrier lié suivant
-      ? Les Lots de Travaux présentés dans ce calendrier lié ne seront pas supprimés.
+    really_delete_timeline: Voulez-vous vraiment supprimer le rapport Chronologique
+      suivant ? Les Lots de Travaux présentés dans ce rapport Chronologique ne seront
+      pas supprimés.
     really_delete_reporting: Voulez-vous vraiment supprimer le rapport suivant? Les
       statuts de rapport précédents seront eux aussi supprimés.
     start: Début
-    timeline: Calendrier lié
+    timeline: Rapport Chronologique
     timelines: Rapport Chronologique
     settings: Chronologie
     vertical_work_package: Lots de Travaux verticaux
@@ -1732,7 +1733,7 @@ fr:
     blocked: verrouillé temporairement
     blocked_num_failed_logins:
       one: verrouillé temporairement (une tentative de connexion échouée)
-      other: verrouillé temporairement (%{count} tentatives de connexion echouées)
+      other: verrouillé temporairement (%{count} tentatives de connexion échouées)
     deleted: Utilisateur supprimé
     error_status_change_failed: 'Le changement du statut de l''utilisateur a échoué
       dû aux erreurs suivantes: %{errors}'
@@ -1747,7 +1748,7 @@ fr:
       désactivé, il ne peut s'authentifier.
     password_change_unsupported: Le changement de mot de passe n'est pas supporté.
     authorization_rejected: Vous n'êtes pas autorisé à vous authentifier.
-  version_status_closed: fermé
+  version_status_closed: clôturé
   version_status_locked: verrouillé
   version_status_open: ouvrir
   note: Note
@@ -1775,7 +1776,8 @@ fr:
       lock_version: Version Lock
     errors:
       code_401: Vous devez être authentifié pour accéder à cette ressource.
-      code_401_wrong_credentials: You did not provide the correct credentials.
+      code_401_wrong_credentials: Vous n'avez pas fourni les informations d'identification
+        correctes.
       code_403: Vous n'êtes pas autorisé à accéder à cette ressource.
       code_404: La ressource demandée est introuvable.
       code_409: Ne pouvait pas mettre à jour la ressource en raison de modifications
@@ -1785,16 +1787,16 @@ fr:
       invalid_format: 'Format invalide pour la propriété "%{property}" : un format
         de type "%{expected_format}" est requis, mais la valeur invalide "%{actual}"
         a été reçue.'
-      invalid_json: The request could not be parsed as JSON.
+      invalid_json: La demande n'a pas pu être analysée au format JSON.
       invalid_relation: La relation n'est pas valide.
       invalid_resource: '"%{actual}" est invalide, car la propriété "%{property}"
         requiert un lien de type "%{expected}".'
       invalid_user_status_transition: L'état du compte de l'utilisateur ne permet
         pas cette opération.
       missing_content_type: non spécifié
-      missing_request_body: There was no request body.
-      multipart_body_error: The request body did not contain the expected multipart
-        parts.
+      missing_request_body: Il y n'avait aucun corps dans la requête.
+      multipart_body_error: Le corps de la requête ne contenait pas les pièces multiparts
+        attendus.
       multiple_errors: Plusieurs contraintes de champ n'ont pas été respectées.
       writing_read_only_attributes: Vous ne devez pas écrire un attribut en lecture
         seule.

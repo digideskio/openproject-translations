@@ -51,7 +51,7 @@ fr:
     label_deactivate: Désactiver
     label_descending: Décroissant
     label_description: Description
-    label_closed_work_packages: fermé
+    label_closed_work_packages: clôturé
     label_collapse: Regrouper
     label_collapsed: regroupé
     label_collapse_all: Tout replier
@@ -223,11 +223,11 @@ fr:
       outline: Réinitialiser le contour
       outlines:
         aggregation: Ne montrer que les agrégations
-        level1: Etendre niveau 1
-        level2: Etendre niveau 2
-        level3: Etendre niveau 3
-        level4: Etendre niveau 4
-        level5: Etendre niveau 5
+        level1: Déplier 1 niveau
+        level2: Déplier 2 niveaux
+        level3: Déplier 3 niveaux
+        level4: Déplier 4 niveaux
+        level5: Déplier 5 niveaux
         all: Tout montrer
       project_status: "État du projet"
       project_type: Type de projet
@@ -335,11 +335,11 @@ fr:
         errors:
           unretrievable_query: Impossible de récupérer la requête par l'URL
       tabs:
-        overview: Vue d'ensemble
+        overview: Vue globale
         activity: Activité
         relations: Relations
         watchers: Observateurs
-        attachments: Pièces jointes
+        attachments: Fichiers
       time_relative:
         days: jours
         weeks: semaines
@@ -377,7 +377,7 @@ fr:
     inplace:
       button_edit: "%{attribute} : Modifier"
       button_save: "%{attribute} : Enregistrer"
-      button_save_and_send: "%{attribute} : Enregistrer et envoyer un courriel"
+      button_save_and_send: "%{attribute} : Enregistrer et notifier par mail"
       button_cancel: "%{attribute} : Annuler"
       link_formatting_help: Mise en forme texte
       btn_preview_enable: Prévisualisation

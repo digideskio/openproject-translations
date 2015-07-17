@@ -1,9 +1,9 @@
 ---
-fa:
+af:
   js:
     ajax:
       hide: Hide
-      loading: "در حال بارگذاری ..."
+      loading: Loading ...
     close_popup_title: Close popup
     button_add_watcher: Add watcher
     button_cancel: Cancel
@@ -28,7 +28,7 @@ fa:
     description_available_columns: Available Columns
     description_select_work_package: Select work package
     description_selected_columns: Selected Columns
-    description_subwork_package: "جزئی از بسته کاری "
+    description_subwork_package: Sub work package of
     filter:
       noneElement: "(none)"
     general_text_no: 'no'
@@ -43,27 +43,27 @@ fa:
     label_added_time_by: Added by %{author} %{age}
     label_ago: days ago
     label_all: all
-    label_all_work_packages: "تمام بسته های کاری"
+    label_all_work_packages: all work packages
     label_ascending: Ascending
     label_board_locked: Locked
     label_board_sticky: Sticky
-    label_date: "تاریخ"
+    label_date: Date
     label_deactivate: Deactivate
     label_descending: Descending
     label_description: Description
     label_closed_work_packages: closed
     label_collapse: Collapse
-    label_collapsed: "فروریخته"
+    label_collapsed: collapsed
     label_collapse_all: Collapse all
     label_commented_on: commented on
     label_contains: contains
     label_equals: is
-    label_expand: "گشودن"
-    label_expanded: "بست یافته"
+    label_expand: Expand
+    label_expanded: expanded
     label_expand_all: Expand all
     label_export: Export
-    label_filename: "فایل"
-    label_filesize: "اندازه‌"
+    label_filename: File
+    label_filesize: Size
     label_format_atom: Atom
     label_format_csv: CSV
     label_format_pdf: PDF
@@ -81,8 +81,8 @@ fa:
     label_less_than_ago: less than days ago
     label_loading: Loading...
     label_me: me
-    label_menu_collapse: "فرو ریختن"
-    label_menu_expand: "بست دادن"
+    label_menu_collapse: collapse
+    label_menu_expand: expand
     label_more_than_ago: more than days ago
     label_next: Next
     label_no_data: No data to display
@@ -123,8 +123,8 @@ fa:
     label_uploaded_by: Uploaded by
     label_global_queries: Shared queries
     label_custom_queries: Private queries
-    label_columns: "ستون‌ها"
-    label_click_to_enter_description: "برای وارد کردن توضیحات کلیک کنید..."
+    label_columns: Columns
+    label_click_to_enter_description: Click to enter description...
     text_are_you_sure: Are you sure?
     filter_labels:
       assigned_to: Assignee
@@ -133,7 +133,7 @@ fa:
       category: Category
       created_at: Created on
       done_ratio: "% done"
-      due_date: "موعد مقرر"
+      due_date: Due date
       estimated_hours: Estimated time
       fixed_version: Version
       member_of_group: Assignee's group
@@ -143,14 +143,14 @@ fa:
       priority: Priority
       progress: "% done"
       project: Project
-      responsible: "مسئول"
+      responsible: Responsible
       spent_time: Spent time
       start_date: Start date
       status: Status
       subject: Subject
       subproject: Subproject
       time_entries: Log time
-      type: "نوع"
+      type: Type
       updated_at: Updated on
       version: Version
       watcher: Watcher
@@ -180,9 +180,9 @@ fa:
         one: Please enter one more character
         other: Please enter {{count}} more characters
         zero: Please enter more characters
-      load_more: "در حال بارگذاری نتایج بیشتر..."
-      no_matches: "هیچ مورد مطابقی یافت نشد"
-      searching: "جستجو ..."
+      load_more: Loading more results ...
+      no_matches: No matches found
+      searching: Searching ...
       selection_too_big:
         one: You can only select one item
         other: You can only select {{limit}} items
@@ -194,9 +194,9 @@ fa:
     timelines:
       cancel: Cancel
       change: Change in planning
-      due_date: "موعد مقرر"
+      due_date: Due date
       empty: "(empty)"
-      error: "یک خطا رخ داده است."
+      error: An error has occured.
       errors:
         not_implemented: The timeline could not be rendered because it uses a feature
           that is not yet implemented.
@@ -209,11 +209,11 @@ fa:
       filter:
         column:
           assigned_to: Assignee
-          type: "نوع"
+          type: Type
           due_date: End date
           name: Name
           status: Status
-          responsible: "مسئول"
+          responsible: Responsible
           start_date: Start date
         grouping_other: Other
         noneSelection: "(none)"
@@ -229,13 +229,13 @@ fa:
         level5: Expand level 5
         all: Show all
       project_status: Project status
-      project_type: "نوع پروژه"
+      project_type: Project type
       really_close_dialog: Do you really want to close the dialog and lose the entered
         data?
-      responsible: "مسئول"
+      responsible: Responsible
       save: Save
       start_date: Start date
-      tooManyProjects: "بیشتر از %{count} از پروژه ها. لطفا فیلتر بهتری استفاده کنید!"
+      tooManyProjects: More than %{count} Projects. Please use a better filter!
       zoom:
         in: Zoom in
         out: Zoom out
@@ -244,10 +244,10 @@ fa:
         months: Months
         quarters: Quarters
         years: Years
-        slider: "زبانه متحرک بزرگنمایی"
+        slider: Zoom slider
     tl_toolbar:
-      zooms: "سطح زوم"
-      outlines: "سطح سلسله مراتب"
+      zooms: Zoom level
+      outlines: Hierarchy level
     unsupported_browser:
       title: Your browser version is not supported
       message: The browser version you are using is no longer supported by OpenProject.
@@ -275,7 +275,7 @@ fa:
       description_enter_text: Enter text
       description_options_hide: Hide options
       description_options_show: Show options
-      error: "یک خطا رخ داده است."
+      error: An error has occured.
       label_enable_multi_select: Enable multiselect
       label_disable_multi_select: Disable multiselect
       label_filter_add: Add filter
@@ -292,34 +292,34 @@ fa:
           filtered out.</p>"
       property_groups:
         details: Details
-        people: "افراد"
-        estimatesAndTime: "برآورد و زمان"
+        people: People
+        estimatesAndTime: Estimates & Time
         other: Other
       properties:
         assignee: Assignee
         author: Author
         createdAt: Created on
         description: Description
-        date: "تاریخ"
-        dueDate: "موعد مقرر"
+        date: Date
+        dueDate: Due date
         estimatedTime: Estimated time
         spentTime: Spent time
         category: Category
         percentageDone: Percentage done
         priority: Priority
         projectName: Project
-        responsible: "مسئول"
+        responsible: Responsible
         startDate: Start date
         status: Status
         subject: Subject
         title: Title
-        type: "نوع"
+        type: Type
         updatedAt: Updated on
         versionName: Version
         version: Version
       query:
-        column_names: "ستون‌ها"
-        group_by: "دسته بندی نتایج با"
+        column_names: Columns
+        group_by: Group results by
         group: Group by
         sort_ascending: Sort ascending
         sort_descending: Sort descending
@@ -327,13 +327,13 @@ fa:
         move_column_right: Move column right
         hide_column: Hide column
         insert_columns: Insert columns ...
-        filters: "فیلترها"
+        filters: Filters
         display_sums: Display Sums
         errors:
           unretrievable_query: Unable to retrieve query from URL
       tabs:
         overview: Overview
-        activity: "فعالیت"
+        activity: Activity
         relations: Relations
         watchers: Watchers
         attachments: Attachments
@@ -378,13 +378,13 @@ fa:
       button_cancel: "%{attribute}: Cancel"
       link_formatting_help: Text formatting
       btn_preview_enable: Preview
-      btn_preview_disable: "غیر فعال کردن پیش نمایش"
+      btn_preview_disable: Disable preview
       null_value_label: No value
       clear_value_label: "-"
       errors:
         required: "%{field} cannot be empty"
         number: "%{field} is not a valid number"
-    error_could_not_resolve_version_name: "تطبیق نام نسخه میسر نشد"
+    error_could_not_resolve_version_name: Couldn't resolve version name
     error_could_not_resolve_user_name: Couldn't resolve user name
     units:
       hour:

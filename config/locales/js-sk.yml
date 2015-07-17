@@ -178,17 +178,17 @@ sk:
     select2:
       input_too_short:
         one: Zadajte jeden alebo viac znakov
-        other: Please enter {{count}} more characters
+        other: Zadajte ešte minimálne {{count}} znaky
         zero: Please enter more characters
-        few: Please enter {{count}} more characters
+        few: Zadajte ešte minimálne {{count}} znaky
       load_more: Načítanie ďalších záznamov ...
       no_matches: Nenašli sa žiadne záznamy
       searching: Vyhľadávanie ...
       selection_too_big:
         one: Môžete vybrať maximálne jednu položku
-        other: You can only select {{limit}} items
+        other: Môžete vybrať maximálne {{limit}} položiek
         zero: You cannot select any items
-        few: You can only select {{limit}} items
+        few: Môžete vybrať maximálne {{limit}} položiek
     text_work_packages_destroy_confirmation: Are you sure you want to delete the selected
       work package(s)?
     text_query_destroy_confirmation: Naozaj chcete odstrániť vybratý dopyt?
@@ -392,6 +392,6 @@ sk:
     units:
       hour:
         one: 1 hodina
-        other: "%{count} hours"
+        other: "%{count} hodín"
         zero: 0 hours
-        few: "%{count} hours"
+        few: "%{count} hodín"
