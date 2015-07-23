@@ -603,11 +603,11 @@ pt-BR:
   error_scm_annotate: A entrada não existe ou não pode ser anotada.
   error_scm_command_failed: 'Ocorreu um erro ao tentar acessar o repositório: %{value}'
   error_scm_not_found: A entrada ou a revisão não foi encontrado no repositório.
-  error_unable_delete_status: The work package status cannot be deleted since it is
-    used by at least one work package.
-  error_unable_delete_default_status: Unable to delete the default work package status.
-    Please select another default work package status before deleting the current
-    one.
+  error_unable_delete_status: A situação de pacote de trabalho não pode ser excluída,
+    pois ela é usado por ao menos um pacote de trabalho.
+  error_unable_delete_default_status: Não é possível excluir a situação padrão de
+    pacotes de trabalho. Selecione outra situação padrão de pacote de trabalho antes
+    de excluir a atual.
   error_unable_to_connect: Não é possível conectar (%{value})
   error_workflow_copy_source: Por favor, selecione um tipo de fonte ou função
   error_workflow_copy_target: Por favor, selecione o tipo de alvo(s) e função(ões)
@@ -1349,7 +1349,10 @@ pt-BR:
     para todas as solicitações
   setting_login_required: Autenticação Requerida
   setting_mail_from: Endereço de e-mail de saída
-  setting_mail_handler_api_enabled: Ativa WS para e-mails recebidos
+  setting_mail_handler_api_enabled: Enable incoming email web service
+  setting_mail_handler_api_description: The email web handler enables OpenProject
+    to receive emails containing specific commands as an instrumentation mechanism
+    (e.g., to create and update work packages).
   setting_mail_handler_api_key: Chaves API
   setting_mail_handler_body_delimiters: Truncar e-mails depois de uma dessas linhas
   setting_new_project_user_role_id: Papel dado a um usuário não-administrador que
@@ -1376,7 +1379,9 @@ pt-BR:
   setting_session_ttl_hint: Valor abaixo de 5 trabalhos como desativado
   setting_session_ttl_enabled: Sessão expira
   setting_start_of_week: Iniciar calendários na
-  setting_sys_api_enabled: Ativa WS para gerenciamento do repositório
+  setting_sys_api_enabled: Enable repository management web service
+  setting_sys_api_description: The repository management web service provides integration
+    and user authorization for accessing repositories.
   setting_text_formatting: Formatação de texto
   setting_time_format: Formato de hora
   setting_ui_theme: Tema
@@ -1769,15 +1774,15 @@ pt-BR:
         encontrado.
       invalid_format: 'Formato inválido para a propriedade ''%{property}'': Formato
         esperado como ''%{expected_format}'', mas tem ''%{actual}''.'
-      invalid_json: A solicitação não pôde ser analisada como JSON.
+      invalid_json: A requisição não pôde ser analisada como JSON.
       invalid_relation: The relation is invalid.
       invalid_resource: Para a propriedade '%{property}' é esperado um link como '%{expected}'
         mas foi encontrado '%{actual}'.
       invalid_user_status_transition: O status da conta do usuário atual não permite
         esta operação.
       missing_content_type: Não especificado
-      missing_request_body: Não havia nenhum corpo de solicitação.
-      multipart_body_error: O corpo da solicitação não continha as partes multipart
+      missing_request_body: Não havia nenhum corpo de requisição.
+      multipart_body_error: O corpo da requisição não continha as partes multipart
         esperadas.
       multiple_errors: Várias restrições de campo foram violadas.
       writing_read_only_attributes: Você não pode escrever um atributo somente leitura.
