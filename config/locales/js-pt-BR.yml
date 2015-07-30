@@ -4,7 +4,7 @@ pt-BR:
     ajax:
       hide: Ocultar
       loading: Carregando ...
-    close_popup_title: Close popup
+    close_popup_title: Fechar pop-up
     button_add_watcher: Adicionar observador
     button_cancel: Cancelar
     button_check_all: Selecionar todos
@@ -16,7 +16,7 @@ pt-BR:
     button_edit: Editar
     button_filter: Filtro
     button_list_view: Lista
-    button_log_time: Tempo gasto
+    button_log_time: Registrar tempo
     button_more: Mais
     button_move: Mover
     button_open_details: Abrir visão detalhada
@@ -149,7 +149,7 @@ pt-BR:
       status: Situação
       subject: Assunto
       subproject: Subprojeto
-      time_entries: Tempo gasto
+      time_entries: Registrar tempo
       type: Tipo
       updated_at: Atualizado em
       version: Versão
@@ -177,14 +177,14 @@ pt-BR:
     field_value_enter_prompt: Insira um valor para '%{field}'
     select2:
       input_too_short:
-        one: Por favor, insira um caractere mais
+        one: Por favor, insira um ou mais caracteres
         other: Por favor, insira {{count}} caracteres mais
         zero: Please enter more characters
       load_more: Carregar mais resultados...
       no_matches: Nenhum resultado encontrado
       searching: Pesquisando ...
       selection_too_big:
-        one: Você só pode selecionar um item
+        one: Você pode selecionar somente um item
         other: Você pode apenas selecionar {{limit}} itens
         zero: You cannot select any items
     text_work_packages_destroy_confirmation: Tem certeza que deseja excluir o pacote
@@ -279,9 +279,10 @@ pt-BR:
       label_disable_multi_select: Desativar seleção múltipla
       label_filter_add: Adicionar filtro
       label_options: Opções
-      label_column_multiselect: 'Combined dropdown field: Select with arrow keys,
-        confirm selection with enter, delete with backspace'
-      label_column_select: 'Status - Combined dropdown field: Selection with auto-completion.'
+      label_column_multiselect: 'Campo dropdown combinado: selecione com as teclas
+        de seta, confirme a seleção com enter, apague com backspace'
+      label_column_select: 'Status - campo dropdown combinado: Seleção com preenchimento
+        automático.'
       message_error_during_bulk_delete: Ocorreu um erro ao tentar excluir pacotes
         de trabalho.
       message_successful_bulk_delete: Pacotes de trabalho excluídos com sucesso.
@@ -381,8 +382,8 @@ pt-BR:
       null_value_label: Nenhum valor
       clear_value_label: "-"
       errors:
-        required: "%{field} cannot be empty"
-        number: "%{field} is not a valid number"
+        required: "%{field} não pode ser vazio"
+        number: "%{field} não é um número válido"
     error_could_not_resolve_version_name: Não foi possível identificar o nome da versão
     error_could_not_resolve_user_name: Não foi possível identificar o nome do usuário
     units:

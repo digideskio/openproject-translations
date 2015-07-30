@@ -145,6 +145,7 @@ it:
         hexcode: Codice esadecimale
       project_association:
         description: Causa
+        project_b: Dependent project
       project_type:
         allows_association: Consenti associazioni
         name: Nome
@@ -210,7 +211,8 @@ it:
         could_not_be_copied: non poteva essere copiato (completamente)
       models:
         project_association:
-          identical_projects: non può essere creato da un progetto a se stesso
+          identical_projects: Dependency cannot be created between one project and
+            itself.
           project_association_not_allowed: non consente le associazioni
         repository:
           not_whitelisted: non è consentito dalla configurazione
@@ -299,7 +301,7 @@ it:
     attachments: Allegati
     author: Autore
     base: 'Errore Generale:'
-    blocks_ids: Blocchi
+    blocks_ids: ID dei work packages bloccati
     category: Categoria
     comment: Commento
     comments: Commento
@@ -505,44 +507,65 @@ it:
       hour:
         one: ora
         other: ore
-  default_activity_management: Gestione
-  default_activity_design: Design
   default_activity_development: Sviluppo
+  default_activity_management: Gestione
+  default_activity_other: Altro
+  default_activity_specification: Specification
+  default_activity_support: Supporto
   default_activity_testing: Fase di prova
-  default_activity_Support: Supporto
-  default_activity_Other: Altro
+  default_color_black: Black
+  default_color_blue: Blue
+  default_color_blue_dark: Blue (dark)
+  default_color_blue_light: Blue (light)
+  default_color_green_dark: Green (dark)
+  default_color_green_light: Green (light)
+  default_color_grey_dark: Grey (dark)
+  default_color_grey_light: Grey (light)
+  default_color_grey: Grey
+  default_color_magenta: Magenta
+  default_color_orange: Orange
+  default_color_red: Rosso
+  default_color_white: White
+  default_color_yellow: Yellow
+  default_status_closed: Closed
+  default_status_confirmed: Confirmed
+  default_status_developed: Developed
+  default_status_in_development: In development
+  default_status_in_progress: In progress
+  default_status_in_specification: In specification
+  default_status_in_testing: In testing
   default_status_new: Nuovo
-  default_status_specified: specificato
-  default_status_confirmed: confermato
-  default_status_to_be_scheduled: sta per essere programmato
-  default_status_scheduled: programmato
-  default_status_in_progress: In Corso
-  default_status_tested: testato
-  default_status_on_hold: in attesa
-  default_status_rejected: Rifiutato
-  default_status_closed: chiuso
+  default_status_on_hold: On hold
+  default_status_rejected: Rejected
+  default_status_scheduled: Scheduled
+  default_status_specified: Specified
+  default_status_tested: Tested
+  default_status_test_failed: Test failed
+  default_status_to_be_scheduled: To be scheduled
   default_priority_low: Bassa
   default_priority_normal: Normale
   default_priority_high: Alta
   default_priority_immediate: Immediata
-  default_project_type_customer: Progetto cliente
-  default_project_type_internal: Progetto interno
+  default_project_type_scrum: Scrum team
+  default_project_type_standard: Standard project
   default_reported_project_status_green: Verde
   default_reported_project_status_amber: Ambra
   default_reported_project_status_red: Rosso
   default_role_anonymous: Anonimo
   default_role_developer: Sviluppatore
-  default_role_manager: Manager
+  default_role_project_admin: Project admin
   default_role_non_member: Non membro
   default_role_reader: Lettore
   default_role_member: Membro
   default_type: Pacchetto di Lavoro
-  default_type_task: Attività
+  default_type_bug: Bug
   default_type_deliverable: Consegnabile
+  default_type_epic: Epic
+  default_type_feature: Caratteristica
   default_type_milestone: Traguardo
   default_type_phase: Fase
-  default_type_bug: Bug
-  default_type_feature: Caratteristica
+  default_type_task: Attività
+  default_type_user_story: User story
   description_active: Attivo?
   description_attachment_toggle: Mostra/Nascondi allegati
   description_autocomplete: Questo campo utilizza completamento automatico. Mentre
@@ -592,8 +615,6 @@ it:
   error_can_not_remove_role: Questo ruolo è in uso e non può essere eliminato.
   error_can_not_reopen_work_package_on_closed_version: Un pacchetto di lavoro assegnato
     a una versione chiusa non può essere riaperto
-  error_can_t_load_default_data: 'LA configurazione predefinita non può essere caricato:
-    %{value}'
   error_check_user_and_role: Per favore scegli un utente e un ruolo.
   error_work_package_done_ratios_not_updated: Percentuale di completamento del pacchetto
     di lavoro non aggiornato.
@@ -611,11 +632,11 @@ it:
   error_scm_command_failed: 'Si è verificato un errore quando si tenta di accedere
     al repository: %{value}'
   error_scm_not_found: La voce o la revisione non è stata trovata nel repository.
-  error_unable_delete_status: The work package status cannot be deleted since it is
-    used by at least one work package.
-  error_unable_delete_default_status: Unable to delete the default work package status.
-    Please select another default work package status before deleting the current
-    one.
+  error_unable_delete_status: Lo stato del work package non può essere eliminato poiché
+    è utilizzato da almeno un work package.
+  error_unable_delete_default_status: Impossibile eliminare lo stato predefinito del
+    work package. Si prega di selezionare un altro stato predefinito del work package
+    prima di eliminare quello corrente.
   error_unable_to_connect: Impossibile connettersi (%{value})
   error_workflow_copy_source: Si prega di selezionare un tipo di origine o ruolo
   error_workflow_copy_target: Perfavore seleziona tipo(i) di destinazione e ruolo(i)
@@ -1113,8 +1134,8 @@ it:
     nella pagina di modifica)
   label_keyboard_shortcut_focus_previous_item: Focalizza la lista dell'elemento precedente
     (solo su alcune liste)
-  label_keyboard_shortcut_focus_next_item: Focus next list element (on some lists
-    only)
+  label_keyboard_shortcut_focus_next_item: Evidenzia l'elemento successivo della lista
+    (solo in alcune liste)
   label_visible_elements: Elementi visibili
   macro_execution_error: Errore nell'esecuzione del macro %{macro_name}
   macro_unavailable: Non può essere visualizzata la macro %{macro_name}.
@@ -1164,7 +1185,6 @@ it:
   notice_api_access_key_reseted: La chiave di accesso API è stata reimpostata.
   notice_can_t_change_password: Questo account utilizza una fonte di autenticazione
     esterna. Impossibile cambiare la password.
-  notice_default_data_loaded: Configurazione predefinita caricata con successo.
   notice_email_error: Errore durante l'invio della posta (%{value})
   notice_email_sent: Un'email è stata inviata a %{value}
   notice_failed_to_save_work_packages: 'Impossibile salvare %{count} pacchetto(i)
@@ -1232,7 +1252,7 @@ it:
   permission_browse_repository: Sfoglia il repository
   permission_change_wiki_parent_page: Cambia la pagina padre del wiki
   permission_comment_news: Commenti delle novità
-  permission_commit_access: Commit access
+  permission_commit_access: Conferma l'accesso
   permission_copy_projects: Copia progetti
   permission_delete_work_package_watchers: Eliminare gli osservatori
   permission_delete_work_packages: Cancella pacchetti di lavoro
@@ -1279,12 +1299,13 @@ it:
   permission_select_project_modules: Seleziona moduli del progetto
   permission_manage_types: Seleziona i tipi
   permission_view_calendar: Vedi calendario
-  permission_view_changesets: View changesets
-  permission_view_commit_author_statistics: View commit author statistics
+  permission_view_changesets: Visualizza le modifiche
+  permission_view_commit_author_statistics: Visualizza le statistiche del responsabile
+    delle conferme
   permission_view_work_package_watchers: Vedi la lista degli osservatori
   permission_view_work_packages: Visualizza i pacchetti di lavoro
   permission_view_messages: Visualizza i messaggi
-  permission_view_project_associations: View project dependencies
+  permission_view_project_associations: Visualizzare le dipendenze del progetto
   permission_view_reportings: Vedi rapporti
   permission_view_time_entries: Mostra il tempo trascorso
   permission_view_timelines: Vedi le sequenze temporali
@@ -1300,15 +1321,16 @@ it:
   project_module_timelines: Sequenze temporali
   project_module_wiki: Wiki
   query_fields:
-    assigned_to_role: Assignee's role
-    member_of_group: Assignee's group
+    assigned_to_role: Ruolo del responsabile incaricato
+    member_of_group: Gruppo del responsabile incaricato
     subproject_id: Sottoprogetto
   search_input_placeholder: cerca ...
-  setting_activity_days_default: Days displayed on project activity
+  setting_activity_days_default: Intervallo di giorni visualizzati sulle attività
+    del progetto
   setting_app_subtitle: Sottotitolo applicazione
   setting_app_title: Titolo applicazione
   setting_attachment_max_size: Dimensione max. dell'allegato
-  setting_autofetch_changesets: Autofetch commits
+  setting_autofetch_changesets: Approva automaticamente le modifiche
   setting_autologin: Accesso automatico
   setting_available_languages: Linguaggi disponibili
   setting_bcc_recipients: Destinatari in copia nascosta (BCC)
@@ -1317,16 +1339,17 @@ it:
   setting_brute_force_block_minutes: Tempo di blocco dell'utente (in minuti)
   setting_cache_formatted_text: Cache del testo formattato
   setting_column_options: Personalizza l'aspetto degli elenchi del pacchetto di lavoro
-  setting_commit_fix_keywords: Fixing keywords
+  setting_commit_fix_keywords: Parole chiave di ripristino
   setting_commit_logs_encoding: Codifica il messaggio
   setting_commit_logtime_activity_id: Attività per il tempo d'accesso
   setting_commit_logtime_enabled: Abilitare la registrazione del tempo
   setting_commit_ref_keywords: Riferimento a Parole chiavi
-  setting_cross_project_work_package_relations: Allow cross-project work package relations
+  setting_cross_project_work_package_relations: Consenti di correlare i work package
+    con più progetti
   setting_date_format: Formato data
   setting_default_language: Linguaggio predefinito
   setting_default_notification_option: Opzione di notifica predefinita
-  setting_default_projects_modules: Default enabled modules for new projects
+  setting_default_projects_modules: Moduli abilitati in automatico su nuovi progetti
   setting_default_projects_public: I nuovi progetti sono pubblici come predefinito
   setting_diff_max_lines_displayed: Numero massimo di linee diff visualizzate
   setting_display_subprojects_work_packages: Visualizza pacchetti di lavoro di progetti
@@ -1335,7 +1358,7 @@ it:
   setting_emails_header: Intestazione e-mail
   setting_enabled_scm: SCM Abilitato
   setting_feeds_enabled: Abilita Feed
-  setting_feeds_limit: Feed content limit
+  setting_feeds_limit: Limite al contenuto del contributo
   setting_file_max_size_displayed: Dimensione massima di file di testo visualizzati
     inline
   setting_gravatar_default: Immagine Gravatar predefinità
@@ -1356,15 +1379,16 @@ it:
     tutte le richieste
   setting_login_required: Autenticazione richiesta
   setting_mail_from: Indirizzo e-mail di emissione
-  setting_mail_handler_api_enabled: Enable incoming email web service
-  setting_mail_handler_api_description: The email web handler enables OpenProject
-    to receive emails containing specific commands as an instrumentation mechanism
-    (e.g., to create and update work packages).
+  setting_mail_handler_api_enabled: Abilitare il servizio web di posta elettronica
+    in arrivo
+  setting_mail_handler_api_description: Il gestore di posta elettronica web consente
+    ad OpenProject di ricevere e-mail contenenti comandi specifici come strumento
+    di automazione (ad esempio, per creare e aggiornare pacchetti di lavoro).
   setting_mail_handler_api_key: Chiave API
   setting_mail_handler_body_delimiters: Troncare email dopo una di queste linee
   setting_new_project_user_role_id: Ruolo assegnato ad un utente non amministratore
     che crea un progetto
-  setting_password_active_rules: Active character classes
+  setting_password_active_rules: Insiemi di caratteri attivi
   setting_password_count_former_banned: Numero delle più recenti password usate bannate
     per il riutilizzo
   setting_password_days_valid: Numero di giorni, dopo il quale si impone un cambio
@@ -1386,9 +1410,9 @@ it:
   setting_session_ttl_hint: Valori inferiori a 5 lavorano come disabilitati
   setting_session_ttl_enabled: Sessione scaduta
   setting_start_of_week: Avvia calendario su
-  setting_sys_api_enabled: Enable repository management web service
-  setting_sys_api_description: The repository management web service provides integration
-    and user authorization for accessing repositories.
+  setting_sys_api_enabled: Abilita la gestione di archivi via web service
+  setting_sys_api_description: Il web service di gestione archivio fornisce servizi
+    per integrare ed autorizzare gli utenti nell'accesso agli archivi.
   setting_text_formatting: Formattazione testo
   setting_time_format: Formato del Tempo
   setting_ui_theme: Tema
@@ -1437,7 +1461,7 @@ it:
   text_enumeration_category_reassign_to: 'Riassegnali a questo valore:'
   text_enumeration_destroy_question: "%{count} oggetti sono assegnati a questo valore."
   text_file_repository_writable: Cartella allegati scrivibile
-  text_git_repo_example: a bare and local repository (e.g. /gitrepo, c:\gitrepo)
+  text_git_repo_example: un archivio fisico e locale (ad esempio /gitrepo, c:\gitrepo)
   text_work_package_added: Il pacchetto di lavoro %{id} è stato segnalato da %{author}.
   text_work_package_category_destroy_assignments: Rimuovere le assegnazioni di categoria
   text_work_package_category_destroy_question: Alcuni pacchetti di lavoro (%{count})
@@ -1447,8 +1471,8 @@ it:
   text_work_package_updated: Il pacchetto di lavoro %{id} è stato aggiornato da %{author}.
   text_work_packages_destroy_confirmation: Sei sicuro di che voler eliminare i pacchetti(o)
     di lavoro selezionati?
-  text_work_packages_ref_in_commit_messages: Referencing and fixing work packages
-    in commit messages
+  text_work_packages_ref_in_commit_messages: Work packages che sono correlati e/o
+    modificati nei messaggi di conferma
   text_journal_added: "%{label} %{value} aggiunto"
   text_journal_changed: "%{label} cambiato da %{old} a %{new}"
   text_journal_changed_no_detail: "%{label} aggiornata"
@@ -1456,7 +1480,7 @@ it:
   text_journal_deleted: "%{label} cancellato (%{old})"
   text_journal_deleted_with_diff: "%{label} cancellato (%{link})"
   text_journal_set_to: "%{label} impostato su %{value}"
-  text_journal_set_with_diff: "%{label} set (%{link})"
+  text_journal_set_with_diff: insieme di %{label} (%{link})
   text_length_between: Lunghezza compresa tra %{min} e %{max} caratteri.
   text_line_separated: Valori multipli consentiti (una linea per ogni valore).
   text_load_default_configuration: Carica la configurazione predefinita
@@ -1484,10 +1508,10 @@ it:
   text_select_mail_notifications: Seleziona le azioni per cui l'e-mail deve essere
     inviata.
   text_select_project_modules: 'Seleziona i moduli per abilitare per questo progetto:'
-  text_status_changed_by_changeset: Applied in changeset %{value}.
+  text_status_changed_by_changeset: Stato variato dalla modifica %{value}.
   text_subprojects_destroy_warning: 'i progetto(i) secondari: %{value} verranno anche
     eliminati.'
-  text_time_logged_by_changeset: Applied in changeset %{value}.
+  text_time_logged_by_changeset: Stato variato dalla modifica %{value}.
   text_tip_work_package_begin_day: il pacchetto di lavoro inizia questo giorno
   text_tip_work_package_begin_end_day: il pacchetto di lavoro inizia e finisce questo
     giorno
@@ -1511,7 +1535,7 @@ it:
   text_zoom_in: Ingrandisci
   text_zoom_out: Rimpicciolisci
   time:
-    am: am
+    am: AM
     formats:
       default: "%m/%d/%Y %I: %M %p"
       long: "%B %d % %y h: %M"
@@ -1536,7 +1560,7 @@ it:
       timelines: Sequenze temporali
     add_project_association: Aggiungi dipendenza
     associations: Dipendenze
-    board_could_not_be_saved: Board could not be saved
+    board_could_not_be_saved: Il quadro non può essere salvato
     button_delete_all: Cancella tutti
     change: Cambiare nella pianificazione
     children: Elementi figlio
@@ -1624,7 +1648,7 @@ it:
       hide_chart: Nascondere il grafico
       noneElement: "(nessuno)"
       noneSelection: "(nessuno)"
-      outline: Initial outline expansion
+      outline: Impostazione del dettaglio iniziale
       parent: Mostra i sotto-progetti di
       work_package_filters: Filtro di pacchetti di lavoro
       work_package_responsible: Mostra i pacchetti di lavoro con il responsabile

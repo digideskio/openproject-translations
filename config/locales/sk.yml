@@ -140,6 +140,7 @@ sk:
         hexcode: Hex kód
       project_association:
         description: Príčina
+        project_b: Dependent project
       project_type:
         allows_association: Povoliť asociácie
         name: Názov
@@ -205,7 +206,8 @@ sk:
         could_not_be_copied: Nepodarilo sa (úplne) skopírovať
       models:
         project_association:
-          identical_projects: projekt nemôže byť previazaný sám so sebou
+          identical_projects: Dependency cannot be created between one project and
+            itself.
           project_association_not_allowed: nedovoľuje vytváranie väzieb na iné projekty
         repository:
           not_whitelisted: nie je povolené aktuálnou konfiguráciou
@@ -245,21 +247,21 @@ sk:
               numeric: "Čísla (napríklad 1)"
               special: Špeciálne znaky (napríklad "%")
               reused:
-                one: už bol predtým použitý. Prosím, vyberte odlišnú voľbu ako tú,
-                  ktorá bola zvolená naposledy.
-                other: už bol predtým použitý. Prosím, vyberte odlišnú voľbu ako tú,
-                  ktorá bola zvolená posledných %{count} krát.
-                few: už bol predtým použitý. Prosím, vyberte odlišnú voľbu ako tú,
-                  ktorá bola zvolená posledných %{count} krát.
+                one: has been used before. Please choose one that is different from
+                  your last one.
+                other: has been used before. Please choose one that is different from
+                  your last %{count}.
+                few: has been used before. Please choose one that is different from
+                  your last %{count}.
         member:
           principal_blank: Please choose at least one user or group.
           role_blank: Vyberte aspoň jednu rolu.
       template:
         body: 'Skontrolujte nasledujúce polia:'
         header:
-          one: 1 chyba zabránila uloženiu tohto %{model}
-          other: "%{count} chyby zabránili uloženiu tohto %{model}"
-          few: "%{count} chyby zabránili uloženiu tohto %{model}"
+          one: 1 error prohibited this %{model} from being saved
+          other: "%{count} errors prohibited this %{model} from being saved"
+          few: "%{count} errors prohibited this %{model} from being saved"
     models:
       attachment: Súbor
       board: Fórum
@@ -274,9 +276,9 @@ sk:
       project: Projekt
       query: Vlastný dopyt
       role:
-        one: Rola
-        other: Role
-        few: Role
+        one: Role
+        other: Roles
+        few: Roles
       type: Typ
       planning_element: Planning element
       project_type: Typ projektu
@@ -298,7 +300,7 @@ sk:
     attachments: Prílohy
     author: Autor
     base: 'Všeobecná chyba:'
-    blocks_ids: Blocks
+    blocks_ids: IDs of blocked work packages
     category: Kategória
     comment: Komentár
     comments: Komentár
@@ -463,93 +465,114 @@ sk:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: približne 1 hodina
-        other: približne %{count} hodiny
-        few: približne %{count} hodiny
+        one: about 1 hour
+        other: about %{count} hours
+        few: about %{count} hours
       about_x_months:
-        one: približne 1 mesiac
-        other: približne %{count} mesiace
-        few: približne %{count} mesiace
+        one: about 1 month
+        other: about %{count} months
+        few: about %{count} months
       about_x_years:
-        one: približne 1 rok
-        other: približne %{count} roky
-        few: približne %{count} roky
+        one: about 1 year
+        other: about %{count} years
+        few: about %{count} years
       almost_x_years:
-        one: takmer 1 rok
-        other: takmer %{count} roky
-        few: takmer %{count} roky
+        one: almost 1 year
+        other: almost %{count} years
+        few: almost %{count} years
       half_a_minute: pol minúty
       less_than_x_minutes:
-        one: menej než minúta
-        other: menej než %{count} minút
-        few: menej než %{count} minút
+        one: less than a minute
+        other: less than %{count} minutes
+        few: less than %{count} minutes
       less_than_x_seconds:
-        one: menej než sekunda
-        other: menej ako %{count} sekúndy
-        few: menej ako %{count} sekúndy
+        one: less than 1 second
+        other: less than %{count} seconds
+        few: less than %{count} seconds
       over_x_years:
-        one: viac ako 1 rok
-        other: viac ako %{count} roky
-        few: viac ako %{count} roky
+        one: over 1 year
+        other: over %{count} years
+        few: over %{count} years
       x_days:
-        one: 1 deň
-        other: "%{count} dni"
-        few: "%{count} dni"
+        one: 1 day
+        other: "%{count} days"
+        few: "%{count} days"
       x_minutes:
-        one: 1 minúta
-        other: "%{count} minúty"
-        few: "%{count} minúty"
+        one: 1 minute
+        other: "%{count} minutes"
+        few: "%{count} minutes"
       x_months:
-        one: 1 mesiac
-        other: "%{count} mesiace"
-        few: "%{count} mesiace"
+        one: 1 month
+        other: "%{count} months"
+        few: "%{count} months"
       x_seconds:
-        one: 1 sekunda
-        other: "%{count} sekundy"
-        few: "%{count} sekundy"
+        one: 1 second
+        other: "%{count} seconds"
+        few: "%{count} seconds"
     units:
       hour:
-        one: hodina
-        other: hodiny
-        few: hodiny
-  default_activity_management: Riadenie
-  default_activity_design: Návrh
+        one: hour
+        other: hours
+        few: hours
   default_activity_development: Vývoj
+  default_activity_management: Riadenie
+  default_activity_other: Ostatné
+  default_activity_specification: Specification
+  default_activity_support: Podpora
   default_activity_testing: Testovanie
-  default_activity_Support: Podpora
-  default_activity_Other: Ostatné
-  default_status_new: nové
-  default_status_specified: uvedené
-  default_status_confirmed: potvrdené
-  default_status_to_be_scheduled: má byť naplánované
-  default_status_scheduled: naplánované
-  default_status_in_progress: prebieha
-  default_status_tested: otestované
-  default_status_on_hold: pozastavené
-  default_status_rejected: zamietnuté
-  default_status_closed: uzatvorené
+  default_color_black: Black
+  default_color_blue: Blue
+  default_color_blue_dark: Blue (dark)
+  default_color_blue_light: Blue (light)
+  default_color_green_dark: Green (dark)
+  default_color_green_light: Green (light)
+  default_color_grey_dark: Grey (dark)
+  default_color_grey_light: Grey (light)
+  default_color_grey: Grey
+  default_color_magenta: Magenta
+  default_color_orange: Orange
+  default_color_red: "Červená"
+  default_color_white: White
+  default_color_yellow: Yellow
+  default_status_closed: Closed
+  default_status_confirmed: Confirmed
+  default_status_developed: Developed
+  default_status_in_development: In development
+  default_status_in_progress: In progress
+  default_status_in_specification: In specification
+  default_status_in_testing: In testing
+  default_status_new: Nový
+  default_status_on_hold: On hold
+  default_status_rejected: Rejected
+  default_status_scheduled: Scheduled
+  default_status_specified: Specified
+  default_status_tested: Tested
+  default_status_test_failed: Test failed
+  default_status_to_be_scheduled: To be scheduled
   default_priority_low: Nízka
   default_priority_normal: Normálna
   default_priority_high: Vysoká
   default_priority_immediate: Okamžité
-  default_project_type_customer: Zákaznícky projekt
-  default_project_type_internal: Interný projekt
+  default_project_type_scrum: Scrum team
+  default_project_type_standard: Standard project
   default_reported_project_status_green: Zelená
   default_reported_project_status_amber: Jantárová
   default_reported_project_status_red: "Červená"
   default_role_anonymous: Anonymný
   default_role_developer: Vývojár
-  default_role_manager: Manažér
+  default_role_project_admin: Project admin
   default_role_non_member: Nie člen
   default_role_reader: "Čitateľ"
   default_role_member: "Člen"
   default_type: Pracovný balíček
-  default_type_task: "Úloha"
+  default_type_bug: Chyba
   default_type_deliverable: Výstup
+  default_type_epic: Epic
+  default_type_feature: Nová funkcia
   default_type_milestone: Míľnik
   default_type_phase: Fáza
-  default_type_bug: Chyba
-  default_type_feature: Nová funkcia
+  default_type_task: "Úloha"
+  default_type_user_story: User story
   description_active: Aktívny?
   description_attachment_toggle: Zobraziť / skryť prílohy
   description_autocomplete: This field uses autocomplete. While typing the title of
@@ -596,7 +619,6 @@ sk:
   error_can_not_remove_role: This role is in use and cannot be deleted.
   error_can_not_reopen_work_package_on_closed_version: Pracovný balíček, ktorý je
     priradený na uzatvorenú verziu sa nedá znovu-otvoriť
-  error_can_t_load_default_data: 'Default configuration could not be loaded: %{value}'
   error_check_user_and_role: Please choose a user and a role.
   error_work_package_done_ratios_not_updated: Work package done ratios not updated.
   error_work_package_not_found_in_project: The work package was not found or does
@@ -1060,30 +1082,30 @@ sk:
   label_workflow_plural: Workflows
   label_workflow_summary: Zhrnutie
   label_x_closed_work_packages_abbr:
-    one: 1 uzatvorený
-    other: "%{count} uzatvorené"
+    one: 1 closed
+    other: "%{count} closed"
     zero: 0 closed
-    few: "%{count} uzatvorené"
+    few: "%{count} closed"
   label_x_comments:
-    one: 1 komentár
-    other: "%{count} komentáre"
+    one: 1 comment
+    other: "%{count} comments"
     zero: no comments
-    few: "%{count} komentáre"
+    few: "%{count} comments"
   label_x_open_work_packages_abbr:
-    one: 1 otvorený
-    other: "%{count} otvorené"
+    one: 1 open
+    other: "%{count} open"
     zero: 0 open
-    few: "%{count} otvorené"
+    few: "%{count} open"
   label_x_open_work_packages_abbr_on_total:
-    one: otvorený 1 / %{total}
-    other: otvorených %{count} / %{total}
+    one: 1 open / %{total}
+    other: "%{count} open / %{total}"
     zero: 0 open / %{total}
-    few: otvorených %{count} / %{total}
+    few: "%{count} open / %{total}"
   label_x_projects:
-    one: 1 projekt
-    other: "%{count} projekty"
+    one: 1 project
+    other: "%{count} projects"
     zero: no projects
-    few: "%{count} projekty"
+    few: "%{count} projects"
   label_year: Rok
   label_yesterday: včera
   label_keyboard_function: Function
@@ -1165,7 +1187,6 @@ sk:
   notice_api_access_key_reseted: Your API access key was reset.
   notice_can_t_change_password: This account uses an external authentication source.
     Impossible to change the password.
-  notice_default_data_loaded: Default configuration successfully loaded.
   notice_email_error: An error occurred while sending mail (%{value})
   notice_email_sent: An email was sent to %{value}
   notice_failed_to_save_work_packages: 'Failed to save %{count} work package(s) on
@@ -1216,9 +1237,9 @@ sk:
         format: "%n %u"
         units:
           byte:
-            one: Bajt
-            other: Bajty
-            few: Bajty
+            one: Byte
+            other: Bytes
+            few: Bytes
           gb: GB
           kb: kB
           mb: MB
@@ -1541,9 +1562,9 @@ sk:
     delete_thing: Odstrániť
     duration: Trvanie
     duration_days:
-      one: 1 deň
-      other: "%{count} dni"
-      few: "%{count} dni"
+      one: 1 day
+      other: "%{count} days"
+      few: "%{count} days"
     edit_color: Upraviť farbu
     edit_project_type: Upraviť typ projektu
     edit_thing: Upraviť
@@ -1720,9 +1741,9 @@ sk:
     assign_random_password: Assign random password (sent to user via e-mail)
     blocked: locked temporarily
     blocked_num_failed_logins:
-      one: dočasne zamknuté (jeden neúspešný pokus o prihlásenie)
-      other: dočasne zamknuté (%{count} neúspešné pokusy o prihlásenie)
-      few: dočasne zamknuté (%{count} neúspešné pokusy o prihlásenie)
+      one: locked temporarily (one failed login attempt)
+      other: locked temporarily (%{count} failed login attempts)
+      few: locked temporarily (%{count} failed login attempts)
     deleted: Odstránený používateľ
     error_status_change_failed: 'Changing the user status failed due to the following
       errors: %{errors}'
