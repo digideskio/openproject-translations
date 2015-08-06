@@ -16,7 +16,7 @@ et:
     button_edit: Muuda
     button_filter: Filter
     button_list_view: List view
-    button_log_time: Logi aeg
+    button_log_time: Ajakulu
     button_more: Rohkem
     button_move: Tõsta
     button_open_details: Open details view
@@ -60,7 +60,7 @@ et:
     label_equals: võrdub
     label_expand: Laienda
     label_expanded: laiendatud
-    label_expand_all: Voldi kõik lahti
+    label_expand_all: Laienda kõik
     label_export: Export
     label_filename: Fail
     label_filesize: Suurus
@@ -149,8 +149,8 @@ et:
       status: Olek
       subject: Teema
       subproject: Alamprojekt
-      time_entries: Logi aeg
-      type: Tüüp
+      time_entries: Ajakulu
+      type: Liik
       updated_at: Uuendatud
       version: Versioon
       watcher: Jälgija
@@ -208,7 +208,7 @@ et:
       filter:
         column:
           assigned_to: Määratud tegija
-          type: Tüüp
+          type: Liik
           due_date: Lõppkuupäev
           name: Nimi
           status: Olek
@@ -312,7 +312,7 @@ et:
         status: Olek
         subject: Teema
         title: Pealkiri
-        type: Tüüp
+        type: Liik
         updatedAt: Uuendatud
         versionName: Versioon
         version: Versioon

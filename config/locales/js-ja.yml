@@ -184,7 +184,7 @@ ja:
       searching: "検索中..."
       selection_too_big:
         one: You can only select one item
-        other: "{{limit}}つ項目のみ選択できます。"
+        other: "{{limit}}つ項目のみを選択できます。"
         zero: You cannot select any items
     text_work_packages_destroy_confirmation: "選択した作業項目を削除してもよろしいですか？"
     text_query_destroy_confirmation: "選択したクエリを削除してもよろしいですか？"
@@ -328,7 +328,7 @@ ja:
         attachments: "添付ファイル"
       time_relative:
         days: " 日"
-        weeks: "週間"
+        weeks: "週"
         months: "ヶ月間"
     toolbar:
       settings:

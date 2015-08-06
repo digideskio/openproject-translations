@@ -3,7 +3,7 @@ es:
   js:
     ajax:
       hide: Ocultar
-      loading: Cargando...
+      loading: Cargando ...
     close_popup_title: Cerrar ventana emergente
     button_add_watcher: Añadir observador
     button_cancel: Cancelar
@@ -20,15 +20,15 @@ es:
     button_more: Más
     button_move: Mover
     button_open_details: Vista de detalles abiertos
-    button_quote: Presupuesto
+    button_quote: Comentario
     button_save: Guardar
     button_settings: Configuración
     button_uncheck_all: De-seleccionar todos
     button_update: Actualizar
     description_available_columns: Columnas disponibles
-    description_select_work_package: Seleccione paquete de trabajo
+    description_select_work_package: Seleccione el paquete de trabajo
     description_selected_columns: Columnas seleccionadas
-    description_subwork_package: Subpaquetes de trabajo
+    description_subwork_package: Sub paquete de trabajo de
     filter:
       noneElement: "(ninguno)"
     general_text_no: 'no'
@@ -60,7 +60,7 @@ es:
     label_equals: es
     label_expand: Expandir
     label_expanded: expandido
-    label_expand_all: Expandir todos
+    label_expand_all: Ampliar todo
     label_export: Exportar
     label_filename: Archivo
     label_filesize: Tamaño
@@ -81,8 +81,8 @@ es:
     label_less_than_ago: menos que hace días
     label_loading: Cargando...
     label_me: mi
-    label_menu_collapse: ocultar
-    label_menu_expand: mostrar
+    label_menu_collapse: colapsar
+    label_menu_expand: expandir
     label_more_than_ago: más días atrás
     label_next: Siguiente
     label_no_data: No hay datos disponibles
@@ -177,12 +177,12 @@ es:
     field_value_enter_prompt: Introduzca un valor para '%{field}'
     select2:
       input_too_short:
-        one: Por favor ingreses un caracter más
+        one: Por favor ingresa un caracter mas
         other: Ingrese {{count}} caracteres más
         zero: Please enter more characters
       load_more: Cargando más resultados ...
-      no_matches: No se encontraron resultados
-      searching: Buscando...
+      no_matches: No se encontraron coincidencias
+      searching: Buscando ...
       selection_too_big:
         one: Sólo puede seleccionar un elemento
         other: Sólo puede seleccionar {{limit}} elementos
@@ -235,7 +235,7 @@ es:
       responsible: Responsable
       save: Guardar
       start_date: Fecha de inicio
-      tooManyProjects: Mas de  %{count} proyectos. Usa un mejor filtro!
+      tooManyProjects: Mas de  %{count} proyectos. Por favor, use un mejor filtro!
       zoom:
         in: Acercar
         out: Alejar
@@ -244,10 +244,10 @@ es:
         months: Meses
         quarters: Cuatrimestres
         years: Años
-        slider: Zoom
+        slider: Deslizador del Zoom
     tl_toolbar:
       zooms: Nivel de zoom
-      outlines: Nivel de la jerarquía
+      outlines: Nivel de jerarquía
     unsupported_browser:
       title: La versión de su navegador no está soportada
       message: La version de su navegador no está soportada por OpenProject. Por favor,
@@ -264,7 +264,7 @@ es:
       heading3: Cabecera 3
       unordered_list: Lista Desordenada
       ordered_list: Lista Ordenada
-      quote: Presupuesto
+      quote: Comentario
       unquote: Quitar la Cita
       preformatted_text: Texto Preformateado
       wiki_link: Vincular a una página Wiki

@@ -176,15 +176,15 @@ it:
     field_value_enter_prompt: Inserisci un valore per '%{field}'
     select2:
       input_too_short:
-        one: Perfavore inserisci un altro carattere
-        other: Perfavore inserisci {{count}} caratteri in più
+        one: Per favore inserisci un altro carattere
+        other: Per favore inserisci {{count}} caratteri in più
         zero: Please enter more characters
       load_more: Carica altri risultati ...
       no_matches: Nessuna corrispondenza trovata
       searching: Ricerca ...
       selection_too_big:
-        one: Puoi selezionare solo un oggetto
-        other: Puoi selezionare {{limit}} oggetti
+        one: "È possibile selezionare solo un elemento"
+        other: "È possibile selezionare solo {{limit}} elementi"
         zero: You cannot select any items
     text_work_packages_destroy_confirmation: Sei sicuro di che voler eliminare i pacchetti(o)
       di lavoro selezionati?
@@ -320,7 +320,7 @@ it:
       query:
         column_names: Colonne
         group_by: Raggruppa risultati per
-        group: Raggruppa secondo
+        group: Raggruppa per
         sort_ascending: Ordinamento crescente
         sort_descending: Ordinamento decrescente
         move_column_left: Spostare la colonna sinistra

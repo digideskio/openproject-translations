@@ -36,8 +36,8 @@ nl:
           langer zitten kundig Meld u aan met uw huidige referenties. Als u ervoor
           kiest om een gebruiker van deze toepassing opnieuw te worden, kan je dus
           met behulp van de middelen deze toepassing verleent.
-    error_inactive_activation_by_mail: Uw account is nog niet geactiveerd. voor het
-      activeren van uw account, klik op de link in de u toegestuurde mail.
+    error_inactive_activation_by_mail: Uw account is nog niet geactiveerd. Klik op
+      de link in de u toegestuurde mail om uw account te activeren.
     error_inactive_manual_activation: Uw account is nog niet geactiveerd. Wacht totdat
       een beheerder uw account activeert.
     error_self_registration_disabled: Gebruikersregistratie is uitgeschakeld op dit
@@ -86,7 +86,7 @@ nl:
       journal:
         notes: Notities
       member:
-        roles: Rollen
+        roles: Rol
       project:
         homepage: Website
         identifier: Identifier
@@ -163,9 +163,9 @@ nl:
       work_package:
         done_ratio: "% voltooid"
         fixed_version: Versie
-        parent: Bovenliggende
-        parent_issue: Bovenliggende
-        parent_work_package: Bovenliggende
+        parent: Bovenliggend issue
+        parent_issue: Bovenliggend issue
+        parent_work_package: Bovenliggend issue
         priority: Prioriteit
         progress: "% voltooid"
         responsible: Verantwoordelijk
@@ -278,7 +278,7 @@ nl:
       query: Aangepaste query
       role:
         one: Rol
-        other: Rollen
+        other: Rol
       type: Type
       planning_element: Planning element
       project_type: Projecttype
@@ -323,7 +323,7 @@ nl:
     is_public: Publiek
     issue: Werkpakket
     lastname: Achternaam
-    login: Login
+    login: Inloggen
     mail: E-mail
     name: Naam
     password: Wachtwoord
@@ -804,7 +804,7 @@ nl:
   label_group_plural: Groepen
   label_help: Help
   label_here: here
-  label_hide: Verbergen
+  label_hide: Verberg
   label_history: Geschiedenis
   label_home: Home
   label_in: in
@@ -981,7 +981,7 @@ nl:
   label_roadmap_overdue: "%{value} laat"
   label_role_and_permissions: Rollen en machtigingen
   label_role_new: Nieuwe rol
-  label_role_plural: Rollen
+  label_role_plural: Rol
   label_role_search: Rollen zoeken
   label_scm: SCM
   label_search: Zoeken
@@ -1731,8 +1731,8 @@ nl:
     assign_random_password: Assign random password (sent to user via e-mail)
     blocked: locked temporarily
     blocked_num_failed_logins:
-      one: tijdelijk vergrendeld (één mislukte login poging)
-      other: tijdelijk vergrendeld (%{count} mislukte login pogingen)
+      one: tijdelijk vergrendeld (een mislukte inlogpoging)
+      other: tijdelijk vergrendeld (%{count} mislukte inlogpogingen)
     deleted: Deleted user
     error_status_change_failed: 'Changing the user status failed due to the following
       errors: %{errors}'

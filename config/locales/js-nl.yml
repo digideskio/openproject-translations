@@ -2,8 +2,8 @@
 nl:
   js:
     ajax:
-      hide: Verbergen
-      loading: Bezig met laden...
+      hide: Verberg
+      loading: Bezig met laden ...
     close_popup_title: Close popup
     button_add_watcher: Watcher toevoegen
     button_cancel: Annuleren
@@ -137,9 +137,9 @@ nl:
       estimated_hours: Geschatte tijd
       fixed_version: Versie
       member_of_group: Werknemer's groep
-      parent: Bovenliggende
-      parent_issue: Bovenliggende
-      parent_work_package: Bovenliggende
+      parent: Bovenliggend issue
+      parent_issue: Bovenliggend issue
+      parent_work_package: Bovenliggend issue
       priority: Prioriteit
       progress: "% voltooid"
       project: Project
@@ -155,7 +155,7 @@ nl:
       version: Versie
       watcher: Kijker
     relation_labels:
-      parent: Bovenliggende
+      parent: Bovenliggend issue
       children: Children
       relates: Related To
       duplicates: Duplicates
@@ -177,16 +177,15 @@ nl:
     field_value_enter_prompt: Breng een waarde in voor veld '%{field}'
     select2:
       input_too_short:
-        one: |
-          Voer één of meer tekens in
-        other: Voer {{count}} meer tekens in
+        one: Eén karakter meer inbrengen
+        other: Nog {{count}} karakters inbrengen
         zero: Please enter more characters
-      load_more: Meer resultaten laden...
+      load_more: Meer resultaten laden ...
       no_matches: Geen overeenkomsten gevonden
-      searching: Zoeken ...
+      searching: Bezig met zoeken ...
       selection_too_big:
-        one: U kunt slechts één item selecteren
-        other: U kunt slechts {{limit}} items selecteren
+        one: U kan slechts één item kiezen
+        other: U kan slechts {{limit}} items kiezen
         zero: You cannot select any items
     text_work_packages_destroy_confirmation: Weet u zeker dat u geselecteerd(e) werkpakket(ten)
       wilt verwijderen?

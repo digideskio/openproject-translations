@@ -3,7 +3,7 @@ pl:
   js:
     ajax:
       hide: Ukryj
-      loading: "Ładowanie..."
+      loading: "Ładowanie ..."
     close_popup_title: Close popup
     button_add_watcher: Dodaj obserwatora
     button_cancel: Anuluj
@@ -28,7 +28,7 @@ pl:
     description_available_columns: Dostępne kolumny
     description_select_work_package: Wybierz zadanie
     description_selected_columns: Wybrane kolumny
-    description_subwork_package: Sub work package of
+    description_subwork_package: Część zadania
     filter:
       noneElement: "(brak)"
     general_text_no: nie
@@ -54,7 +54,7 @@ pl:
     label_closed_work_packages: Zamknięte
     label_collapse: Zwiń
     label_collapsed: zwinięty
-    label_collapse_all: Zwiń wszystko
+    label_collapse_all: Zwiń wszystkie
     label_commented_on: skomentował
     label_contains: zawiera
     label_equals: jest
@@ -181,8 +181,8 @@ pl:
         zero: Please enter more characters
         few: Proszę wpisać jeszcze {{count}} znaki
       load_more: "Ładowanie więcej wyników..."
-      no_matches: Nie znaleziono odpowiedników
-      searching: Wyszukiwanie...
+      no_matches: Nie znaleziono dopasowań
+      searching: Wyszukiwanie ...
       selection_too_big:
         one: Możesz wybrać tylko jeden element
         other: Możesz wybrać tylko {{limit}} elementów
@@ -327,12 +327,12 @@ pl:
         hide_column: Ukryj kolumnę
         insert_columns: Wstaw kolumny ...
         filters: Filtry
-        display_sums: Wyświetlanie sumy
+        display_sums: Wyświetl sumy
         errors:
           unretrievable_query: Nie można pobrać zapytania z URL
       tabs:
         overview: Przegląd
-        activity: Działanie
+        activity: Aktywność
         relations: Relacje
         watchers: Obserwatorzy
         attachments: Załączniki

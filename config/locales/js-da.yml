@@ -126,7 +126,7 @@ da:
     label_click_to_enter_description: Klik for at indtaste beskrivelse...
     text_are_you_sure: Er du sikker?
     filter_labels:
-      assigned_to: Tovholder
+      assigned_to: Opdragsgiver
       assigned_to_role: Opdragsgiverens rolle
       author: Forfatter
       category: Kategori
@@ -141,15 +141,15 @@ da:
       parent_work_package: Overordnet
       priority: Prioritet
       progress: "% udført"
-      project: Projekt
+      project: Prjoekt
       responsible: Ansvarlig
-      spent_time: Brugt tid
+      spent_time: Anvendt tid
       start_date: Start dato
       status: Status
       subject: Emne
       subproject: Underprojekt
       time_entries: Log tidspunkt
-      type: Type
+      type: Art
       updated_at: Opdateret den
       version: Version
       watcher: Overvåger
@@ -177,7 +177,7 @@ da:
     select2:
       input_too_short:
         one: Indtast venligst ét tegn mere
-        other: Indtast venligst {{count}} tegn mere
+        other: Indtast venligst mere end {{count}} tegn
         zero: Please enter more characters
       load_more: Henter flere resultater...
       no_matches: Ingen passende resultater fundet
@@ -205,8 +205,8 @@ da:
         report_timeout: Tidslinjen kunne ikke indlæses indenfor en remelig tid.
       filter:
         column:
-          assigned_to: Tovholder
-          type: Type
+          assigned_to: Opdragsgiver
+          type: Art
           due_date: Slutdato
           name: Navn
           status: Status
@@ -292,24 +292,24 @@ da:
         estimatesAndTime: Skøn & tid
         other: Andet
       properties:
-        assignee: Tovholder
+        assignee: Opdragsgiver
         author: Forfatter
         createdAt: Oprettet den
         description: Beskrivelse
         date: Dato
         dueDate: Forfaldsdato
         estimatedTime: Anslået tid
-        spentTime: Brugt tid
+        spentTime: Anvendt tid
         category: Kategori
         percentageDone: Procentdel udført
         priority: Prioritet
-        projectName: Projekt
+        projectName: Prjoekt
         responsible: Ansvarlig
         startDate: Start dato
         status: Status
         subject: Emne
         title: Titel
-        type: Type
+        type: Art
         updatedAt: Opdateret den
         versionName: Version
         version: Version

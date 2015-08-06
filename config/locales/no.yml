@@ -82,7 +82,7 @@
       journal:
         notes: Notater
       member:
-        roles: Roller
+        roles: Rolle
       project:
         homepage: Hjemmeside
         identifier: Identifikator
@@ -248,9 +248,9 @@
               numeric: numerisk (f.eks. "1")
               special: spesialtegn (f.eks. "%")
               reused:
-                one: har blitt brukt tidligere. Vennligst velg ett som er forskjellig
+                one: har blitt brukt tidligere. Vennligst velg et som er forskjellig
                   fra det forrige.
-                other: har blitt brukt tidligere. Vennligst velg ett som er forskjellig
+                other: har blitt brukt tidligere. Vennligst velg et som er forskjellig
                   fra dine siste %{count}.
         member:
           principal_blank: Velg minst én bruker eller gruppe.
@@ -275,7 +275,7 @@
       query: Egendefinert spørring
       role:
         one: Rolle
-        other: Roller
+        other: Rolle
       type: Type
       planning_element: Planleggingselement
       project_type: Prosjekttype
@@ -973,7 +973,7 @@
   label_roadmap_overdue: "%{value} over tiden"
   label_role_and_permissions: Roller og tilganger
   label_role_new: Ny rolle
-  label_role_plural: Roller
+  label_role_plural: Rolle
   label_role_search: Søk etter roller
   label_scm: SCM
   label_search: Søk
@@ -1069,7 +1069,7 @@
   label_workflow_summary: Sammendrag
   label_x_closed_work_packages_abbr:
     one: 1 lukket
-    other: "%{count} lukket"
+    other: "%{count} lukkede"
     zero: 0 closed
   label_x_comments:
     one: 1 kommentar

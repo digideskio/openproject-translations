@@ -84,7 +84,7 @@ ru:
     label_menu_collapse: "свернуть"
     label_menu_expand: "развернуть"
     label_more_than_ago: "больше, чем дней назад"
-    label_next: "Следующии"
+    label_next: "Следующие"
     label_no_data: "Нет данных для отображения"
     label_no_due_date: "без даты окончания"
     label_no_start_date: "без даты начала"
@@ -94,7 +94,7 @@ ru:
     label_on: "на"
     label_open_menu: "Открыть меню"
     label_open_work_packages: "открыть"
-    label_previous: "Предыдущий"
+    label_previous: "Предыдущие"
     label_per_page: "На странице:"
     label_remove_columns: "Удалить выбранные столбцы"
     label_save_as: "Сохранить как"
@@ -127,12 +127,12 @@ ru:
     label_click_to_enter_description: "Нажмите, чтобы ввести описание..."
     text_are_you_sure: "Вы уверены?"
     filter_labels:
-      assigned_to: "Назначено"
+      assigned_to: "Назначениям"
       assigned_to_role: "Роль назначенного"
       author: "Автор"
       category: "Категория"
       created_at: "Создано"
-      done_ratio: "% сделалано"
+      done_ratio: "% выполнено"
       due_date: "Дата выполнения"
       estimated_hours: "Предполагаемое время"
       fixed_version: "Версия"
@@ -141,9 +141,9 @@ ru:
       parent_issue: "Родитель"
       parent_work_package: "Родитель"
       priority: "Приоритет"
-      progress: "% сделалано"
+      progress: "% выполнено"
       project: "Проект"
-      responsible: "Ответственный"
+      responsible: "Ответственному"
       spent_time: "Затраченное время"
       start_date: "Дата начала"
       status: "Состояние"
@@ -178,9 +178,9 @@ ru:
     select2:
       input_too_short:
         one: "Пожалуйста, введите еще один  символ"
-        other: "Пожалуйста, введите еще один символ"
+        other: "Пожалуйста, введите {{count}} символов"
         zero: Please enter more characters
-        few: "Пожалуйста, введите еще один символ"
+        few: "Пожалуйста, введите {{count}} символов"
       load_more: "Загрузка дополнительных результатов ..."
       no_matches: "Совпадения не найдены"
       searching: "Поиск ..."
@@ -201,24 +201,24 @@ ru:
       errors:
         not_implemented: "Временная шкала не может быть отображена, так как использует
           ещё не реализованную функцию."
-        report_comparison: "Невозможно отобразить заданные сравнения на временной
-          шкале. Пожалуйста, проверьте соответствующий раздел в конфигурации, сброс
-          может помочь в решении проблемы."
+        report_comparison: "Невозможно отобразить заданные сравнения в графике. Пожалуйста,
+          проверьте соответствующий раздел в конфигурации, сброс может помочь в решении
+          проблемы."
         report_epicfail: "Временная шкала не может быть отображена из-за неожиданной
           ошибки."
         report_timeout: "График не может быть загружен в разумный период времени."
       filter:
         column:
-          assigned_to: "Назначено"
+          assigned_to: "Назначениям"
           type: "Тип"
           due_date: "Дате окончания"
-          name: "Имя"
+          name: "Имени"
           status: "Состояние"
-          responsible: "Ответственный"
+          responsible: "Ответственному"
           start_date: "Дата начала"
         grouping_other: "Другие"
         noneSelection: "(нет)"
-      name: "Имя"
+      name: "Имени"
       new_work_package: "Новый комплекс работ"
       outline: "Сбросить схему"
       outlines:
@@ -229,11 +229,11 @@ ru:
         level4: "Развернуть уровень 4"
         level5: "Развернуть уровень 5"
         all: "Показывать всё"
-      project_status: "Статус проекта"
+      project_status: "Состояние проекта"
       project_type: "Тип проекта"
       really_close_dialog: "Вы действительно хотите закрыть диалоговое окно и потерять
         введенные данные?"
-      responsible: "Ответственный"
+      responsible: "Ответственному"
       save: "Сохранить"
       start_date: "Дата начала"
       tooManyProjects: "Больше чем %{count} проектов. Пожалуйста, используйте более
@@ -298,7 +298,7 @@ ru:
         estimatesAndTime: "Смета & время"
         other: "Другие"
       properties:
-        assignee: "Назначено"
+        assignee: "Назначениям"
         author: "Автор"
         createdAt: "Создано"
         description: "Описание"
@@ -310,11 +310,11 @@ ru:
         percentageDone: "Сделано в процентах"
         priority: "Приоритет"
         projectName: "Проект"
-        responsible: "Ответственный"
+        responsible: "Ответственному"
         startDate: "Дата начала"
         status: "Состояние"
         subject: "Тема"
-        title: "Название"
+        title: "Заголовок"
         type: "Тип"
         updatedAt: "Обновлено"
         versionName: "Версия"
@@ -360,13 +360,13 @@ ru:
       unselected_title: "Комплекс работ"
     modals:
       label_settings: "Переименование запроса"
-      label_name: "Имя"
+      label_name: "Имени"
       label_delete_page: "Удалить текущую страницу"
       button_apply: "Применить"
       button_save: "Сохранить"
       button_submit: "Отправить"
       button_cancel: "Отмена"
-    notice_successful_create: "Создание завершено."
+    notice_successful_create: "Создание выполнено."
     notice_successful_delete: "Удаление выполнено."
     notice_successful_update: "Обновление выполнено."
     notice_bad_request: "Неправильный запрос."

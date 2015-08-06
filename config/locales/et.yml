@@ -65,7 +65,7 @@ et:
         is_filter: Kasutatakse filtrina
         is_required: Nõutav
         max_length: Maksimaalne pikkus
-        min_length: Minimaalne pikkus
+        min_length: Lühima lubatud parooli pikkus
         possible_values: Võimalikud väärtused
         regexp: Regulaaravaldis
         searchable: Otsitav
@@ -81,7 +81,7 @@ et:
       journal:
         notes: Märkmed
       member:
-        roles: Rollid
+        roles: Rolli
       project:
         homepage: Koduleht
         identifier: Identifikaator
@@ -104,7 +104,7 @@ et:
         activity: Tegevus
         hours: Tunnid
         spent_on: Kuupäev
-        type: Tüüp
+        type: Liik
       type:
         is_in_roadmap: Kuva teemasid tegevusplaani graafikus
         in_aggregation: Kuva teemasid koondvaates
@@ -165,8 +165,8 @@ et:
         responsible: Vastutaja
         spent_time: Kulutatud aeg
         subproject: Alamprojekt
-        time_entries: Logi aeg
-        type: Tüüp
+        time_entries: Ajakulu
+        type: Liik
         watcher: Jälgija
     errors:
       messages:
@@ -271,8 +271,8 @@ et:
       query: Kohandatud päring
       role:
         one: Roll
-        other: Rollid
-      type: Tüüp
+        other: Rolli
+      type: Liik
       planning_element: Planeerimise osa
       project_type: Projekti tüüp
       user: Kasutaja
@@ -329,7 +329,7 @@ et:
     subject: Teema
     summary: Kokkuvõte
     title: Pealkiri
-    type: Tüüp
+    type: Liik
     updated_at: Uuendatud
     updated_on: Uuendatud
     user: Kasutaja
@@ -359,10 +359,10 @@ et:
   button_duplicate: Duplitseeri
   button_edit: Muuda
   button_edit_associated_wikipage: Muuda seotud vikilehte "%{page_title}"
-  button_expand_all: Voldi kõik lahti
+  button_expand_all: Laienda kõik
   button_list: Listi
   button_lock: Lukusta
-  button_log_time: Logi aeg
+  button_log_time: Ajakulu
   button_login: Logi sisse
   button_move: Tõsta
   button_move_and_follow: Tõsta ja järgne
@@ -379,7 +379,7 @@ et:
   button_test: Testi
   button_unarchive: Paki arhiiv lahti
   button_uncheck_all: Nulli valik
-  button_unlock: Ava lukust
+  button_unlock: Aktiveeri
   button_unwatch: "Ära jälgi"
   button_update: Uuenda
   button_view: Kuva
@@ -969,7 +969,7 @@ et:
   label_roadmap_overdue: "%{value} hiljaks jäänud"
   label_role_and_permissions: Rollid ja õigused
   label_role_new: Uus roll
-  label_role_plural: Rollid
+  label_role_plural: Rolli
   label_role_search: Otsi rolle
   label_scm: Lähtekoodi haldusvahendid
   label_search: Otsi
@@ -1007,7 +1007,7 @@ et:
   label_this_year: sel aastal
   label_time_entry_plural: Kulutatud aeg
   label_time_sheet_menu: Time sheet
-  label_time_tracking: Ajakulu jälgimine
+  label_time_tracking: Ajakulu arvestus
   label_today: täna
   label_top_menu: "Ülemine menüü"
   label_topic_plural: Teemad
@@ -1285,7 +1285,7 @@ et:
   project_module_work_package_tracking: Teema jälgimine
   project_module_news: Uudised
   project_module_repository: Hoidla
-  project_module_time_tracking: Ajakulu jälgimine
+  project_module_time_tracking: Ajakulu arvestus
   project_module_timelines: Ajakavad
   project_module_wiki: Viki
   query_fields:
@@ -1355,7 +1355,7 @@ et:
     kasutamine on keelatud
   setting_password_days_valid: Uue parooli kohustuslik määramine antud arvu päevade
     järel (null on igavik)
-  setting_password_min_length: Minimaalne pikkus
+  setting_password_min_length: Lühima lubatud parooli pikkus
   setting_password_min_adhered_rules: Minimaalne nõutav erineva tähemärgiklassi kasutamine
     paroolis
   setting_per_page_options: Kuvatud tulemuste arv lehe kohta
@@ -1569,7 +1569,7 @@ et:
         default: vaikimisi
       column:
         assigned_to: Määratud tegija
-        type: Tüüp
+        type: Liik
         due_date: Lõppkuupäev
         name: Nimi
         status: Olek
@@ -1715,7 +1715,7 @@ et:
     registered: registreeritud
     reset_failed_logins: Lähtesta ebaõnnestunud sisselogimised
     status_user_and_brute_force: "%{user} ja %{brute_force}"
-    unlock: Ava lukust
+    unlock: Aktiveeri
     unlock_and_reset_failed_logins: Aktiveeri ja lähtesta ebaõnnestunud sisselogimised
     no_login: This user authenticates through login by password. Since it is disabled,
       they cannot log in.

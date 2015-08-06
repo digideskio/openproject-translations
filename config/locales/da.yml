@@ -3,7 +3,7 @@ da:
   account:
     delete: Slet konto
     delete_confirmation: Er du sikker på, du vil slette denne konto?
-    deleted: Kontoen slettet med succes
+    deleted: Kontoen er nu slettet
     deletion_info:
       data_consequences:
         other: Så meget som muligt af brugerens data vil blive slettet (fx e-mail,
@@ -79,7 +79,7 @@ da:
       status:
         is_closed: Lukket arbejdspakke
       journal:
-        notes: Noter
+        notes: Kommentarer
       member:
         roles: Roller
       project:
@@ -104,7 +104,7 @@ da:
         activity: Aktivitet
         hours: Timer
         spent_on: Dato
-        type: Type
+        type: Art
       type:
         is_in_roadmap: Arbejdspakker vist i køreplanen
         in_aggregation: Arbejdspakker vist i helhed
@@ -115,7 +115,7 @@ da:
         auth_source: Godkendelsestilstand
         language: Sprog
         last_login_on: Seneste login
-        mail_notification: E-mailpåmindelser
+        mail_notification: E-mail-påmindelser
         new_password: Ny adgangskode
         password_confirmation: Bekræftelse
         force_password_change: "Ændring af adgangskode virksom ved næste login"
@@ -164,10 +164,10 @@ da:
         priority: Prioritet
         progress: "% udført"
         responsible: Ansvarlig
-        spent_time: Brugt tid
+        spent_time: Anvendt tid
         subproject: Underprojekt
         time_entries: Log tidspunkt
-        type: Type
+        type: Art
         watcher: Overvåger
     errors:
       messages:
@@ -247,7 +247,7 @@ da:
               special: Special (fx "%")
               reused:
                 one: er blevet brugt før. Vælg en, der er forskellig fra din seneste.
-                other: har været brugt før. Vælg en, der er forskellig fra dine seneste
+                other: er blevet brugt før. Vælg et, der er forskelligt fra dine seneste
                   %{count}.
         member:
           principal_blank: Vælg venligst mindst én bruger eller gruppe.
@@ -255,8 +255,8 @@ da:
       template:
         body: 'Kontroller venligst følgende felter:'
         header:
-          one: 1 fejl forhindrede at dette %{model} blev gemt
-          other: "%{count} fejl forhindrede at dette %{model} blev gemt"
+          one: 1 fejl forhindrede at denne %{model} blev gemt
+          other: "%{count} fejl forhindrede at denne %{model} blev gemt"
     models:
       attachment: Fil
       board: Forum
@@ -268,19 +268,19 @@ da:
       status: Status for arbejdspakke
       member: Medlem
       news: Nyheder
-      project: Projekt
+      project: Prjoekt
       query: Selvvalgt forespørgsel
       role:
         one: Rolle
         other: Roller
-      type: Type
+      type: Art
       planning_element: Planlægningselement
       project_type: Projekttype
       user: Bruger
       version: Version
       wiki: Wiki
       wiki_page: Wiki-side
-      workflow: Arbejdsstrøm
+      workflow: Arbejdsgang
       work_package: Arbejdspakke
   errors:
     header_invalid_fields: 'Der var problemer med disse felter:'
@@ -289,8 +289,8 @@ da:
     updated: 'Opdateret: %{title}'
   attributes:
     active: Aktiv
-    assigned_to: Tovholder
-    assignee: Tovholder
+    assigned_to: Opdragsgiver
+    assignee: Opdragsgiver
     attachments: Vedhæftninger
     author: Forfatter
     base: 'Generel fejl:'
@@ -322,7 +322,7 @@ da:
     name: Navn
     password: Adgangskode
     priority: Prioritet
-    project: Projekt
+    project: Prjoekt
     responsible: Ansvarlig
     role: Rolle
     start_date: Start dato
@@ -330,7 +330,7 @@ da:
     subject: Emne
     summary: Opsummering
     title: Titel
-    type: Type
+    type: Art
     updated_at: Opdateret den
     updated_on: Opdateret den
     user: Bruger
@@ -344,7 +344,7 @@ da:
   button_back: Tilbage
   button_cancel: Annuller
   button_change: "Ændring"
-  button_change_parent_page: "Ændr overordnet side"
+  button_change_parent_page: Skift overordnet side
   button_change_password: Skift adgangskode
   button_check_all: Vælg alt
   button_clear: Ryd
@@ -384,7 +384,7 @@ da:
   button_unwatch: Stands overvågning
   button_update: Opdater
   button_view: Se
-  button_watch: Overvåg
+  button_watch: Før tilsyn
   button_manage_menu_entry: Opsæt menupunkt
   button_add_menu_entry: Tilføj menupunkt
   button_configure_menu_entry: Opsæt menupunkt
@@ -459,19 +459,19 @@ da:
     distance_in_words:
       about_x_hours:
         one: omkring 1 time
-        other: omkring %{count} timer
+        other: omkring  %{count} timer
       about_x_months:
         one: omkring 1 måned
-        other: omkring %{count} måneder
+        other: omkring  %{count} måneder
       about_x_years:
-        one: omkring 1 år
-        other: omkring %{count} år
-      almost_x_years:
         one: knapt 1 år
+        other: omkring  %{count} år
+      almost_x_years:
+        one: knapt %{count} år
         other: knapt %{count} år
       half_a_minute: et halvt minut
       less_than_x_minutes:
-        one: mindre end et minut
+        one: mindre end 1 minut
         other: mindre end %{count} minutter
       less_than_x_seconds:
         one: mindre end 1 sekund
@@ -484,7 +484,7 @@ da:
         other: "%{count} dage"
       x_minutes:
         one: 1 minut
-        other: "%{count} minutter"
+        other: "%{count} minutte"
       x_months:
         one: 1 måned
         other: "%{count} måneder"
@@ -566,8 +566,8 @@ da:
   description_compare_to: Sammenlign til version
   description_current_position: 'Du er her:'
   description_date_from: Indtast startdato
-  description_date_range_interval: Udpeg interval ved at vælge start- og slutdato
-  description_date_range_list: Udpeg interval fra liste
+  description_date_range_interval: Fastsæt interval ved at vælge start- og slutdato
+  description_date_range_list: Fastsæt interval fra liste
   description_date_to: Indtast slutdato
   description_enter_number: Indtast nummer
   description_enter_text: Indtast tekst
@@ -576,8 +576,8 @@ da:
   description_category_reassign: Vælg kategori
   description_message_content: Meddelelsens indhold
   description_my_project: Du er medlem
-  description_notes: Noter
-  description_parent_work_package: Overordnet arbejdspakken for denne
+  description_notes: Kommentarer
+  description_parent_work_package: Overordnet arbejdspakke for denne
   description_project_scope: Bredde af søgning
   description_query_sort_criteria_attribute: Sorteringsegenskab
   description_query_sort_criteria_direction: Sorteringsretning
@@ -614,7 +614,8 @@ da:
   error_omniauth_registration_timed_out: Registrering via en ekstern godkendelsestjeneste
     er udløbet. Prøv venligst igen.
   error_scm_annotate: Indholdet findes ikke eller der kan ikke tilføjes nyt.
-  error_scm_command_failed: 'Der optod en fejl da du forsøgte at tilgå arkivet: %{value}'
+  error_scm_command_failed: 'Der opstod en fejl da du forsøgte at tilgå projektarkivet:
+    %{value}'
   error_scm_not_found: Indholdet eller ændring findes ikke i arkivet.
   error_unable_delete_status: Arbejdspakkens status kan ikke slettes da den bruges
     af mindst én pakke.
@@ -630,7 +631,7 @@ da:
     Prøv venligst igen.
   events:
     project: Projekt er redigeret
-    changeset: Pakken af ændringer er redigeret
+    changeset: Pakke af ændringer er redigeret
     message: Meddelelse er redigeret
     news: Nyheder
     reply: Besvaret
@@ -662,7 +663,7 @@ da:
   label_add_columns: Tilføj valgte kolonner
   label_add_note: Tilføj en note
   label_add_related_issues: Tilføj et relateret emne
-  label_add_related_work_packages: Tilføj relateret arbejdspakker
+  label_add_related_work_packages: Tilføj relaterede arbejdspakker
   label_add_subtask: Tilføj underopgave
   label_added: tilføjet
   label_added_time_by: Tilføjet af %{author} for %{age} siden
@@ -803,13 +804,13 @@ da:
   label_in_less_than: på mindre end
   label_in_more_than: på mere end
   label_incoming_emails: Indkommende e-mails
-  label_index_by_date: Sider efter dato
-  label_index_by_title: Sider efter titel
+  label_index_by_date: Indhold efter dato
+  label_index_by_title: Indhold efter titel
   label_information: Information
   label_information_plural: Information
   label_integer: Heltal
   label_internal: Intern
-  label_work_package_added: Arbejdspakker tilføjet
+  label_work_package_added: Arbejdspakke tilføjet
   label_work_package_category_new: Ny kategori
   label_work_package_category_plural: Kategorier for arbejdspakker
   label_work_package_hierarchy: Hieraki for arbejdspakker
@@ -829,7 +830,7 @@ da:
     til mig
   label_work_package_view_all_responsible_for: Vis alle arbejdspakker, jeg er ansvarlig
     for
-  label_work_package_view_all_watched: Vis alle arbejdspakker, jeg overvåger
+  label_work_package_view_all_watched: Vis alle arbejdspakker, jeg fører tilsyn med
   label_work_package_watchers: Overvågere
   label_journal_diff: Sammenligning af beskrivelser
   label_jump_to_a_project: Gå til et projekt...
@@ -909,7 +910,7 @@ da:
   label_password_rule_numeric: Tal
   label_password_rule_special: Specialtegn
   label_password_rule_uppercase: Store bogstaver
-  label_path_encoding: Vælg sti for arkivering
+  label_path_encoding: Indkod sti for arkivering
   label_pdf_with_descriptions: PDF med beskrivelser
   label_per_page: Per side
   label_permissions: Tilladelser
@@ -919,7 +920,7 @@ da:
   label_please_login: Log venligst ind
   label_plugins: Tilføjelsesprogrammer
   label_precedes: kommer før
-  label_preferences: Instillinger
+  label_preferences: Indstillinger
   label_preview: Forhåndsvisning
   label_previous: Foregående
   label_previous_week: Foregående uge
@@ -987,7 +988,7 @@ da:
   label_sort_highest: Flyt til toppen
   label_sort_lower: Flyt ned
   label_sort_lowest: Flyt til bunden
-  label_spent_time: Brugt tid
+  label_spent_time: Anvendt tid
   label_start_to_end: start til slut
   label_start_to_start: Start til start
   label_statistics: Statistik
@@ -1007,7 +1008,7 @@ da:
   label_this_month: denne måned
   label_this_week: denne uge
   label_this_year: dette år
-  label_time_entry_plural: Brugt tid
+  label_time_entry_plural: Anvendt tid
   label_time_sheet_menu: Tidsskema
   label_time_tracking: Tidsregistrering
   label_today: i dag
@@ -1062,11 +1063,11 @@ da:
   label_wiki_show_new_page_link: Vis undermenupunktet 'Opret ny underside'
   label_wiki_show_submenu_item: 'Vis som punkt i undermenu til '
   label_work_package: Arbejdspakke
-  label_workflow: Arbejdsstrøm
+  label_workflow: Arbejdsgang
   label_workflow_plural: Arbejdsprocesser
   label_workflow_summary: Opsummering
   label_x_closed_work_packages_abbr:
-    one: 1 lukket
+    one: 1 afsluttet
     other: "%{count} afsluttede"
     zero: 0 closed
   label_x_comments:
@@ -1078,11 +1079,11 @@ da:
     other: "%{count} åbne"
     zero: 0 open
   label_x_open_work_packages_abbr_on_total:
-    one: 1 åben /%{total}
-    other: "%{count} åbne /%{total}"
+    one: 1 / %{total} åben
+    other: "%{count} / %{total} åbne"
     zero: 0 open / %{total}
   label_x_projects:
-    one: 1 projekt
+    one: "%{count} projekter"
     other: "%{count} projekter"
     zero: no projects
   label_year: "År"
@@ -1576,8 +1577,8 @@ da:
         date: dato
         default: Forhåndsvalgt
       column:
-        assigned_to: Tovholder
-        type: Type
+        assigned_to: Opdragsgiver
+        type: Art
         due_date: Slutdato
         name: Navn
         status: Status
@@ -1714,8 +1715,8 @@ da:
     assign_random_password: Tildel tilfældig adgangskode (sendt til bruger med e-mail)
     blocked: Midlertid spærret
     blocked_num_failed_logins:
-      one: midlertidigt spærret (1 mislykket forsøg på at logge ind)
-      other: Midlertidigt spærret (%{count} mislykkede forsøg på at logge ind)
+      one: låst midlertidigt (ét mislykket forsøg på login)
+      other: låst midlertidigt (%{count} mislykkede forsøg på login)
     deleted: Slettet bruger
     error_status_change_failed: 'Det lykkedes ikke at ændre brugerens status på grund
       af denne fejl: %{errors}'
