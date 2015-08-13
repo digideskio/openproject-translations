@@ -239,8 +239,8 @@ da:
         user:
           attributes:
             password:
-              weak: 'skal indeholde tegn fra de følgende typer (mindst %{min_count}
-                af %{all_count}): %{rules}'
+              weak: 'Must contain characters of the following classes (at least %{min_count}
+                of %{all_count}): %{rules}'
               lowercase: små bogstaver (f.eks. "a")
               uppercase: store bogstaver (f.eks. "A")
               numeric: tal (fx "1")
@@ -249,6 +249,10 @@ da:
                 one: er blevet brugt før. Vælg en, der er forskellig fra din seneste.
                 other: er blevet brugt før. Vælg et, der er forskelligt fra dine seneste
                   %{count}.
+              match:
+                confirm: Confirm new password.
+                description: "'Password confirmation' should match the input in the
+                  'New password' field."
         member:
           principal_blank: Vælg venligst mindst én bruger eller gruppe.
           role_blank: Vælg venligst mindst én rolle.
@@ -1116,6 +1120,10 @@ da:
   label_keyboard_shortcut_focus_next_item: Fokuser på næste listeelement (kun på nogle
     lister)
   label_visible_elements: Synlige elementer
+  auth_source:
+    using_abstract_auth_source: Can't use an abstract authentication source.
+    ldap_error: 'LDAP-Error: %{error_message}'
+    ldap_auth_failed: Could not authenticate at the LDAP-Server.
   macro_execution_error: Fejl ved udførelse af makroen %{macro_name}
   macro_unavailable: Makro %{macro_name} kan ikke vises.
   mail_body_account_activation_request: 'En ny bruger ( %{value}) har registreret
@@ -1230,7 +1238,7 @@ da:
   permission_browse_repository: Gennemse projektarkivet
   permission_change_wiki_parent_page: Skift overordnet wiki-side
   permission_comment_news: Kommenter nyheder
-  permission_commit_access: Tillad adgang
+  permission_commit_access: Submit commits
   permission_copy_projects: Kopiér projekter
   permission_delete_work_package_watchers: Slet tilsynsførende
   permission_delete_work_packages: Slet arbejdspakker
@@ -1253,7 +1261,7 @@ da:
   permission_edit_time_entries: Rediger tidsregistringer
   permission_edit_timelines: Rediger tidslinjer
   permission_edit_wiki_pages: Rediger wiki-sider
-  permission_export_work_packages: Eksporter arbejdspakker
+  permission_export_work_packages: Export work packages
   permission_export_wiki_pages: Eksporter wiki-sider
   permission_list_attachments: Oplist vedhæftninger
   permission_log_time: Registrer brugt tid
@@ -1400,7 +1408,7 @@ da:
     passwords: Adgangskoder
     session: Session
     brute_force_prevention: Automatiseret brugerblokering
-  show_hide_project_menu: Vis/gem projektmenu
+  show_hide_project_menu: Show/Hide project menu
   status_active: aktiv
   support:
     array:

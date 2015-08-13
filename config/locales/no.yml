@@ -241,8 +241,8 @@
         user:
           attributes:
             password:
-              weak: 'må inneholde tegn fra de følgende klassene (minst %{min_count}
-                av %{all_count}): %{rules}'
+              weak: 'Must contain characters of the following classes (at least %{min_count}
+                of %{all_count}): %{rules}'
               lowercase: små bokstaver (f.eks. "a")
               uppercase: store bokstaver (f.eks. "A")
               numeric: numerisk (f.eks. "1")
@@ -252,6 +252,10 @@
                   fra det forrige.
                 other: har blitt brukt tidligere. Vennligst velg et som er forskjellig
                   fra dine siste %{count}.
+              match:
+                confirm: Confirm new password.
+                description: "'Password confirmation' should match the input in the
+                  'New password' field."
         member:
           principal_blank: Velg minst én bruker eller gruppe.
           role_blank: Velg minst én rolle.
@@ -1119,6 +1123,10 @@
   label_keyboard_shortcut_focus_next_item: Sett fokus på neste listeelement (gjelder
     bare noen lister)
   label_visible_elements: Visible elements
+  auth_source:
+    using_abstract_auth_source: Can't use an abstract authentication source.
+    ldap_error: 'LDAP-Error: %{error_message}'
+    ldap_auth_failed: Could not authenticate at the LDAP-Server.
   macro_execution_error: Feil ved kjøring av makroen %{macro_name}
   macro_unavailable: Makroen %{macro_name} kan ikke vises.
   mail_body_account_activation_request: 'En ny bruker (%{value}) har registrert seg.
@@ -1229,7 +1237,7 @@
   permission_browse_repository: Bla gjennom pakkebrønner
   permission_change_wiki_parent_page: Endre overordnet wiki-side
   permission_comment_news: Kommenter nyheter
-  permission_commit_access: Angi tilgang
+  permission_commit_access: Submit commits
   permission_copy_projects: Kopier prosjekter
   permission_delete_work_package_watchers: Slett overvåkere
   permission_delete_work_packages: Slett arbeidspakker
@@ -1252,7 +1260,7 @@
   permission_edit_time_entries: Rediger tidsrapporter
   permission_edit_timelines: Rediger tidslinjer
   permission_edit_wiki_pages: Rediger wiki-sider
-  permission_export_work_packages: Eksporter arbeidspakker
+  permission_export_work_packages: Export work packages
   permission_export_wiki_pages: Eksportèr wiki-sider
   permission_list_attachments: List vedlegg
   permission_log_time: Logg tidsbruk
@@ -1400,7 +1408,7 @@
     passwords: Passord
     session: Sesjon
     brute_force_prevention: Automatisk blokkering av brukere
-  show_hide_project_menu: Vis/Skjul prosjektmeny
+  show_hide_project_menu: Show/Hide project menu
   status_active: aktiv
   support:
     array:

@@ -212,7 +212,8 @@ zh:
         user:
           attributes:
             password:
-              weak: "必须包含以下类字符 （至少 %{min_count} 个 %{all_count}）： %{rules}"
+              weak: 'Must contain characters of the following classes (at least %{min_count}
+                of %{all_count}): %{rules}'
               lowercase: "小写字母 （如 'a')"
               uppercase: "大写字母 (如 ' A')"
               numeric: "数值 （例如 ' 1')"
@@ -221,6 +222,10 @@ zh:
                 one: has been used before. Please choose one that is different from
                   your last one.
                 other: "已被使用过。请选择一个不同于您最后 %{count}。"
+              match:
+                confirm: Confirm new password.
+                description: "'Password confirmation' should match the input in the
+                  'New password' field."
         member:
           principal_blank: "请选择至少一个用户或组。"
           role_blank: "请选择至少一个角色。"
@@ -1059,6 +1064,10 @@ zh:
   label_keyboard_shortcut_focus_previous_item: "聚焦前面的列表元素 （只有某些列表)"
   label_keyboard_shortcut_focus_next_item: "聚焦下一个的列表元素 （只有某些列表)"
   label_visible_elements: "可见的元素"
+  auth_source:
+    using_abstract_auth_source: Can't use an abstract authentication source.
+    ldap_error: 'LDAP-Error: %{error_message}'
+    ldap_auth_failed: Could not authenticate at the LDAP-Server.
   macro_execution_error: "执行宏 %{macro_name} 出错"
   macro_unavailable: "无法显示宏 %{macro_name} 。"
   mail_body_account_activation_request: "一个新的用户 (%{value}) 注册。该帐户正在等待您的批准："
@@ -1152,7 +1161,7 @@ zh:
   permission_browse_repository: "浏览代码库"
   permission_change_wiki_parent_page: "更改父 wiki 页面"
   permission_comment_news: "评论新闻"
-  permission_commit_access: "提交修改的权限"
+  permission_commit_access: Submit commits
   permission_copy_projects: "复制项目"
   permission_delete_work_package_watchers: "删除关注人"
   permission_delete_work_packages: "删除工作包"
@@ -1175,7 +1184,7 @@ zh:
   permission_edit_time_entries: "编辑时间记录"
   permission_edit_timelines: "编辑时间线"
   permission_edit_wiki_pages: "编辑 wiki 页面"
-  permission_export_work_packages: "导出工作包"
+  permission_export_work_packages: Export work packages
   permission_export_wiki_pages: "导出 wiki 页面"
   permission_list_attachments: "列出附件"
   permission_log_time: "记录消耗时间"
@@ -1312,7 +1321,7 @@ zh:
     passwords: "密码"
     session: "会话"
     brute_force_prevention: "自动化的用户阻止"
-  show_hide_project_menu: "隐藏/显示项目菜单"
+  show_hide_project_menu: Show/Hide project menu
   status_active: "激活"
   support:
     array:

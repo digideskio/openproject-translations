@@ -245,8 +245,8 @@ it:
         user:
           attributes:
             password:
-              weak: 'deve contenere caratteri delle seguenti classi (almeno %{min_count}
-                %{all_count}): %{rules}'
+              weak: 'Must contain characters of the following classes (at least %{min_count}
+                of %{all_count}): %{rules}'
               lowercase: minuscolo (e.g. 'a')
               uppercase: maiuscolo (e.g. 'A')
               numeric: numerico (e.g. '1')
@@ -256,6 +256,10 @@ it:
                   è diversa dall'ultima."
                 other: "è già stata utilizzata. Si prega di sceglierne una  diversa
                   dalle ultime %{count}."
+              match:
+                confirm: Confirm new password.
+                description: "'Password confirmation' should match the input in the
+                  'New password' field."
         member:
           principal_blank: Si prega di scegliere almeno un utente o un gruppo.
           role_blank: Si prega di scegliere almeno un ruolo.
@@ -1131,6 +1135,11 @@ it:
   label_keyboard_shortcut_focus_next_item: Evidenzia l'elemento successivo della lista
     (solo in alcune liste)
   label_visible_elements: Elementi visibili
+  auth_source:
+    using_abstract_auth_source: Non è possibile utilizzare una fonte di autenticazione
+      astratta.
+    ldap_error: 'Errore LDAP: %{error_message}'
+    ldap_auth_failed: Non è possibile autenticare attraverso il Server LDAP.
   macro_execution_error: Errore nell'esecuzione del macro %{macro_name}
   macro_unavailable: Non può essere visualizzata la macro %{macro_name}.
   mail_body_account_activation_request: 'Un nuovo utente (%{value}) si è registrato.
@@ -1246,7 +1255,7 @@ it:
   permission_browse_repository: Sfoglia il repository
   permission_change_wiki_parent_page: Cambia la pagina padre del wiki
   permission_comment_news: Commenti delle novità
-  permission_commit_access: Conferma l'accesso
+  permission_commit_access: Submit commits
   permission_copy_projects: Copia progetti
   permission_delete_work_package_watchers: Eliminare gli osservatori
   permission_delete_work_packages: Cancella pacchetti di lavoro
@@ -1269,7 +1278,7 @@ it:
   permission_edit_time_entries: Modifica registro temporale
   permission_edit_timelines: Modifica le sequenze temporali
   permission_edit_wiki_pages: Modifica le pagine wiki
-  permission_export_work_packages: Esporta i pacchetti di lavoro
+  permission_export_work_packages: Export work packages
   permission_export_wiki_pages: Esporta le pagine wiki
   permission_list_attachments: Elenco allegati
   permission_log_time: Log tempo speso
@@ -1425,7 +1434,7 @@ it:
     passwords: Password
     session: Sessione
     brute_force_prevention: Bloccaggio automatico agli utenti
-  show_hide_project_menu: Mostra/Nascondi menu del progetto
+  show_hide_project_menu: Show/Hide project menu
   status_active: attivo
   support:
     array:

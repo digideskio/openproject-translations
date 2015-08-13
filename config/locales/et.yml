@@ -238,8 +238,8 @@ et:
         user:
           attributes:
             password:
-              weak: parool peab sisaldama erinevad märke (vähemalt %{min_count} %{all_count}-st
-                selliseid %{rules})
+              weak: 'Must contain characters of the following classes (at least %{min_count}
+                of %{all_count}): %{rules}'
               lowercase: väiketäht (näiteks "a")
               uppercase: suurtäht (näiteks 'A')
               numeric: arvuline (nt 1, 2, 3)
@@ -248,6 +248,10 @@ et:
                 one: Vali uus parool, mis erineb eelmisest paroolist.
                 other: Vali uus parool, mis erineb eelmiselt kasutatud %{count}-st
                   paroolist.
+              match:
+                confirm: Confirm new password.
+                description: "'Password confirmation' should match the input in the
+                  'New password' field."
         member:
           principal_blank: Vali vähemalt üks kasutaja või grupp.
           role_blank: Vali vähemalt üks roll.
@@ -1113,6 +1117,10 @@ et:
   label_keyboard_shortcut_focus_next_item: Liigu järgmisele loendi elemendile (töötab
     vaid valitud loendites)
   label_visible_elements: Visible elements
+  auth_source:
+    using_abstract_auth_source: Can't use an abstract authentication source.
+    ldap_error: 'LDAP-Error: %{error_message}'
+    ldap_auth_failed: Could not authenticate at the LDAP-Server.
   macro_execution_error: Error executing the macro %{macro_name}
   macro_unavailable: Macro %{macro_name} cannot be displayed.
   mail_body_account_activation_request: 'Uus kasutaja (%{value}) on registreerunud.
@@ -1221,7 +1229,7 @@ et:
   permission_browse_repository: Hoidlaid sirvida
   permission_change_wiki_parent_page: Muuta viki ülemlehti
   permission_comment_news: Uudiseid kommenteerida
-  permission_commit_access: Sissekandeid teha
+  permission_commit_access: Submit commits
   permission_copy_projects: Kopeerida projekte
   permission_delete_work_package_watchers: Jälgijaid eemaldada
   permission_delete_work_packages: Teemasid kustutada
@@ -1244,7 +1252,7 @@ et:
   permission_edit_time_entries: Muuta ajalogisid
   permission_edit_timelines: Muuta ajakavasid
   permission_edit_wiki_pages: Muuta vikilehti
-  permission_export_work_packages: Teemasid eksportida
+  permission_export_work_packages: Export work packages
   permission_export_wiki_pages: Eksportida vikilehti
   permission_list_attachments: Kuvada manuseid
   permission_log_time: Logida ajakulu
@@ -1395,7 +1403,7 @@ et:
     passwords: Paroolid
     session: Seanss
     brute_force_prevention: Automatiseeritud kasutajate blokeerimine
-  show_hide_project_menu: Projektimenüü kuvamine
+  show_hide_project_menu: Show/Hide project menu
   status_active: aktiivne
   support:
     array:

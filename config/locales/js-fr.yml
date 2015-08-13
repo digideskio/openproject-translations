@@ -5,7 +5,7 @@ fr:
       hide: Masquer
       loading: Chargement ...
     close_popup_title: Fermer popup
-    button_add_watcher: Ajouter un abonné
+    button_add_watcher: Ajouter observateur
     button_cancel: Annuler
     button_check_all: Tout cocher
     button_copy: Copier
@@ -15,7 +15,7 @@ fr:
     button_duplicate: Dupliquer
     button_edit: "Éditer"
     button_filter: Filtre
-    button_list_view: Vue Liste
+    button_list_view: Vue en liste
     button_log_time: Consigner temps
     button_more: Plus
     button_move: Déplacer
@@ -124,7 +124,7 @@ fr:
     label_global_queries: Requêtes partagées
     label_custom_queries: Requêtes privées
     label_columns: Colonnes
-    label_click_to_enter_description: Cliquez pour entrer la description...
+    label_click_to_enter_description: Cliquer pour entrer la description…
     text_are_you_sure: "Êtes-vous sûr ?"
     filter_labels:
       assigned_to: Assignée à
@@ -256,7 +256,7 @@ fr:
       learn_more: En savoir plus
     wiki_formatting:
       strong: Gras
-      italic: Italiques
+      italic: Italique
       underline: Souligné
       deleted: supprimé
       code: Code Inline
@@ -355,7 +355,7 @@ fr:
         save_as: Enregistrer sous ...
         export: Exporter ...
         share: Partager ...
-        page_settings: Renommez la requête...
+        page_settings: Renommer la requête…
         delete: Supprimer
       filter: Filtre
       unselected_title: Lots de Travaux
@@ -377,10 +377,10 @@ fr:
     inplace:
       button_edit: "%{attribute} : Modifier"
       button_save: "%{attribute} : Enregistrer"
-      button_save_and_send: "%{attribute} : Enregistrer et notifier par mail"
+      button_save_and_send: "%{attribute} : Enregistrer et notifier par courriel"
       button_cancel: "%{attribute} : Annuler"
       link_formatting_help: Mise en forme texte
-      btn_preview_enable: Prévisualisation
+      btn_preview_enable: Aperçu
       btn_preview_disable: Désactiver l'aperçu
       null_value_label: Aucune valeur
       clear_value_label: "-"

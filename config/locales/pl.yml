@@ -239,8 +239,8 @@ pl:
         user:
           attributes:
             password:
-              weak: 'musi zawierać znaków następujących klas (co najmniej %{min_count}
-                z %{all_count}): %{rules}'
+              weak: 'Must contain characters of the following classes (at least %{min_count}
+                of %{all_count}): %{rules}'
               lowercase: małe litery (np. 'a')
               uppercase: wielkie litery (np. 'A')
               numeric: liczbowe (np. 1)
@@ -249,6 +249,10 @@ pl:
                 one: było użyte wcześniej. Proszę wybrać inne niż ostatnio.
                 other: było użyte wcześniej. Proszę wybrać inne niż %{count} ostatnich.
                 few: było użyte wcześniej. Proszę wybrać inne niż %{count} ostatnich.
+              match:
+                confirm: Confirm new password.
+                description: "'Password confirmation' should match the input in the
+                  'New password' field."
         member:
           principal_blank: Wybierz co najmniej jeden użytkownik lub Grupa.
           role_blank: Proszę wybrać przynajmniej jedną rolę.
@@ -1137,6 +1141,10 @@ pl:
   label_keyboard_shortcut_focus_next_item: Focus next list element (on some lists
     only)
   label_visible_elements: Elementy widoczne
+  auth_source:
+    using_abstract_auth_source: Can't use an abstract authentication source.
+    ldap_error: 'LDAP-Error: %{error_message}'
+    ldap_auth_failed: Could not authenticate at the LDAP-Server.
   macro_execution_error: Błąd podczas wykonywania makra %{macro_name}
   macro_unavailable: Makro %{macro_name} nie może zostać wyświetlone.
   mail_body_account_activation_request: 'A new user (%{value}) has registered. The
@@ -1252,7 +1260,7 @@ pl:
   permission_browse_repository: Przeglądanie repozytorium
   permission_change_wiki_parent_page: Zmiana strony nadrzędnej wiki
   permission_comment_news: Komentowanie Nowości
-  permission_commit_access: Zatwierdź dostęp
+  permission_commit_access: Submit commits
   permission_copy_projects: Kopiowanie projektów
   permission_delete_work_package_watchers: Usuwanie obserwatorów
   permission_delete_work_packages: Usuń zadania
@@ -1275,7 +1283,7 @@ pl:
   permission_edit_time_entries: Edycja wpisów dziennika
   permission_edit_timelines: Edycja osi czasu
   permission_edit_wiki_pages: Edycja stron wiki
-  permission_export_work_packages: Eksportowanie zadań
+  permission_export_work_packages: Export work packages
   permission_export_wiki_pages: Eksportowanie stron wiki
   permission_list_attachments: Lista załączników
   permission_log_time: Rejestr spędzonego czasu
@@ -1426,7 +1434,7 @@ pl:
     passwords: Hasła
     session: Sesja
     brute_force_prevention: Automatyczne blokowanie użytkowników
-  show_hide_project_menu: Ukryj/Pokaż menu projektu
+  show_hide_project_menu: Show/Hide project menu
   status_active: aktywne
   support:
     array:

@@ -240,8 +240,8 @@ sv-SE:
         user:
           attributes:
             password:
-              weak: 'måste innehålla tecken av följande klasser (minst %{min_count}
-                %{all_count}): %{rules}'
+              weak: 'Must contain characters of the following classes (at least %{min_count}
+                of %{all_count}): %{rules}'
               lowercase: gemener (t.ex. "a")
               uppercase: versal (t.ex. "A")
               numeric: numeriska (t.ex. ' 1')
@@ -250,6 +250,10 @@ sv-SE:
                 one: har tidigare använts. Välj ett som skiljer sig från ditt senaste.
                 other: har tidigare använts. Välj ett som skiljer sig från dina %{count}
                   senaste.
+              match:
+                confirm: Confirm new password.
+                description: "'Password confirmation' should match the input in the
+                  'New password' field."
         member:
           principal_blank: Välj minst en användare eller grupp.
           role_blank: Välj minst en roll.
@@ -893,7 +897,7 @@ sv-SE:
   label_no_change_option: "(Ingen ändring)"
   label_no_data: Ingen data att visa
   label_nobody: ingen
-  label_none: ingen
+  label_none: inga
   label_not_contains: innehåller inte
   label_not_equals: "är inte"
   label_notify_member_plural: Uppdateringar via E-post
@@ -1118,6 +1122,10 @@ sv-SE:
   label_keyboard_shortcut_focus_next_item: Fokusera nästa listelement (på vissa listor
     endast)
   label_visible_elements: Synliga element
+  auth_source:
+    using_abstract_auth_source: Can't use an abstract authentication source.
+    ldap_error: 'LDAP-Error: %{error_message}'
+    ldap_auth_failed: Could not authenticate at the LDAP-Server.
   macro_execution_error: Fel under körning av makrot %{macro_name}
   macro_unavailable: Makrot %{macro_name} kan inte visas.
   mail_body_account_activation_request: 'En ny användare (%{value}) har registrerats.
@@ -1229,7 +1237,7 @@ sv-SE:
   permission_browse_repository: Bläddra i versionsarkivet
   permission_change_wiki_parent_page: "Ändra överordnad wiki-sida"
   permission_comment_news: Kommentera nyhet
-  permission_commit_access: Kan checka in i versionsarkiv
+  permission_commit_access: Submit commits
   permission_copy_projects: Kopiera projekt
   permission_delete_work_package_watchers: Ta bort bevakare
   permission_delete_work_packages: Ta bort arbetspaket
@@ -1252,7 +1260,7 @@ sv-SE:
   permission_edit_time_entries: Redigera tidrapporter
   permission_edit_timelines: Redigera tidslinjer
   permission_edit_wiki_pages: Redigera wiki-sidor
-  permission_export_work_packages: Exportera arbetspaket
+  permission_export_work_packages: Export work packages
   permission_export_wiki_pages: Exportera wiki-sidor
   permission_list_attachments: Lista bifogade filer
   permission_log_time: Tidrapportera
@@ -1402,7 +1410,7 @@ sv-SE:
     passwords: Lösenord
     session: Session
     brute_force_prevention: Automatiserad användarblockering
-  show_hide_project_menu: Dölj/Visa projekt-menyn
+  show_hide_project_menu: Show/Hide project menu
   status_active: aktiv
   support:
     array:

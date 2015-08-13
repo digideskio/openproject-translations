@@ -246,8 +246,8 @@ nl:
         user:
           attributes:
             password:
-              weak: 'moet karakters van de volgende klasse bevatten (ten minste %{min_count}
-                van %{all_count}): %{rules}'
+              weak: 'Must contain characters of the following classes (at least %{min_count}
+                of %{all_count}): %{rules}'
               lowercase: kleine letters (bijvoorbeeld 'a')
               uppercase: hoofdletters (bijvoorbeeld ' A')
               numeric: numerieke (bijvoorbeeld ' 1')
@@ -255,6 +255,10 @@ nl:
               reused:
                 one: is reeds eerder gebruikt. Kies een die verschilt van uw laatste.
                 other: is reeds eerder gebruikt. Kies een die verschilt van uw laatste  %{count}.
+              match:
+                confirm: Confirm new password.
+                description: "'Password confirmation' should match the input in the
+                  'New password' field."
         member:
           principal_blank: Kies ten minste één gebruiker of groep.
           role_blank: Kies ten minste één rol.
@@ -1129,6 +1133,10 @@ nl:
   label_keyboard_shortcut_focus_next_item: Focus volgende lijstelement (enkel op sommige
     lijsten)
   label_visible_elements: Visible elements
+  auth_source:
+    using_abstract_auth_source: Can't use an abstract authentication source.
+    ldap_error: 'LDAP-Error: %{error_message}'
+    ldap_auth_failed: Could not authenticate at the LDAP-Server.
   macro_execution_error: Error executing the macro %{macro_name}
   macro_unavailable: Macro %{macro_name} cannot be displayed.
   mail_body_account_activation_request: 'Een nieuwe gebruiker (%{value}) heeft zich
@@ -1243,7 +1251,7 @@ nl:
   permission_browse_repository: Bladeren Archief
   permission_change_wiki_parent_page: Bovenliggende wiki-pagina wijzigen
   permission_comment_news: Opmerking nieuws
-  permission_commit_access: Commit toegang
+  permission_commit_access: Submit commits
   permission_copy_projects: Kopiëren van projecten
   permission_delete_work_package_watchers: Kijkers verwijderen
   permission_delete_work_packages: Werkpakketten verwijderen
@@ -1266,7 +1274,7 @@ nl:
   permission_edit_time_entries: Bewerk de logboeken van de tijd
   permission_edit_timelines: Bewerken van tijdlijnen
   permission_edit_wiki_pages: Wiki pagina's bewerken
-  permission_export_work_packages: Werkpakketten exporteren
+  permission_export_work_packages: Export work packages
   permission_export_wiki_pages: Wiki pagina's exporteren
   permission_list_attachments: Bijlagen weergeven
   permission_log_time: Meld uw besteede tijd
@@ -1416,7 +1424,7 @@ nl:
     passwords: Wachtwoorden
     session: Sessie
     brute_force_prevention: Automatische gebruiker blokkering
-  show_hide_project_menu: Verberg/Toon projectmenu
+  show_hide_project_menu: Show/Hide project menu
   status_active: actief
   support:
     array:

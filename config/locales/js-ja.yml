@@ -113,7 +113,7 @@ ja:
     label_today: "今日"
     label_total_progress: "%{percent}% 進行状況"
     label_visible_for_others: "他人に見られるページ"
-    label_work_package: "作業項目"
+    label_work_package: "ワーク パッケージ"
     label_watch_work_package: "作業項目をウォッチ"
     label_watcher_added_successfully: "ウォッチャーが正常に追加されました ！"
     label_watcher_deleted_successfully: "ウォッチャーが正常に削除されました ！"

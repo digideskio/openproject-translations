@@ -238,8 +238,8 @@ hu:
         user:
           attributes:
             password:
-              weak: 'Az alábbi karaktereket tartalmaznia kell a következők szerint  (legalább
-                %{min_count} of %{all_count}): %{rules}'
+              weak: 'Must contain characters of the following classes (at least %{min_count}
+                of %{all_count}): %{rules}'
               lowercase: Kisbetű (pl. 'a')
               uppercase: Nagybetű (pl. 'A')
               numeric: Szám (pl. '1')
@@ -249,6 +249,10 @@ hu:
                   az utolsónak használttól.
                 other: Korábban már használta. kérjük, válasszon egyet, amely eltér
                   az utolsó  %{count}-tól.
+              match:
+                confirm: Confirm new password.
+                description: "'Password confirmation' should match the input in the
+                  'New password' field."
         member:
           principal_blank: Kérem, válasszon legalább egy felhasználót vagy csoportot.
           role_blank: kérem, válasszon legalább egy szerepkört.
@@ -1124,6 +1128,10 @@ hu:
   label_keyboard_shortcut_focus_next_item: Középpontban a következő lista elemei (csak
     néhány lista)
   label_visible_elements: Visible elements
+  auth_source:
+    using_abstract_auth_source: Can't use an abstract authentication source.
+    ldap_error: 'LDAP-Error: %{error_message}'
+    ldap_auth_failed: Could not authenticate at the LDAP-Server.
   macro_execution_error: Hiba a makro %{macro_name} végrehajtásában
   macro_unavailable: A %{macro_name} makró nem jeleníthető meg.
   mail_body_account_activation_request: "Új felhasználó (%{value}) regisztrálva van.
@@ -1234,7 +1242,7 @@ hu:
   permission_browse_repository: A csomagároló tallózása
   permission_change_wiki_parent_page: A szülő wiki oldal megváltoztatása
   permission_comment_news: Megjegyzések írása a hírekehez
-  permission_commit_access: Hozzáférés elfogadása
+  permission_commit_access: Submit commits
   permission_copy_projects: Projekt másolása
   permission_delete_work_package_watchers: Megfigyelők törlése
   permission_delete_work_packages: Törölje a munkacsomagokat
@@ -1257,7 +1265,7 @@ hu:
   permission_edit_time_entries: Bejelentkezett idő szerkesztése
   permission_edit_timelines: Idővonalak szerkesztése
   permission_edit_wiki_pages: Wiki lapok szerkesztése
-  permission_export_work_packages: Munkacsomagok exportálása
+  permission_export_work_packages: Export work packages
   permission_export_wiki_pages: Wiki oldalak exportálása
   permission_list_attachments: Mellékletek listája
   permission_log_time: Bejelentkezett időtartam
@@ -1410,7 +1418,7 @@ hu:
     passwords: Jelszavak
     session: Munkamenet
     brute_force_prevention: Felhasználó automatikus blokkolása
-  show_hide_project_menu: A projekt menü elrejtése/megjelenítése
+  show_hide_project_menu: Show/Hide project menu
   status_active: aktív
   support:
     array:

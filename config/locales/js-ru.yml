@@ -281,7 +281,7 @@ ru:
       label_enable_multi_select: "Разрешить множественный выбор"
       label_disable_multi_select: "Отключить множественный выбор"
       label_filter_add: "Добавить фильтр"
-      label_options: "Опции"
+      label_options: "Параметры"
       label_column_multiselect: "Комбинированные ниспадающие поле: выбор  клавишами
         со стрелками, подтвержднение выбора нажатием клавиши enter, удаление  клавишей
         backspace"
