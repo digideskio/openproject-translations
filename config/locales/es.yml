@@ -2,39 +2,39 @@
 es:
   account:
     delete: Borrar cuenta
-    delete_confirmation: "¿Está seguro que desea eliminar esta cuenta?"
+    delete_confirmation: "¿Está seguro que desea eliminar la cuenta?"
     deleted: Cuenta eliminada con éxito
     deletion_info:
       data_consequences:
-        other: De los datos el usuario creado (por ejemplo correo electrónico, preferencias,
-          paquetes de trabajo, wiki entradas) serán eliminados, en la medida de lo
+        other: De los datos del usuario creado (por ejemplo correo electrónico, preferencias,
+          paquetes de trabajo, entradas wiki) serán eliminados, en la medida de lo
           posible. Sin embargo, tenga en cuenta que no se pueden eliminar datos como
           entradas wiki y paquetes de trabajo sin obstaculizar el trabajo de los demás
           usuarios. Dichos datos, por lo tanto, serán reasignados a una cuenta denominada
-          "user Deleted". Como los datos de cada cuenta borrada son reasignados al
-          eliminarla, no será posible distinguir los datos del usuario creado a partir
-          de los datos de otra cuenta.
-        self: De los datos ha creado (por ejemplo e-mail, preferencias, paquetes de
-          trabajo, wiki entradas) tanto como sea posible se eliminará. Sin embargo,
-          tenga en cuenta que no se pueden eliminar datos como  entradas wiki y paquetes
-          de trabajo sin obstaculizar el trabajo de los demás usuarios. Dichos datos
-          por lo tanto es reasignados a una cuenta denominada "user Deleted". Como
-          los datos de cada cuenta eliminada es reasignados a esta cuenta no será
-          posible distinguir los datos que creado a partir de los datos de otra cuenta
-          eliminada.
+          "Usuarios Eliminados". Como los datos de cada cuenta borrada son reasignados
+          al eliminarla, no será posible distinguir los datos del usuario creado a
+          partir de los datos de otra cuenta.
+        self: De los datos que ha creado (por ejemplo correo electrónico, preferencias,
+          paquetes de trabajo, entradas wiki) serán eliminados tanto como sea posible.
+          Sin embargo, tenga en cuenta que no se pueden eliminar datos como entradas
+          wiki y paquetes de trabajo sin obstaculizar el trabajo de los demás usuarios.
+          Dichos datos por lo tanto son reasignados a una cuenta denominada "Usuarios
+          Eliminados". Como los datos de cada cuenta eliminada son reasignados a esta
+          cuenta no será posible distinguir los datos que creado a partir de los datos
+          de otra cuenta eliminada.
       heading: Borrar cuenta de %{name}
       info:
         other: Borrar la cuenta de usuario es una acción irreversible.
-        self: Borrar la cuenta de usuario es una acción irreversible.
+        self: Borrar tu cuenta de usuario es una acción irreversible.
       login_consequences:
         other: La cuenta se borrará del sistema. Por lo tanto, el usuario ya no será
           capaz de iniciar sesión con sus credenciales actuales. Él/ella puede elegir
-          volver a ser un usuario de la aplicación por los medios que otorga a esta
+          volver a ser un usuario de la aplicación por los medios que otorga esta
           aplicación.
         self: Su cuenta se borrará del sistema. Por lo tanto, ya no serás capaz de
-          iniciar sesión con tus credenciales actuales. Si usted decide convertirse
-          en un usuario de nuevo esta aplicación, puedes hacerlo mediante el uso de
-          los medios otorga a esta aplicación.
+          iniciar sesión con sus credenciales actuales. Si usted decide convertirse
+          en un usuario de esta aplicación nuevamente, puede hacerlo mediante el uso
+          de los medios que otorga a esta aplicación.
     error_inactive_activation_by_mail: Su cuenta aún no está activada. Para activar
       su cuenta, haga clic en el enlace que fue enviado por correo electrónico.
     error_inactive_manual_activation: Su cuenta aún no está activada. Por favor, espere
@@ -54,7 +54,7 @@ es:
         account: Cuenta
         attr_firstname: Atributo Nombre
         attr_lastname: Atributo Apellido
-        attr_login: Atributo Ingreso
+        attr_login: Atributo de inicio de sesión
         attr_mail: Atributo Correo electrónico
         base_dn: Base DN
         host: Host
@@ -72,7 +72,7 @@ es:
         min_length: Longitud mínima
         possible_values: Valores posibles
         regexp: Expresión regular
-        searchable: Búsquedas
+        searchable: Buscable
         visible: Visible
       custom_value:
         value: Valor
@@ -112,24 +112,25 @@ es:
       type:
         is_in_roadmap: Paquetes de trabajo mostrados en la hoja de ruta
         in_aggregation: Paquetes de trabajo mostrados en la agregación
-        is_milestone: Paquetes de trabajo mostrados como avance
+        is_milestone: Paquetes de trabajo mostrados como hito
         color: Color
       user:
         admin: Administrador
-        auth_source: Modo de autentificación
+        auth_source: Modos de autentificación
         language: Idioma
         last_login_on: Ultimó acceso
         mail_notification: Notificaciones de correo electrónico
         new_password: Nueva contraseña
         password_confirmation: Confirmación
-        force_password_change: Aplicar el cambio de contraseña en la próxima sesión
+        force_password_change: Aplicar el cambio de contraseña en el proximo inicio
+          de sesión
       user_preference:
         comments_sorting: Mostrar comentarios
         hide_mail: Ocultar mi dirección de correo electrónico
         impaired: Modo de accesibilidad
         time_zone: Zona horaria
-        warn_on_leaving_unsaved: Avisarme cuando salga sin guardar de una página con
-          texto modificado
+        warn_on_leaving_unsaved: Avisarme cuando salga de una página con texto modificado
+          sin guardar
       version:
         effective_date: Fecha de vencimiento
         sharing: Compartiendo
@@ -138,7 +139,7 @@ es:
       wiki_content:
         text: Texto
       wiki_page:
-        parent_title: Página principal
+        parent_title: Página Padre
         redirect_existing_links: Redirigir los enlaces existentes
       planning_element_type_color:
         name: Nombre
@@ -192,7 +193,7 @@ es:
         greater_than_start_date: debe ser mayor que la fecha de inicio
         inclusion: no corresponde a uno de los valores permitidos
         invalid: no es válido
-        less_than: debe ser menos de %{count}
+        less_than: debe ser menor a %{count}
         less_than_or_equal_to: debe ser menor o igual a %{count}
         not_a_date: no es una fecha
         not_a_number: no es un número
@@ -243,36 +244,36 @@ es:
         user:
           attributes:
             password:
-              weak: 'Must contain characters of the following classes (at least %{min_count}
-                of %{all_count}): %{rules}'
+              weak: 'Debe contener caracteres de las siguientes clases (al menos %{min_count}
+                a %{all_count}): %{rules}'
               lowercase: en minúsculas (por ejemplo 'a')
               uppercase: en mayúsculas (por ejemplo ' A')
               numeric: numérico (por ejemplo, ' 1')
               special: especial (por ejemplo, ' %')
               reused:
                 one: ha sido usada anteriormente. Por favor elija una que sea diferente
-                  de la última.
+                  a la última utilizada.
                 other: ha sido usada anteriormente. Por favor elija una que sea diferente
-                  de las últimas %{count}.
+                  de las últimas %{count} utilizadas.
               match:
-                confirm: Confirm new password.
-                description: "'Password confirmation' should match the input in the
-                  'New password' field."
+                confirm: Confirmar Nueva Contraseña.
+                description: "'La confirmación de la contraseña' debe coincidir con
+                  la ingresada en el campo 'Nueva contraseña'."
         member:
           principal_blank: Por favor seleccione al menos un usuario o grupo.
           role_blank: Elija al menos un rol.
       template:
         body: 'Por favor revise los siguientes campos:'
         header:
-          one: 1 error ha impedido a %{model} de ser guardado
-          other: "%{count} errores han impedido a %{model} de ser guardado"
+          one: 1 error ha impedido a %{model} ser guardado
+          other: "%{count} errores han impedido a %{model} ser guardado"
     models:
       attachment: Archivo
       board: Foro
       comment: Comentario
       custom_field: Campo personalizado
       group: Grupo
-      issue: Caso
+      issue: Tema
       category: Categoría
       status: Estado del paquete de trabajo
       member: Miembro
@@ -308,9 +309,9 @@ es:
     comment: Comentario
     comments: Comentario
     content: Contenido
-    created_at: Creado al
+    created_at: Creado en
     created_on: Creado en
-    custom_values: Campos personalizados
+    custom_values: Campos Personalizados
     default_columns: Columnas predeterminadas
     description: Descripción
     display_sums: Mostrar sumas
@@ -369,7 +370,7 @@ es:
   button_duplicate: Duplicar
   button_edit: Editar
   button_edit_associated_wikipage: 'Editar página Wiki asociada: %{page_title}'
-  button_expand_all: Ampliar todo
+  button_expand_all: Expandir todos
   button_list: Lista
   button_lock: Bloquear
   button_log_time: Registro de tiempo
@@ -442,7 +443,7 @@ es:
     - Viernes
     - Sábado
     formats:
-      default: "%d/%m/%Y"
+      default: "%m/%d/%Y"
       long: "%B %d, %Y"
       short: "%b %d"
     month_names:
@@ -466,17 +467,17 @@ es:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: hace 1 hora
-        other: hace %{count} horas
+        one: aprox. 1 hora
+        other: aprox. %{count} horas
       about_x_months:
-        one: hace 1 mes
-        other: aprox. %{count} meseses
+        one: aprox. 1 mes
+        other: aprox. %{count} meses
       about_x_years:
         one: aprox. 1 año
         other: aprox. %{count} años
       almost_x_years:
-        one: casi 1 año
-        other: casi %{count} años
+        one: al menos 1 año
+        other: al menos %{count} años
       half_a_minute: medio minuto
       less_than_x_minutes:
         one: menos de un minuto
@@ -510,7 +511,7 @@ es:
   default_activity_support: Soporte
   default_activity_testing: Probando
   default_color_black: Negro
-  default_color_blue: Azúl
+  default_color_blue: Azul
   default_color_blue_dark: Azul (oscuro)
   default_color_blue_light: Azul (claro)
   default_color_green_dark: Verde (oscuro)
@@ -566,8 +567,9 @@ es:
   description_attachment_toggle: Mostrar/ocultar archivos adjuntos
   description_autocomplete: Este campo utiliza Autocompletar. Mientras se escribe
     el título de un paquete de trabajo recibirá una lista de posibles candidatos.
-    Elija uno usando la flecha y flecha abajo clave y selecciónelo con ficha o enter.
-    Alternativamente usted puede ingresar el número del paquete de trabajo directamente.
+    Elija uno usando las teclas de  flecha arriba y abajo  y selecciónelo con el tabulador
+    o enter. Alternativamente usted puede ingresar el número del paquete de trabajo
+    directamente.
   description_available_columns: Columnas disponibles
   description_choose_project: Proyectos
   description_compare_from: Comparar versiones
@@ -576,7 +578,7 @@ es:
   description_date_from: Introduzca la fecha de inicio
   description_date_range_interval: Elija rango mediante la selección de fecha de inicio
     y fin
-  description_date_range_list: Elija el rango de lista
+  description_date_range_list: Elija el rango desde la lista
   description_date_to: Introduzca la fecha de finalización
   description_enter_number: Ingrese número
   description_enter_text: Ingrese texto
@@ -588,14 +590,14 @@ es:
   description_notes: Notas
   description_parent_work_package: Paquete de trabajo primario actual
   description_project_scope: "Ámbito de búsqueda"
-  description_query_sort_criteria_attribute: Atributo de orden
+  description_query_sort_criteria_attribute: Ordenar atributos
   description_query_sort_criteria_direction: Ordenar por dirección
   description_search: Campo de búsqueda
   description_select_work_package: Seleccione el paquete de trabajo
   description_selected_columns: Columnas seleccionadas
   description_sub_work_package: Subpaquetes de trabajo actuales
   description_toc_toggle: Mostrar/ocultar tabla de contenidos
-  description_user_mail_notification: Configuración de notificación de correo
+  description_user_mail_notification: Configuraciónes de notificación por correo
   description_wiki_subpages_reassign: Elija nueva página principal
   direction: ltr
   enumeration_activities: Actividades (tiempo de seguimiento)
@@ -603,7 +605,7 @@ es:
   enumeration_system_activity: Actividad del sistema
   enumeration_reported_project_statuses: Estatus del proyecto reportado
   error_can_not_archive_project: El proyecto no se puede archivar
-  error_can_not_delete_custom_field: El usuario no puede eliminar este campo
+  error_can_not_delete_custom_field: Imposible eliminar el campo seleccionado
   error_can_not_delete_type: Este tipo contiene paquetes de trabajo y no se puede
     eliminar.
   error_can_not_delete_standard_type: Tipos estándar no se pueden borrar.
@@ -699,7 +701,7 @@ es:
   label_attachment_plural: Archivos
   label_attribute: Atributo
   label_attribute_plural: Atributos
-  label_auth_source: Modo de autentificación
+  label_auth_source: Modos de autentificación
   label_auth_source_new: Nuevo modo de autenticaficación
   label_auth_source_plural: Modos de autentificación
   label_authentication: Autentificación
@@ -709,7 +711,7 @@ es:
   label_board_new: Foro nuevo
   label_board_plural: Foros
   label_board_sticky: Adhesivo
-  label_boolean: Aleatorio
+  label_boolean: Booleano
   label_branch: Sucursal
   label_browse: Explorar
   label_bulk_edit_selected_work_packages: Edición masiva de paquetes de trabajo
@@ -743,13 +745,13 @@ es:
   label_copy_same_as_target: Igual al destino
   label_copy_source: Fuente
   label_copy_target: Objetivo
-  label_copy_workflow_from: Copiar flujo de trabajo
+  label_copy_workflow_from: Copiar flujo de trabajo desde
   label_copy_project: Copiar proyecto
   label_core_version: Versión base
   label_current_status: Estado actual
   label_current_version: Version actual
   label_custom_field_new: Nuevo campo personalizado
-  label_custom_field_plural: Campos personalizados
+  label_custom_field_plural: Campos Personalizados
   label_custom_field_default_type: Tipo vacío
   label_date: Fecha
   label_date_from: De
@@ -764,7 +766,7 @@ es:
   label_details: Detalles
   label_diff: diff
   label_diff_inline: en línea
-  label_diff_side_by_side: En paralelo
+  label_diff_side_by_side: lado a lado
   label_disabled: deshabilitado
   label_display: Mostrar
   label_display_per_page: 'Por página: %{value}'
@@ -940,7 +942,7 @@ es:
   label_project_copy_notifications: Enviar notificaciones por correo electrónico durante
     la copia del proyecto
   label_project_latest: "Últimos proyectos"
-  label_project_default_type: Deje vacío tipo
+  label_project_default_type: Permitir tipo vacio
   label_project_new: Nuevo proyecto
   label_project_plural: Proyectos
   label_project_settings: Configuración del proyecto
@@ -967,7 +969,7 @@ es:
   label_report_plural: Informes
   label_reported_work_packages: Paquetes de trabajo reportados
   label_reporting: Presentación de informe
-  label_reporting_plural: Informando
+  label_reporting_plural: Presentacion de Informes
   label_repository: Repositorio
   label_repository_plural: Repositorios
   label_responsible_for_work_packages: Soy responsable de estos paquetes de trabajo
@@ -1012,7 +1014,7 @@ es:
   label_subtask_plural: Subtareas
   label_summary: Resumen
   label_system: Sistema
-  label_table_of_contents: Contenidos
+  label_table_of_contents: Tabla de contenidos
   label_tag: Etiqueta
   label_text: Texto largo
   label_theme: Tema
@@ -1033,16 +1035,16 @@ es:
     ejecutados
   label_updated_time: "%{value} actualizado hace"
   label_updated_time_at: "%{author} %{age}"
-  label_updated_time_by: Actualizado por  %{author} %{age} ace
+  label_updated_time_by: Actualizado por  %{author} %{age} hace
   label_used_by: Utilizado por
-  label_user_activity: "%{value} de actividad"
+  label_user_activity: 'Actividad de %{value} '
   label_user_anonymous: Anónimo
   label_user_mail_no_self_notified: No quiero ser notificado de los cambios que hago
     yo mismo
   label_user_mail_option_all: Para cualquier evento en todos mis proyectos
   label_user_mail_option_none: No hay eventos
   label_user_mail_option_only_assigned: Sólo para cosas asignadas a mí
-  label_user_mail_option_only_my_events: Sólo para cosas que controlo o en la que
+  label_user_mail_option_only_my_events: Sólo para cosas que controlo o en las que
     participo
   label_user_mail_option_only_owner: Sólo para cosas de las que soy el dueño
   label_user_mail_option_selected: Para cualquier evento sólo en proyectos seleccionados...
@@ -1063,7 +1065,7 @@ es:
   label_week: Semana
   label_wiki_content_added: Página wiki añadida
   label_wiki_content_updated: Página wiki actualizada
-  label_wiki_toc: Contenidos
+  label_wiki_toc: Tabla de contenidos
   label_wiki_dont_show_menu_item: No mostrar esta página wiki en la navegación del
     proyecto
   label_wiki_edit: Editar Wiki
@@ -1162,7 +1164,7 @@ es:
   more_actions: Más funciones
   noscript_description: Necesita activar JavaScript para poder usar OpenProject!
   noscript_heading: JavaScript desactivado
-  noscript_learn_more: Más información
+  noscript_learn_more: Saber más
   notice_account_activated: Su cuenta ha sido activada. Ahora puede iniciar sesión.
   notice_account_invalid_credentials: Usuario no válido o la contraseña
   notice_account_invalid_credentials_or_blocked: Usuario no válido o la contraseña
@@ -1188,7 +1190,7 @@ es:
   notice_api_access_key_reseted: Su API de acceso ha sido re-iniciada.
   notice_can_t_change_password: Esta cuenta utiliza una fuente de autenticación externa.
     Es imposible cambiar la contraseña.
-  notice_email_error: Error al enviar correo (% {value})
+  notice_email_error: Un error ha ocurrido mientras se enviaba el correo (%{value})
   notice_email_sent: Se envió un correo electrónico a % {value}
   notice_failed_to_save_work_packages: 'Fallo al salvar %{count} paquete(s) de trabajo
     en %{total} seleccionado: %{ids}.'
@@ -1257,7 +1259,7 @@ es:
   permission_browse_repository: Explorar repositorio
   permission_change_wiki_parent_page: Cambiar wiki pagina madre
   permission_comment_news: Comentar noticias
-  permission_commit_access: Submit commits
+  permission_commit_access: Enviar
   permission_copy_projects: Copiar proyectos
   permission_delete_work_package_watchers: Eliminar los observadores
   permission_delete_work_packages: Eliminar paquetes de trabajo
@@ -1280,7 +1282,7 @@ es:
   permission_edit_time_entries: Editar registros de tiempo
   permission_edit_timelines: Editar líneas de tiempo
   permission_edit_wiki_pages: Editar wiki página
-  permission_export_work_packages: Export work packages
+  permission_export_work_packages: Exportar Paquetes de Trabajo
   permission_export_wiki_pages: Exportar wiki página
   permission_list_attachments: Lista archivos adjuntos
   permission_log_time: Registro de tiempo empleado
@@ -1305,11 +1307,11 @@ es:
   permission_manage_types: Seleccionar Tipos
   permission_view_calendar: Ver calendario
   permission_view_changesets: Ver conjunto de cambios
-  permission_view_commit_author_statistics: Ver estadísticas de autor de compromisos
+  permission_view_commit_author_statistics: Ver estadísticas de compromisos del autor
   permission_view_work_package_watchers: Ver lista de observadores
   permission_view_work_packages: Ver Paquetes de Trabajo
   permission_view_messages: Ver mensajes
-  permission_view_project_associations: Ver dependencias de projecto
+  permission_view_project_associations: Ver dependencias de proyecto
   permission_view_reportings: Ver reportes
   permission_view_time_entries: Ver tiempo empleado
   permission_view_timelines: Ver líneas de tiempo
@@ -1340,7 +1342,7 @@ es:
   setting_brute_force_block_after_failed_logins: Bloquear usuario después de este
     numero de intentos de inicio de sesión fallidos (desactivar con 0)
   setting_brute_force_block_minutes: Tiempo en que el usuario queda bloqueado (minutos)
-  setting_cache_formatted_text: Cache de texto con formato
+  setting_cache_formatted_text: Texto formateado del cache
   setting_column_options: Personalizar la apariencia de las listas de paquete te trabajo
   setting_commit_fix_keywords: Reparando palabras clave
   setting_commit_logs_encoding: Codificación de mensajes de compromiso
@@ -1437,7 +1439,7 @@ es:
     passwords: Contraseñas
     session: Sesión
     brute_force_prevention: Bloqueo automático de usuarios
-  show_hide_project_menu: Show/Hide project menu
+  show_hide_project_menu: Mostrar/ocultar menú de proyecto
   status_active: activo
   support:
     array:
@@ -1606,9 +1608,9 @@ es:
         compare_to_relative: 'El valor de la comparación relativa '
         compare_to_absolute: 'El valor de la comparación absoluta '
         planning_element_time_relative_one: 'El comienzo para los paquetes de trabajo
-          en un cierto plazo '
+          en un cierto plazo  '
         planning_element_time_relative_two: 'Al final de los paquetes de trabajo en
-          un cierto plazo '
+          un cierto plazo  '
         planning_element_time_absolute_one: 'El comienzo para los paquetes de trabajo
           en un cierto plazo  '
         planning_element_time_absolute_two: 'Al final de los paquetes de trabajo en
@@ -1766,7 +1768,7 @@ es:
     blocked_num_failed_logins:
       one: bloqueada temporalmente (un intento de ingreso fallido)
       other: bloqueada temporalmente (%{count} intentos de ingreso fallidos)
-    deleted: Usuario eliminado
+    deleted: Usuarios Eliminados
     error_status_change_failed: 'Cambiar la condición de usuario falló debido a los
       errores siguientes: %{errors}'
     lock: Bloquear permanentemente

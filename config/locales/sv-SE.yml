@@ -261,7 +261,7 @@ sv-SE:
         body: 'Kontrollera följande fält:'
         header:
           one: Ett fel förbjud denna %{model} från att sparas
-          other: "%{count} fel hindrade %{model} från att sparas"
+          other: "%{count} fel hindrade denna %{model} från att sparas"
     models:
       attachment: Fil
       board: Forum
@@ -297,7 +297,7 @@ sv-SE:
     assigned_to: Tilldelad till
     assignee: Tilldelad till
     attachments: Bilagor
-    author: Författare
+    author: Upphovsman
     base: 'Allmänt fel:'
     blocks_ids: ID:n för blockerade arbetspaket
     category: Kategori
@@ -466,35 +466,35 @@ sv-SE:
         one: ca 1 timme
         other: om %{count} timmar
       about_x_months:
-        one: ungefär 1 månad
+        one: ungefär en månad
         other: ungefär %{count} månader
       about_x_years:
-        one: ungefär 1 år
+        one: ungefär ett år
         other: ungefär %{count} år
       almost_x_years:
-        one: nästan 1 år
+        one: nästan ett år
         other: nästan %{count} år
       half_a_minute: en halv minut
       less_than_x_minutes:
         one: mindre än en minut
         other: mindre än %{count} minuter
       less_than_x_seconds:
-        one: mindre än 1 sekund
+        one: mindre än en sekund
         other: mindre än %{count} sekunder
       over_x_years:
-        one: "över 1 år"
+        one: "över ett år"
         other: "över %{count} år"
       x_days:
-        one: 1 dag
+        one: En dag
         other: "%{count} dagar"
       x_minutes:
-        one: 1 minut
+        one: v minut
         other: "%{count} minuter"
       x_months:
-        one: 1 månad
+        one: En månad
         other: "%{count} månader"
       x_seconds:
-        one: 1 sekund
+        one: En sekund
         other: "%{count} sekunder"
     units:
       hour:
@@ -520,7 +520,7 @@ sv-SE:
   default_color_red: Röd
   default_color_white: Vit
   default_color_yellow: Gul
-  default_status_closed: Stängd
+  default_status_closed: Stängt
   default_status_confirmed: Bekräftad
   default_status_developed: Utvecklad
   default_status_in_development: Under utveckling
@@ -653,7 +653,7 @@ sv-SE:
   general_text_yes: ja
   general_text_No: Nej
   general_text_Yes: Ja
-  gui_validation_error: 1 fel
+  gui_validation_error: ett fel
   gui_validation_error_plural: "%{count} fel"
   instructions_after_registration: Du kan logga in så snart ditt konto har aktiverats
     genom att klicka på %{signin}.
@@ -720,7 +720,7 @@ sv-SE:
   label_checked: vald
   label_chronological_order: I kronologisk ordning
   label_close_versions: Stäng slutförda versioner
-  label_closed_work_packages: stängd
+  label_closed_work_packages: stängt
   label_collapse: Fäll ihop
   label_configuration: konfiguration
   label_comment_add: Lägg till en kommentar
@@ -818,7 +818,7 @@ sv-SE:
   label_work_package_category_new: Ny kategori
   label_work_package_category_plural: Arbetspaketkategorier
   label_work_package_hierarchy: Arbetspaketshierarki
-  label_work_package_new: Nya arbetspaket
+  label_work_package_new: Nytt arbetspaket
   label_work_package_note_added: Anteckning lades till arbetspaket
   label_work_package_edit: Redigera arbetspaket %{name}
   label_work_package_plural: Arbetspaketen
@@ -902,7 +902,7 @@ sv-SE:
   label_not_equals: "är inte"
   label_notify_member_plural: Uppdateringar via E-post
   label_open_menu: "Öppna meny"
-  label_open_work_packages: "öppen"
+  label_open_work_packages: "öppna"
   label_open_work_packages_plural: "öppen"
   label_optional_description: Beskrivning
   label_options: Alternativ
@@ -1071,23 +1071,23 @@ sv-SE:
   label_workflow_plural: Arbetsflöden
   label_workflow_summary: Sammanfattning
   label_x_closed_work_packages_abbr:
-    one: 1 stängd
+    one: en stängd
     other: "%{count} stängda"
     zero: 0 closed
   label_x_comments:
-    one: 1 kommentar
+    one: En kommentar
     other: "%{count} kommentarer"
     zero: no comments
   label_x_open_work_packages_abbr:
-    one: 1 öppen
+    one: en öppen
     other: "%{count} öppna"
     zero: 0 open
   label_x_open_work_packages_abbr_on_total:
-    one: 1 öppen / %{total}
+    one: en öppen / %{total}
     other: "%{count} öppna / %{total}"
     zero: 0 open / %{total}
   label_x_projects:
-    one: 1 projekt
+    one: Ett projekt
     other: "%{count} projekt"
     zero: no projects
   label_year: "År"
@@ -1546,7 +1546,7 @@ sv-SE:
     delete_thing: Ta bort
     duration: Varaktighet
     duration_days:
-      one: 1 dag
+      one: En dag
       other: "%{count} dagar"
     edit_color: Redigera färg
     edit_project_type: Redigera projekttyp
@@ -1571,16 +1571,16 @@ sv-SE:
         compare_to_relative: 'Värdet av relativa jämförelsen '
         compare_to_absolute: 'Värdet av den absoluta jämförelsen '
         planning_element_time_relative_one: 'Starten för arbetspaketen inom en viss
-          tidsram  '
-        planning_element_time_relative_two: 'Slutet för arbetspaketen inom en viss
           tidsram '
+        planning_element_time_relative_two: 'Slutet för arbetspaketen inom en viss
+          tidsram  '
         planning_element_time_absolute_one: 'Starten för arbetspaketen inom en viss
           tidsram  '
         planning_element_time_absolute_two: 'Slutet för arbetspaketen inom en viss
           tidsram  '
       sort:
         sortation: Sortera efter
-        alphabet: alfabetet
+        alphabet: alfabetisk
         explicit_order: explicit ordning
         project_sortation: Sortera projekt efter
         date: datum
@@ -1646,7 +1646,7 @@ sv-SE:
     history: Historik
     new_color: Ny färg
     new_association: Nytt beroende
-    new_work_package: Nya arbetspaket
+    new_work_package: Nytt arbetspaket
     new_project_type: Ny projekttyp
     new_reporting: Ny rapportering
     new_timeline: Ny tidslinjerapport

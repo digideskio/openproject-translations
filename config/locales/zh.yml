@@ -233,7 +233,7 @@ zh:
         body: "请检查以下字段："
         header:
           one: 1 error prohibited this %{model} from being saved
-          other: "%{count} 个错误阻止保存 %{model}"
+          other: "这个%{model} 在保存时被%{count} 个错误阻止"
     models:
       attachment: "文件"
       board: "论坛"
@@ -443,7 +443,7 @@ zh:
         other: "大约 %{count} 年"
       almost_x_years:
         one: almost 1 year
-        other: "几乎 %{count} 年"
+        other: "接近 %{count} 年"
       half_a_minute: "半分钟"
       less_than_x_minutes:
         one: less than a minute
@@ -1018,7 +1018,7 @@ zh:
   label_workflow_summary: "摘要"
   label_x_closed_work_packages_abbr:
     one: 1 closed
-    other: "%{count} 关闭"
+    other: "%{count} 关闭的"
     zero: 0 closed
   label_x_comments:
     one: 1 comment
@@ -1030,7 +1030,7 @@ zh:
     zero: 0 open
   label_x_open_work_packages_abbr_on_total:
     one: 1 open / %{total}
-    other: "%{count} 打开 / %{total}"
+    other: "%{total} 中 %{count} 个待处理的"
     zero: 0 open / %{total}
   label_x_projects:
     one: 1 project
@@ -1459,7 +1459,7 @@ zh:
         timeframe_end: "时间段结束"
         compare_to_relative: "相对比较的值 "
         compare_to_absolute: "绝对比较的值 "
-        planning_element_time_relative_one: "在一定时间段内的工作包开始  "
+        planning_element_time_relative_one: "在一定时间段内的工作包结尾  "
         planning_element_time_relative_two: "在一定时间段内的工作包结尾  "
         planning_element_time_absolute_one: "在一定时间段内的工作包开始  "
         planning_element_time_absolute_two: "在一定时间段内的工作包结尾  "

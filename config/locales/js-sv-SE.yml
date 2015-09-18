@@ -215,7 +215,7 @@ sv-SE:
         grouping_other: Andra
         noneSelection: "(ingen)"
       name: Namn
-      new_work_package: Nya arbetspaket
+      new_work_package: Nytt arbetspaket
       outline: "Återställa disposition"
       outlines:
         aggregation: Visa endast aggregeringar

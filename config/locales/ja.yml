@@ -224,7 +224,7 @@ ja:
               reused:
                 one: has been used before. Please choose one that is different from
                   your last one.
-                other: "これは以前に使用されています。直近%{count}つと異なるのを選択してください。"
+                other: "は以前に使用されています。前回の%{count}つと異なるものを選択してください。"
               match:
                 confirm: Confirm new password.
                 description: "'Password confirmation' should match the input in the
@@ -236,7 +236,7 @@ ja:
         body: "次のフィールドをチェックしてください："
         header:
           one: 1 error prohibited this %{model} from being saved
-          other: "\"%{model} に%{count}つのエラーが発生しました。"
+          other: "%{count}つのエラーにより%{model}を保存できませんでした。"
     models:
       attachment: "ファイル"
       board: "フォーラム"
@@ -440,10 +440,10 @@ ja:
         other: "約%{count}時間"
       about_x_months:
         one: about 1 month
-        other: "約%{count} ヶ月"
+        other: "約%{count}ヶ月"
       about_x_years:
         one: about 1 year
-        other: "約%{count} 年間"
+        other: "約%{count}年間"
       almost_x_years:
         one: almost 1 year
         other: "ほぼ%{count}年間"
@@ -456,16 +456,16 @@ ja:
         other: "%{count}秒未満"
       over_x_years:
         one: over 1 year
-        other: "%{count} 年"
+        other: "%{count}年間以上"
       x_days:
         one: 1 day
-        other: "%{count}日"
+        other: "%{count}日間"
       x_minutes:
         one: 1 minute
         other: "%{count}分"
       x_months:
         one: 1 month
-        other: "%{count} ヶ月"
+        other: "%{count}ヶ月"
       x_seconds:
         one: 1 second
         other: "%{count}秒"
@@ -655,9 +655,9 @@ ja:
   label_auth_source_new: "新しい認証方式"
   label_auth_source_plural: "認証方式"
   label_authentication: "認証"
-  label_blocked_by: "ブロックされた"
+  label_blocked_by: "ブロックされている"
   label_blocks: "ブロックしている"
-  label_board_locked: "ロックされています。"
+  label_board_locked: "ロックされている"
   label_board_new: "新しいフォーラム"
   label_board_plural: "フォーラム"
   label_board_sticky: "固定する"
@@ -680,7 +680,7 @@ ja:
   label_chronological_order: "古い順"
   label_close_versions: "完了したバージョンを終了にする"
   label_closed_work_packages: "完了"
-  label_collapse: "以下を非表示"
+  label_collapse: "折りたたむ"
   label_configuration: "設定"
   label_comment_add: "コメントを追加"
   label_comment_added: "コメントを追加された。"
@@ -704,12 +704,12 @@ ja:
   label_custom_field_plural: "カスタムフィールド"
   label_custom_field_default_type: "空の型"
   label_date: "日付"
-  label_date_from: "から"
+  label_date_from: "日付指定: "
   label_date_from_to: "%{start} ～%{end}"
   label_date_range: "期間"
   label_date_to: "から"
-  label_day_plural: " 日"
-  label_default: "既定"
+  label_day_plural: "日"
+  label_default: "既定の項目"
   label_deleted: "削除された"
   label_deleted_custom_field: "（削除されたカスタムフィールド）"
   label_descending: "降順"
@@ -877,7 +877,7 @@ ja:
   label_planning: "計画"
   label_please_login: "ログインしてください。"
   label_plugins: "プラグイン"
-  label_precedes: "先立つ"
+  label_precedes: "次の項目に先行"
   label_preferences: "設定"
   label_preview: "プレビュー"
   label_previous: "前へ"
@@ -1450,7 +1450,7 @@ ja:
     duration: "期間"
     duration_days:
       one: 1 day
-      other: "%{count}日"
+      other: "%{count}日間"
     edit_color: "色を編集する"
     edit_project_type: "プロジェクトの種類を編集する"
     edit_thing: "編集"
@@ -1499,9 +1499,9 @@ ja:
         compare_relative_suffix: "前"
         compare_absolute: "現在計画を%{date}と比較する"
       time_relative:
-        days: " 日"
+        days: "日"
         weeks: "週"
-        months: "ヶ月間"
+        months: "月"
       exclude_own_work_packages: "このプロジェクトで作業項目を非表示"
       exclude_reporters: "他プロジェクトを非表示"
       exclude_empty: "空のプロジェクトを非表示"
@@ -1610,7 +1610,7 @@ ja:
     blocked: "一時的ロック"
     blocked_num_failed_logins:
       one: locked temporarily (one failed login attempt)
-      other: "一時的にロックされています。 （%{count}回のログイン試行が失敗）"
+      other: "一時的にロックされている （%{count}回失敗したログイン試行）"
     deleted: "削除されたユーザ"
     error_status_change_failed: "次のエラーによりユーザーのステータスの変更が失敗しました：%{errors}"
     lock: "永続ロックする"

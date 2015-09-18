@@ -1722,7 +1722,7 @@
     assign_random_password: Tildel vilkårlig passord (sendt til brukeren på e-post)
     blocked: midlertidig låst
     blocked_num_failed_logins:
-      one: midlertidig låst (et mislykket innloggingsforsøk)
+      one: midlertidig låst (ett mislykket innloggingsforsøk)
       other: midlertidig låst (%{count} mislykkede innloggingsforsøk)
     deleted: Slettet bruker
     error_status_change_failed: 'Endring av brukerstatus mislyktes på grunn av følgende

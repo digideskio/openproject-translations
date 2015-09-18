@@ -2,7 +2,7 @@
 pl:
   account:
     delete: Usuń konto
-    delete_confirmation: Czy na pewno chcesz usunąć konto?
+    delete_confirmation: Czy na pewno chcesz usunąć to konto?
     deleted: Konto usunięte pomyślnie
     deletion_info:
       data_consequences:
@@ -100,7 +100,7 @@ pl:
       role:
         assignable: Zadanie może być przypisane do tej roli
       time_entry:
-        activity: Aktywność
+        activity: Działanie
         hours: Godziny
         spent_on: Data
         type: Typ
@@ -180,7 +180,7 @@ pl:
         equal_to: musi być równa %{count}
         even: musi być parzysty
         exclusion: jest zarezerwowany
-        file_too_large: is too large (maximum size is %{count} Bytes)
+        file_too_large: jest zbyt duży (maksymalny rozmiar to %{count} bajtów)
         greater_than: musi być większa niż %{count}
         greater_than_or_equal_to: musi być większa lub równa %{count}
         smaller_than_or_equal_to_max_length: musi być mniejsze lub równe maksymalnej
@@ -239,8 +239,8 @@ pl:
         user:
           attributes:
             password:
-              weak: 'Must contain characters of the following classes (at least %{min_count}
-                of %{all_count}): %{rules}'
+              weak: 'Musi zawierać znaki z następujących klas (co najmniej %{min_count}
+                z %{all_count}): %{rules}'
               lowercase: małe litery (np. 'a')
               uppercase: wielkie litery (np. 'A')
               numeric: liczbowe (np. 1)
@@ -259,9 +259,9 @@ pl:
       template:
         body: 'Sprawdź następujące pola:'
         header:
-          one: 1 błąd spowodował niezapisanie bieżącego %{model}
-          other: "%{count} błędów spowodowało niezapisanie bieżącego %{model}"
-          few: "%{count} błędów spowodowało niezapisanie bieżącego %{model}"
+          one: 1 błąd zabrania uniemożliwia zapisanie %{model}
+          other: "%{count} błędów uniemożliwia zapisanie %{model}"
+          few: "%{count} błędów uniemożliwia zapisanie %{model}"
     models:
       attachment: Plik
       board: Forum
@@ -287,7 +287,7 @@ pl:
       wiki: Wiki
       wiki_page: Strona wiki
       workflow: Przepływ pracy
-      work_package: Zadania
+      work_package: Zadanie
   errors:
     header_invalid_fields: 'Wystąpił problem z następującymi polami:'
   activity:
@@ -321,7 +321,7 @@ pl:
     is_default: Wartość domyślna
     is_for_all: Dla wszystkich projektów
     is_public: Publicznego
-    issue: Zadania
+    issue: Zadanie
     lastname: Nazwisko
     login: Login
     mail: Adres e-mail
@@ -332,7 +332,7 @@ pl:
     responsible: Odpowiedzialny
     role: Rola
     start_date: Data rozpoczęcia
-    status: Stan
+    status: Status
     subject: Temat
     summary: Podsumowanie
     title: Tytuł
@@ -341,7 +341,7 @@ pl:
     updated_on: Aktualizacja
     user: Użytkownik
     version: Wersja
-    work_package: Zadania
+    work_package: Zadanie
   button_add: Dodaj
   button_add_watcher: Dodaj obserwatora
   button_annotate: Adnotacja
@@ -354,7 +354,7 @@ pl:
   button_change_password: Zmiana hasła
   button_check_all: Zaznacz wszystko
   button_clear: Wyczyść
-  button_collapse_all: Zwiń wszystkie
+  button_collapse_all: Zwiń wszystko
   button_configure: Konfigurowanie
   button_copy: Kopiuj
   button_copy_and_follow: Skopiuj i wykonaj
@@ -661,7 +661,7 @@ pl:
   general_csv_encoding: UTF-8
   general_csv_separator: ","
   general_first_day_of_week: '7'
-  general_lang_name: Angielski
+  general_lang_name: Polskie
   general_pdf_encoding: ISO-8859-2
   general_text_no: nie
   general_text_yes: tak
@@ -675,7 +675,7 @@ pl:
   instructions_after_error: Można spróbować się zalogować ponownie klikając %{signin}.
     Jeśli ten błąd będzie się powtarzał, poproś swojego admina o pomoc.
   label_account: Konto
-  label_activity: Aktywność
+  label_activity: Działanie
   label_add_another_file: Dodaj plik
   label_add_columns: Dodaj wybrane kolumny
   label_add_note: Dodaj notatkę
@@ -697,7 +697,7 @@ pl:
   label_and_its_subprojects: "%{value} oraz jego projekty podrzędne"
   label_api_access_key: Klucz dostępu API
   label_api_access_key_created_on: Klucz API utworzony %{value} temu
-  label_applied_status: Applied status
+  label_applied_status: Nadaj status
   label_ascending: Rosnąco
   label_assigned_to_me_work_packages: Zadania przypisane do mnie
   label_associated_revisions: Powiązane rewizje
@@ -752,7 +752,7 @@ pl:
   label_copy_target: Cel
   label_copy_workflow_from: Kopiowanie pracy z
   label_copy_project: Kopiuj projekt
-  label_core_version: Core version
+  label_core_version: Wersja bazowa
   label_current_status: Aktualny stan
   label_current_version: Aktualna wersja
   label_custom_field_new: Nowe pole niestandardowe
@@ -765,7 +765,7 @@ pl:
   label_date_to: Do
   label_day_plural: dni
   label_default: Domyślnie
-  label_deleted: usunięte
+  label_deleted: Usunięty
   label_deleted_custom_field: "(usunięte pole niestandardowe)"
   label_descending: Malejąco
   label_details: Szczegóły
@@ -780,8 +780,8 @@ pl:
   label_download: "%{count} Download"
   label_download_plural: "%{count} Downloads"
   label_downloads_abbr: D/L
-  label_duplicated_by: powielone przez
-  label_duplicates: duplikaty
+  label_duplicated_by: Powielone przez
+  label_duplicates: Duplikaty
   label_edit: Edycja
   label_enable_multi_select: Włącz wybór wielokrotny
   label_end_to_end: koniec do końca
@@ -803,7 +803,7 @@ pl:
   label_filter_add: Dodaj filtr
   label_filter_plural: Filtry
   label_float: Liczba rzeczywista
-  label_follows: follows
+  label_follows: Następujący
   label_force_user_language_to_default: Ustaw język domyślny dla użytkowników o innych
     ustawieniach językowych niż dozwolone
   label_general: Ogólne
@@ -937,7 +937,7 @@ pl:
   label_planning: Planowanie
   label_please_login: Proszę się zalogować
   label_plugins: Wtyczki
-  label_precedes: poprzedza
+  label_precedes: Poprzedza
   label_preferences: Preferencje
   label_preview: Podgląd
   label_previous: Poprzedni
@@ -965,7 +965,7 @@ pl:
   label_registration_automatic_activation: automatyczna aktywacja konta
   label_registration_manual_activation: ręczna aktywacja konta
   label_related_work_packages: Powiązanie zadania
-  label_relates_to: powiązane z
+  label_relates_to: Powiązane z
   label_relation_delete: Usuń powiązanie
   label_relation_new: Nowe powiązanie
   label_remove_columns: Usuń zaznaczone kolumny
@@ -1011,7 +1011,7 @@ pl:
   label_start_to_end: od początku do końca
   label_start_to_start: rozpoczęcie-rozpoczęcie
   label_statistics: Statystyki
-  label_status: Stan
+  label_status: Status
   label_status_updated: Status zadania został zaktualizowany
   label_stay_logged_in: Pozostań zalogowany
   label_string: Tekst
@@ -1080,7 +1080,7 @@ pl:
   label_wiki_show_menu_item: Pokaż jako element menu w nawigacji projektu
   label_wiki_show_new_page_link: Pokaż element podmenu "Utwórz nową stronę podrzędną"
   label_wiki_show_submenu_item: 'Pokaż jako pozycję podmenu '
-  label_work_package: Zadania
+  label_work_package: Zadanie
   label_workflow: Przepływ pracy
   label_workflow_plural: Przepływy pracy
   label_workflow_summary: Podsumowanie
@@ -1245,8 +1245,8 @@ pl:
         units:
           byte:
             one: Bajt
-            other: Bajtów
-            few: Bajtów
+            other: Bajty
+            few: Bajty
           gb: GB
           kb: kB
           mb: MB
@@ -1317,7 +1317,7 @@ pl:
   permission_view_timelines: Widok osi czasu
   permission_view_wiki_edits: WIdok historii wiki
   permission_view_wiki_pages: Widok wiki
-  project_module_activity: Aktywność
+  project_module_activity: Działanie
   project_module_boards: Fora
   project_module_calendar: Kalendarz
   project_module_work_package_tracking: "Śledzenie zadania"
@@ -1335,7 +1335,7 @@ pl:
   setting_app_subtitle: Podtytuł
   setting_app_title: Tytuł
   setting_attachment_max_size: Maks. rozmiar załącznika
-  setting_autofetch_changesets: Autofetch commits
+  setting_autofetch_changesets: Automatyczne pobieranie commitów
   setting_autologin: Automatyczne logowanie
   setting_available_languages: Dostępne języki
   setting_bcc_recipients: Adresaci ukrytych kopii (bcc)
@@ -1346,8 +1346,8 @@ pl:
   setting_column_options: Dostosuj wygląd listy zadań
   setting_commit_fix_keywords: Stałe słowa kluczowe
   setting_commit_logs_encoding: Commit messages encoding
-  setting_commit_logtime_activity_id: Activity for logged time
-  setting_commit_logtime_enabled: Enable time logging
+  setting_commit_logtime_activity_id: Aktywność dla logowania czasu pracy
+  setting_commit_logtime_enabled: Włącz logowanie czasu pracy
   setting_commit_ref_keywords: Referencing keywords
   setting_cross_project_work_package_relations: Allow cross-project work package relations
   setting_date_format: Format daty
@@ -1419,12 +1419,11 @@ pl:
   setting_text_formatting: Formatowanie tekstu
   setting_time_format: Format czasu
   setting_ui_theme: Motyw
-  setting_user_may_override_theme: Users may choose their own themes
-  setting_accessibility_mode_for_anonymous: Enable accessibility mode for anonymous
-    users
+  setting_user_may_override_theme: Użytkownicy mogą wybrać swój motyw
+  setting_accessibility_mode_for_anonymous: Włącz tryb dostępu dla użytkowników anonimowych
   setting_user_format: Format wyświetlania nazwy użytkownika
   setting_users_deletable_by_admins: Konta użytkowników mogą być usuwane przez administratorów
-  setting_users_deletable_by_self: Users allowed to delete their accounts
+  setting_users_deletable_by_self: Użytkownicy mogą usuwać swoje konta
   setting_welcome_text: Tekst powitalny
   setting_wiki_compression: Kompresja historii wiki
   setting_work_package_group_assignment: Allow assignment to groups
@@ -1462,7 +1461,7 @@ pl:
     Configure your SMTP server in config/configuration.yml and restart the application to enable them.
   text_enumeration_category_reassign_to: 'Reassign them to this value:'
   text_enumeration_destroy_question: "%{count} objects are assigned to this value."
-  text_file_repository_writable: Attachments directory writable
+  text_file_repository_writable: Można zapisywać do katalogu z załącznikami
   text_git_repo_example: a bare and local repository (e.g. /gitrepo, c:\gitrepo)
   text_work_package_added: Work package %{id} has been reported by %{author}.
   text_work_package_category_destroy_assignments: Remove category assignments
@@ -1483,7 +1482,7 @@ pl:
   text_journal_set_to: "%{label} set to %{value}"
   text_journal_set_with_diff: "%{label} set (%{link})"
   text_length_between: Length between %{min} and %{max} characters.
-  text_line_separated: Multiple values allowed (one line for each value).
+  text_line_separated: Wiele wartości dopuszczalne (jeden wiersz dla każdej wartości).
   text_load_default_configuration: Załaduj domyślną konfigurację
   text_min_max_length_info: 0 means no restriction
   text_no_configuration_data: |
@@ -1597,8 +1596,8 @@ pl:
         timeframe_end: 'The timeframe end '
         compare_to_relative: 'Wartość względnego porównania '
         compare_to_absolute: 'Wartość bezwzględna porównania '
-        planning_element_time_relative_one: 'Początek zadania w określonym czasie '
-        planning_element_time_relative_two: 'Koniec zadania w określonym czasie '
+        planning_element_time_relative_one: 'Początek zadania w określonym czasie  '
+        planning_element_time_relative_two: 'Koniec zadania w określonym czasie  '
         planning_element_time_absolute_one: 'Początek zadania w określonym czasie  '
         planning_element_time_absolute_two: 'Koniec zadania w określonym czasie  '
       sort:
@@ -1613,7 +1612,7 @@ pl:
         type: Typ
         due_date: Data zakończenia
         name: Nazwa
-        status: Stan
+        status: Status
         responsible: Odpowiedzialny
         start_date: Data rozpoczęcia
       columns: Kolumny

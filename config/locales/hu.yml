@@ -84,7 +84,7 @@ hu:
       project:
         homepage: Weboldal
         identifier: Azonosító
-        work_packages: Munka csomagok
+        work_packages: Munkacsomagok
         parent: Alprojekt
         versions: Verzió
         project_type: Projekt típus
@@ -101,8 +101,8 @@ hu:
         assignable: Ehhez a szerepkörhöz nem lehet hozzárendelni a munkacsomagot
       time_entry:
         activity: Tevékenység
-        hours: "Óra"
-        spent_on: Dátum
+        hours: "órák"
+        spent_on: dátum
         type: Típus
       type:
         is_in_roadmap: A munkacsomag megjelenik az ütemtervben
@@ -292,7 +292,7 @@ hu:
     created: 'Létrehozva: %{title}'
     updated: 'Frissítve: %{title}'
   attributes:
-    active: Aktív
+    active: aktív
     assigned_to: Megbízott
     assignee: Megbízott
     attachments: Csatolmány
@@ -646,7 +646,7 @@ hu:
     wiki_page: A Wiki oldal szerkesztve
     work_package_closed: A munkacsomag lezárva
     work_package_edit: A munkacsomag szerkesztve
-    work_package_note: A munkacsomag jegyzet hozzáadva
+    work_package_note: Munkacsomag megjegyzés hozzáadva
   general_csv_decimal_separator: "."
   general_csv_encoding: UTF-8
   general_csv_separator: ","
@@ -655,8 +655,8 @@ hu:
   general_pdf_encoding: ISO-8859-1
   general_text_no: nem
   general_text_yes: igen
-  general_text_No: nem
-  general_text_Yes: igen
+  general_text_No: Nem
+  general_text_Yes: Igen
   gui_validation_error: 1 hiba
   gui_validation_error_plural: "%{count} hiba"
   instructions_after_registration: Be tud jelentkezni, amint fiókját aktiválta ide
@@ -700,7 +700,7 @@ hu:
   label_auth_source_new: "Új hitelesítési mód"
   label_auth_source_plural: Hitelesítési mód
   label_authentication: Hitelesítés
-  label_blocked_by: blokkolta
+  label_blocked_by: Blokkolta
   label_blocks: blokkol
   label_board_locked: Zárolt
   label_board_new: "Új fórum"
@@ -748,14 +748,14 @@ hu:
   label_custom_field_new: "Új választható mező"
   label_custom_field_plural: Választható mezők
   label_custom_field_default_type: "Üres típus"
-  label_date: Dátum
-  label_date_from: "-ból, -ből"
+  label_date: dátum
+  label_date_from: tól
   label_date_from_to: "%{start}-tól %{end}-ig"
   label_date_range: Dátum intervallum
   label_date_to: címzett
-  label_day_plural: napok
-  label_default: Alapértelmezett
-  label_deleted: törölve
+  label_day_plural: Napok
+  label_default: alapértelmezett
+  label_deleted: Törölve
   label_deleted_custom_field: "(egyéni mező törölve)"
   label_descending: Csökkenő
   label_details: Részletek
@@ -770,7 +770,7 @@ hu:
   label_download: "%{count} Letöltés"
   label_download_plural: "%{count} Letöltés"
   label_downloads_abbr: D/L
-  label_duplicated_by: duplázott
+  label_duplicated_by: Ismétlődések szerint
   label_duplicates: Ismétlődések
   label_edit: Szerkesztés
   label_enable_multi_select: Multiselect ki-/ bekapcsolása
@@ -793,7 +793,7 @@ hu:
   label_filter_add: Szűrő hozzáadása
   label_filter_plural: Szürő
   label_float: Mozgó
-  label_follows: következik
+  label_follows: Következik
   label_force_user_language_to_default: Nyelv beállitása a felhasználóknak, amelyeknél
     nem az alapértelmezett nyelv az elfogadott
   label_general: "Általános"
@@ -927,7 +927,7 @@ hu:
   label_planning: Tervezés
   label_please_login: Kérjük, jelentkezzen be
   label_plugins: Modulok
-  label_precedes: megelőzi
+  label_precedes: Megelőzi
   label_preferences: Tulajdonságok
   label_preview: Előnézet
   label_previous: Korábbi
@@ -954,7 +954,7 @@ hu:
   label_registration_automatic_activation: automatikus fiók aktiválás
   label_registration_manual_activation: fiók kézi aktiválása
   label_related_work_packages: Kapcsolódó munkacsomagok
-  label_relates_to: kapcsolódó
+  label_relates_to: Kapcsolódó
   label_relation_delete: Kapcsolat törlése
   label_relation_new: "Új kapcsolat"
   label_remove_columns: Eltávolítja a kijelölt oszlopokat
@@ -1227,7 +1227,7 @@ hu:
         format: "%n %u"
         units:
           byte:
-            one: Bájt
+            one: Byte
             other: Bájt
           gb: GB
           kb: kB
@@ -1615,9 +1615,9 @@ hu:
         compare_relative_suffix: ago
         compare_absolute: Hasonlítsa össze a jelenlegi tervezési  %{date} időpont
       time_relative:
-        days: napok
-        weeks: hetek
-        months: hónapok
+        days: Napok
+        weeks: Hetek
+        months: Hónapok
       exclude_own_work_packages: Ettől a projekttől a munkacsomagok elrejtése
       exclude_reporters: Más projektek elrejtése
       exclude_empty: "Üres projektek elrejtése"

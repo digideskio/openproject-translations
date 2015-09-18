@@ -7,7 +7,7 @@ th:
     close_popup_title: Close popup
     button_add_watcher: "เพิ่มผู้ดูข้อมูล"
     button_cancel: "ยกเลิก"
-    button_check_all: "ตรวจสอบทั้งหมด"
+    button_check_all: "ทำเครื่องหมายทั้งหมด"
     button_copy: "คัดลอก"
     button_delete: "ลบ"
     button_delete_watcher: Delete watcher
@@ -137,13 +137,13 @@ th:
       estimated_hours: "ระยะเวลาโดยประมาณ"
       fixed_version: "เวอร์ชัน"
       member_of_group: "กลุ่มของผู้รับผิดชอบ"
-      parent: "ค่าหลัก"
-      parent_issue: "ค่าหลัก"
-      parent_work_package: "ค่าหลัก"
+      parent: "หัวข้อหลัก"
+      parent_issue: "หัวข้อหลัก"
+      parent_work_package: "หัวข้อหลัก"
       priority: "ระดับความสำคัญ"
       progress: "% ที่แล้วเสร็จ"
       project: "โครงการ"
-      responsible: "ผู้รับผิดชอบ"
+      responsible: "รับผิดชอบ"
       spent_time: "เวลาที่ใช้"
       start_date: "วันเริ่มต้น"
       status: "สถานะ"
@@ -155,7 +155,7 @@ th:
       version: "เวอร์ชัน"
       watcher: "ผู้ดูข้อมูล"
     relation_labels:
-      parent: "ค่าหลัก"
+      parent: "หัวข้อหลัก"
       children: Children
       relates: Related To
       duplicates: Duplicates
@@ -210,7 +210,7 @@ th:
           due_date: "วันสิ้นสุด"
           name: "ชื่อ"
           status: "สถานะ"
-          responsible: "ผู้รับผิดชอบ"
+          responsible: "รับผิดชอบ"
           start_date: "วันเริ่มต้น"
         grouping_other: "อื่น ๆ"
         noneSelection: "(ไม่มี)"
@@ -229,7 +229,7 @@ th:
       project_type: "ประเภทของโครงการ"
       really_close_dialog: Do you really want to close the dialog and lose the entered
         data?
-      responsible: "ผู้รับผิดชอบ"
+      responsible: "รับผิดชอบ"
       save: "บันทึก"
       start_date: "วันเริ่มต้น"
       tooManyProjects: "พบมากกว่า %{count} โครงการ กรุณาใช้ตัวกรองที่ดีกว่านี้ !"
@@ -305,7 +305,7 @@ th:
         percentageDone: Percentage done
         priority: "ระดับความสำคัญ"
         projectName: "โครงการ"
-        responsible: "ผู้รับผิดชอบ"
+        responsible: "รับผิดชอบ"
         startDate: "วันเริ่มต้น"
         status: "สถานะ"
         subject: "หัวข้อ"

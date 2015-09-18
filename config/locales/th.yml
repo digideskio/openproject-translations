@@ -25,8 +25,8 @@ th:
           จะยังสามารถเป็นผู้ใช้ในแอปพลิเคชั่นนี้ได้อีกครั้งโดยการอนุญาตให้ใช้งาน"
         self: "บัญชีผู้ใช้ของคุณจะถูกลบออกจากระบบ เพราะฉะนั้น คุณจะไม่สามารถล็อกอินได้อีกต่อไป
           หากคุณต้องการกลับมาเป็นผู้ใช้แอปพลิเคชั่นนี้ใหม่อีกครั้ง คุณสามารถทำได้โดยวิธีการอนุญาตให้ใช้งานแอปพลิเคชั่น"
-    error_inactive_activation_by_mail: "บัญชีของคุณได้ไม่ยังถูกเปิดการใช้งาน กรุณาคลิกที่ลิงค์ที่ถูกส่งไปยังอีเมลของคุณ
-      เพื่อเปิดการใช้งานบัญชี"
+    error_inactive_activation_by_mail: "บัญชีของคุณได้ไม่ได้เปิดการใช้งาน กรุณาคลิกที่ลิงค์ที่ถูกส่งไปยังอีเมลของคุณ
+      เพื่อเปิดการใช้งาน"
     error_inactive_manual_activation: "บัญชีผู้ใช้ของคุณยังไม่ได้เปิดใช้งาน กรุณารอเพื่อให้ผู้ดูแลระบบ
       เปิดใช้งานบัญชีผู้ใช้ของคุณเสียก่อน"
     error_self_registration_disabled: "ระบบไม่ได้เปิดให้ผู้ใช้ลงทะเบียนใช้งานด้วยตัวเอง
@@ -81,9 +81,9 @@ th:
         identifier: "รหัส"
         work_packages: "ชุดภารกิจ"
         parent: "โครงการย่อยของ"
-        versions: "รุ่น"
+        versions: "เวอร์ชั่น"
         project_type: "ประเภทของโครงการ"
-        responsible: "ผู้รับผิดชอบ"
+        responsible: "รับผิดชอบ"
         types: "ประเภท"
         queries: "การสอบถาม"
       query:
@@ -151,12 +151,12 @@ th:
       work_package:
         done_ratio: "% ที่แล้วเสร็จ"
         fixed_version: "เวอร์ชัน"
-        parent: "ค่าหลัก"
-        parent_issue: "ค่าหลัก"
-        parent_work_package: "ค่าหลัก"
+        parent: "หัวข้อหลัก"
+        parent_issue: "หัวข้อหลัก"
+        parent_work_package: "หัวข้อหลัก"
         priority: "ระดับความสำคัญ"
         progress: "% ที่แล้วเสร็จ"
-        responsible: "ผู้รับผิดชอบ"
+        responsible: "รับผิดชอบ"
         spent_time: "เวลาที่ใช้"
         subproject: "โครงการย่อย"
         time_entries: "เวลาที่ถูกบันทึก"
@@ -318,7 +318,7 @@ th:
     password: "รหัสผ่าน"
     priority: "ระดับความสำคัญ"
     project: "โครงการ"
-    responsible: "ผู้รับผิดชอบ"
+    responsible: "รับผิดชอบ"
     role: "บทบาท"
     start_date: "วันเริ่มต้น"
     status: "สถานะ"
@@ -341,7 +341,7 @@ th:
   button_change: "เปลี่ยนแปลง"
   button_change_parent_page: "เปลี่ยนหน้าหลัก"
   button_change_password: "เปลี่ยนรหัสผ่าน"
-  button_check_all: "ตรวจสอบทั้งหมด"
+  button_check_all: "ทำเครื่องหมายทั้งหมด"
   button_clear: "ล้างข้อมูล"
   button_collapse_all: "ยุบทั้งหมด"
   button_configure: "กำหนดค่า"
@@ -634,7 +634,7 @@ th:
   general_csv_encoding: UTF-8
   general_csv_separator: ","
   general_first_day_of_week: '7'
-  general_lang_name: "อังกฤษ"
+  general_lang_name: "ไทย"
   general_pdf_encoding: ISO-8859-1
   general_text_no: "ไม่ใช่"
   general_text_yes: "ใช่"
@@ -941,7 +941,7 @@ th:
   label_reported_work_packages: "ชุดภารกิจที่รายงานแล้ว"
   label_reporting: "รายงาน"
   label_reporting_plural: Reportings
-  label_repository: "ที่เก็บ"
+  label_repository: "ที่เก็บข้อมูล"
   label_repository_plural: "ที่เก็บ"
   label_responsible_for_work_packages: "ชุดภารกิจที่ฉันรับผิดชอบ"
   label_result_plural: "ผลลัพธ์"
@@ -1020,7 +1020,7 @@ th:
   label_user_plural: "ผู้ใช้"
   label_user_search: "ค้นหาผู้ใช้"
   label_version_new: "เวอร์ชั่นใหม่"
-  label_version_plural: "รุ่น"
+  label_version_plural: "เวอร์ชั่น"
   label_version_sharing_descendants: "พร้อมด้วยโครงการย่อย"
   label_version_sharing_hierarchy: "พร้อมด้วยลำดับชั้นของโครงการ"
   label_version_sharing_none: "ไม่ได้แบ่งปัน"
@@ -1265,7 +1265,7 @@ th:
   project_module_calendar: "ปฏิทิน"
   project_module_work_package_tracking: "ติดตามผลชุดภารกิจ"
   project_module_news: "ข่าวสาร"
-  project_module_repository: "ที่เก็บ"
+  project_module_repository: "ที่เก็บข้อมูล"
   project_module_time_tracking: "ติดตามเวลาที่ใช้"
   project_module_timelines: "เส้นเวลา"
   project_module_wiki: "วิกิ"
@@ -1516,8 +1516,8 @@ th:
         timeframe_end: "สิ้นสุดกรอบเวลา"
         compare_to_relative: "ค่าของการเปรียบเทียบสัมพันธ์ "
         compare_to_absolute: "ค่าของการเปรียบเทียบสัมบูรณ์ "
-        planning_element_time_relative_one: "การเริ่มต้นของชุดภารกิจในกรอบเวลาที่แน่นอน"
-        planning_element_time_relative_two: "การสิ้นสุดของชุดภารกิจในกรอบเวลาที่แน่นอน"
+        planning_element_time_relative_one: "การเริ่มต้นของชุดภารกิจในกรอบเวลาที่แน่นอน  "
+        planning_element_time_relative_two: "การสิ้นสุดของชุดภารกิจในกรอบเวลาที่แน่นอน  "
         planning_element_time_absolute_one: "การเริ่มต้นของชุดภารกิจในกรอบเวลาที่แน่นอน  "
         planning_element_time_absolute_two: "การสิ้นสุดของชุดภารกิจในกรอบเวลาที่แน่นอน  "
       sort:
@@ -1533,7 +1533,7 @@ th:
         due_date: "วันสิ้นสุด"
         name: "ชื่อ"
         status: "สถานะ"
-        responsible: "ผู้รับผิดชอบ"
+        responsible: "รับผิดชอบ"
         start_date: "วันเริ่มต้น"
       columns: "คอลัมน์"
       comparisons: "เปรียบเทียบ"

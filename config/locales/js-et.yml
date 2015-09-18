@@ -23,14 +23,14 @@ et:
     button_quote: Tsiteeri
     button_save: Salvesta
     button_settings: Seaded
-    button_uncheck_all: Nulli valik
+    button_uncheck_all: Tühjenda valik
     button_update: Uuenda
     description_available_columns: Saadaolevad väljad
     description_select_work_package: Vali teema
     description_selected_columns: Valitud väljad
     description_subwork_package: Teema sisaldub teises teemas
     filter:
-      noneElement: "(ei midagi)"
+      noneElement: "(pole)"
     general_text_no: ei
     general_text_yes: jah
     general_text_No: Ei
@@ -50,11 +50,11 @@ et:
     label_date: Kuupäev
     label_deactivate: Deactivate
     label_descending: Kahanev
-    label_description: Kirjeldus
+    label_description: Teave
     label_closed_work_packages: suletud
     label_collapse: Koonda
     label_collapsed: koondatud
-    label_collapse_all: Ahenda kõik
+    label_collapse_all: Koonda kõik
     label_commented_on: commented on
     label_contains: sisaldab
     label_equals: võrdub
@@ -62,7 +62,7 @@ et:
     label_expanded: laiendatud
     label_expand_all: Laienda kõik
     label_export: Export
-    label_filename: Fail
+    label_filename: Manus
     label_filesize: Suurus
     label_format_atom: Atom
     label_format_csv: CSV
@@ -150,7 +150,7 @@ et:
       subject: Teema
       subproject: Alamprojekt
       time_entries: Ajakulu
-      type: Liik
+      type: Tüüp
       updated_at: Uuendatud
       version: Versioon
       watcher: Jälgija
@@ -208,14 +208,14 @@ et:
       filter:
         column:
           assigned_to: Määratud tegija
-          type: Liik
+          type: Tüüp
           due_date: Lõppkuupäev
           name: Nimi
           status: Olek
           responsible: Vastutaja
           start_date: Alguskuupäev
         grouping_other: Muu
-        noneSelection: "(ei midagi)"
+        noneSelection: "(pole)"
       name: Nimi
       new_work_package: Uus teema
       outline: Lähtesta kontuur
@@ -251,7 +251,7 @@ et:
       title: Your browser version is not supported
       message: The browser version you are using is no longer supported by OpenProject.
         Please update your browser.
-      learn_more: Lisateave
+      learn_more: Loe rohkem
     wiki_formatting:
       strong: Strong
       italic: Italic
@@ -298,7 +298,7 @@ et:
         assignee: Määratud tegija
         author: Autor
         createdAt: Loodud
-        description: Kirjeldus
+        description: Teave
         date: Kuupäev
         dueDate: Tähtaeg
         estimatedTime: Eeldatav ajakulu
@@ -312,7 +312,7 @@ et:
         status: Olek
         subject: Teema
         title: Pealkiri
-        type: Liik
+        type: Tüüp
         updatedAt: Uuendatud
         versionName: Versioon
         version: Versioon

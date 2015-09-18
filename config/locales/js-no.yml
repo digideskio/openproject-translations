@@ -176,8 +176,8 @@
     field_value_enter_prompt: Angi en verdi for '%{field}'
     select2:
       input_too_short:
-        one: Skriv inn ett tegn til
-        other: Skriv inn {{count}} flere tegn
+        one: Vennligst skriv ett tegn til
+        other: Vennligst skriv {{count}} flere tegn
         zero: Please enter more characters
       load_more: Laster inn flere resultater...
       no_matches: Ingen treff

@@ -5,7 +5,7 @@ da:
       hide: Gem
       loading: Henter...
     close_popup_title: Luk popup
-    button_add_watcher: Tilføj overvåger
+    button_add_watcher: Tilføj tilsynsførende
     button_cancel: Annuller
     button_check_all: Vælg alt
     button_copy: Kopier
@@ -16,7 +16,7 @@ da:
     button_edit: Rediger
     button_filter: Filter
     button_list_view: Listevisning
-    button_log_time: Log tidspunkt
+    button_log_time: Tidsregistrering
     button_more: mere
     button_move: Flyt
     button_open_details: "Åbn detaljevisning"
@@ -35,7 +35,7 @@ da:
     general_text_yes: ja
     general_text_No: Nej
     general_text_Yes: Ja
-    label_activate: Aktiver
+    label_activate: Aktivér
     label_add_columns: Tilføj valgte kolonner
     label_add_comment: Tilføj kommentar
     label_add_comment_title: Tilføj din kommentar her
@@ -148,11 +148,11 @@ da:
       status: Status
       subject: Emne
       subproject: Underprojekt
-      time_entries: Log tidspunkt
-      type: Art
+      time_entries: Tidsregistrering
+      type: Type
       updated_at: Opdateret den
       version: Version
-      watcher: Overvåger
+      watcher: Tilsynsførende
     relation_labels:
       parent: Overordnet
       children: Underordnede
@@ -176,15 +176,15 @@ da:
     field_value_enter_prompt: Indtast en værdi for '%{field}'
     select2:
       input_too_short:
-        one: Indtast venligst ét tegn mere
+        one: Indtast venligst mere end ét tegn
         other: Indtast venligst mere end {{count}} tegn
         zero: Please enter more characters
       load_more: Henter flere resultater...
       no_matches: Ingen passende resultater fundet
       searching: Søger...
       selection_too_big:
-        one: Du kan kun vælge ét element
-        other: Du kan kun vælge {{limit}} elementer
+        one: Du kan kun vælge ét emne
+        other: Du kan kun vælge {{limit}} emne
         zero: You cannot select any items
     text_work_packages_destroy_confirmation: Er du sikker på, du vil slette de/den
       valgte arbejdspakke(r)?
@@ -206,7 +206,7 @@ da:
       filter:
         column:
           assigned_to: Opdragsgiver
-          type: Art
+          type: Type
           due_date: Slutdato
           name: Navn
           status: Status
@@ -309,13 +309,13 @@ da:
         status: Status
         subject: Emne
         title: Titel
-        type: Art
+        type: Type
         updatedAt: Opdateret den
         versionName: Version
         version: Version
       query:
         column_names: Kolonner
-        group_by: Grupper resultater efter
+        group_by: Gruppér resultater efter
         group: Gruppér efter
         sort_ascending: Sorter stigende
         sort_descending: Sorter faldende
@@ -329,9 +329,9 @@ da:
           unretrievable_query: Kan ikke hente forespørgsel fra URL
       tabs:
         overview: Overblik
-        activity: Aktivitet
+        activity: Aktivivtet
         relations: Tilknytninger
-        watchers: Overvågere
+        watchers: Tilsynsførende
         attachments: Vedhæftninger
       time_relative:
         days: dage
