@@ -4,7 +4,7 @@ ja:
     ajax:
       hide: "非表示"
       loading: "ロード中..."
-    close_popup_title: Close popup
+    close_popup_title: "ポップアップを閉じる"
     button_add_watcher: "ウォッチャーを追加"
     button_cancel: "キャンセル"
     button_check_all: "全てを選択"
@@ -69,7 +69,7 @@ ja:
     label_format_pdf: PDF
     label_format_pdf_with_descriptions: "説明付きPDF"
     label_greater_or_equal: ">="
-    label_group_by: "グループ"
+    label_group_by: "グループ化"
     label_hide_attributes: "未入力を隠す"
     label_hide_column: "列を非表示"
     label_in: "今日から○日後"
@@ -113,7 +113,7 @@ ja:
     label_today: "今日"
     label_total_progress: "%{percent}% 進行状況"
     label_visible_for_others: "他人に見られるページ"
-    label_work_package: "ワーク パッケージ"
+    label_work_package: "作業項目"
     label_watch_work_package: "作業項目をウォッチ"
     label_watcher_added_successfully: "ウォッチャーが正常に追加されました ！"
     label_watcher_deleted_successfully: "ウォッチャーが正常に削除されました ！"
@@ -121,13 +121,13 @@ ja:
     label_unwatch_work_package: "作業項目のウォッチを削除"
     label_uploaded_by: "アップロードした人"
     label_global_queries: "共有された問い合わせ"
-    label_custom_queries: "プライベートな問い合わせ"
+    label_custom_queries: "個人用のクエリ"
     label_columns: "列"
     label_click_to_enter_description: "クリックして説明を入力する..."
     text_are_you_sure: "よろしいですか？"
     filter_labels:
       assigned_to: "担当者"
-      assigned_to_role: "担当者の役割"
+      assigned_to_role: "担当者のロール"
       author: "作成者"
       category: "カテゴリ"
       created_at: "作成日時"
@@ -271,9 +271,8 @@ ja:
       label_disable_multi_select: "複数の選択を禁止"
       label_filter_add: "フィルターを追加"
       label_options: "オプション"
-      label_column_multiselect: 'Combined dropdown field: Select with arrow keys,
-        confirm selection with enter, delete with backspace'
-      label_column_select: 'Status - Combined dropdown field: Selection with auto-completion.'
+      label_column_multiselect: "結合されたドロップダウンフィールド: 矢印キーで選択する、エンターキーで選択を確認する、バックスペースキーで削除する"
+      label_column_select: "ステータス - 結合されたドロップダウンフィールド: オートコンプリートで選択する"
       message_error_during_bulk_delete: "作業項目を削除する際にエラーが発生しました。"
       message_successful_bulk_delete: "作業項目が正常に削除されました。"
       no_results:
@@ -309,7 +308,7 @@ ja:
       query:
         column_names: "列"
         group_by: "グループ化"
-        group: "グループ"
+        group: "グループ化"
         sort_ascending: "昇順にソート"
         sort_descending: "降順にソート"
         move_column_left: "列を左に移動"
@@ -327,9 +326,9 @@ ja:
         watchers: "ウォッチャー"
         attachments: "添付ファイル"
       time_relative:
-        days: "日"
-        weeks: "週"
-        months: "月"
+        days: " 日"
+        weeks: "週間"
+        months: "ヶ月間"
     toolbar:
       settings:
         columns: "列..."
@@ -371,8 +370,8 @@ ja:
       null_value_label: "値なし"
       clear_value_label: "-"
       errors:
-        required: "%{field} cannot be empty"
-        number: "%{field} is not a valid number"
+        required: "%{field}を空にできません"
+        number: "%{field}は有効な数値ではありません"
     error_could_not_resolve_version_name: "バージョン名を解決できませんでした。"
     error_could_not_resolve_user_name: "ユーザ名を特定できません"
     units:

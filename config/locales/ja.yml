@@ -6,20 +6,20 @@ ja:
     deleted: "アカウントが正常に削除されました。"
     deletion_info:
       data_consequences:
-        other: "ユーザーが作成した殆どのデータ (例えば電子メール、設定、作業項目 、wiki記載 )が削除されます。ただし、他のユーザーの作業を妨害することがなく作業項目やwiki
-          記載のようなデータは削除できません。それ故に、このようなデータは「削除されたユーザ」と呼ばれるアカウントに再割り当てます。削除された全てのアカウントのデータがこのアカウントに再割り当ているので、削除された別のユーザーのデータと区別できなくなります。"
-        self: "ユーザーが作成した殆どのデータ (例えば電子メール、設定、作業項目 、wiki記載 )が削除されます。ただし、他のユーザーの作業を妨害することがなく作業項目やwiki
-          記載のようなデータは削除できません。それ故に、このようなデータは「削除されたユーザ」と呼ばれるアカウントに再割り当てます。削除された全てのアカウントのデータがこのアカウントに再割り当ているので、削除された別のユーザーのデータと区別できなくなります。"
+        other: "ユーザが作成した殆どのデータ (例えば電子メール、設定、作業項目 、wiki記載 )が削除されます。ただし、他のユーザの作業を妨害することがなく作業項目やwiki
+          記載のようなデータは削除できません。それ故に、このようなデータは「削除されたユーザ」と呼ばれるアカウントに再割り当てます。削除された全てのアカウントのデータがこのアカウントに再割り当ているので、削除された別のユーザのデータと区別できなくなります。"
+        self: "ユーザが作成した殆どのデータ (例えば電子メール、設定、作業項目 、wiki記載 )が削除されます。ただし、他のユーザの作業を妨害することがなく作業項目やwiki
+          記載のようなデータは削除できません。それ故に、このようなデータは「削除されたユーザ」と呼ばれるアカウントに再割り当てます。削除された全てのアカウントのデータがこのアカウントに再割り当ているので、削除された別のユーザのデータと区別できなくなります。"
       heading: "アカウント名「 %{name} 」を削除します。"
       info:
-        other: "ユーザーアカウントの削除は復元できない操作です。"
+        other: "ユーザアカウントの削除は復元できない操作です。"
         self: "アカウントの削除は復元できない操作です。"
       login_consequences:
-        other: "このアカウントはシステムから削除されます。したがって、このユーザーは現在の認証情報でログイン不可能になります。再度このアプリケーションのユーザーになることは可能です。"
-        self: "自分のアカウントがシステムから削除されます。したがって、現在の認証情報ではログイン不可能になります。再度このアプリケーションのユーザーになることは可能です。"
+        other: "このアカウントはシステムから削除されます。したがって、このユーザは現在の認証情報でログイン不可能になります。再度このアプリケーションのユーザになることは可能です。"
+        self: "自分のアカウントがシステムから削除されます。したがって、現在の認証情報ではログイン不可能になります。再度このアプリケーションのユーザになることは可能です。"
     error_inactive_activation_by_mail: "アカウントが有効化されていません。アカウントを有効にするために、受信したメール内のリンクをクリックしてください。"
     error_inactive_manual_activation: "あなたのアカウントは未だ有効化されていません。管理者がアカウントを有効化するまでにお待ちください。"
-    error_self_registration_disabled: "このシステムでは、ユーザー登録が無効化されています。アカウントを作成するには管理者にお問い合わせください。"
+    error_self_registration_disabled: "このシステムでは、ユーザ登録が無効化されています。アカウントを作成するには管理者にお問い合わせください。"
     login_with_auth_provider: "または、既存のアカウントでログインしてください。"
   actionview_instancetag_blank_option: "選択してください"
   activerecord:
@@ -82,10 +82,10 @@ ja:
       repository:
         url: URL
       role:
-        assignable: "この役割に作業項目を割り当て可能"
+        assignable: "このロールに作業項目を割り当て可能"
       time_entry:
         activity: "活動"
-        hours: " 時間"
+        hours: "時間"
         spent_on: "日付"
         type: "種別"
       type:
@@ -123,7 +123,7 @@ ja:
         hexcode: 16進コード
       project_association:
         description: "原因"
-        project_b: Dependent project
+        project_b: "依存するプロジェクト"
       project_type:
         allows_association: "関連付けが可能"
         name: "名称"
@@ -162,7 +162,7 @@ ja:
         equal_to: "は%{count}に等しくしてください。"
         even: "は偶数にしてください。"
         exclusion: "は予約されています。"
-        file_too_large: is too large (maximum size is %{count} Bytes)
+        file_too_large: "は大きすぎます (最大サイズは%{count}バイト)"
         greater_than: "は%{count}より大きい値にしてください。"
         greater_than_or_equal_to: "は%{count}以上の値にしてください。"
         smaller_than_or_equal_to_max_length: "は最大長さより以下でなければなりません。"
@@ -187,12 +187,11 @@ ja:
         could_not_be_copied: "（完全に）コピーできませんでした。"
       models:
         project_association:
-          identical_projects: Dependency cannot be created between one project and
-            itself.
+          identical_projects: "同一プロジェクトと依存関係を作成できません。"
           project_association_not_allowed: "関連付けを許可していません。"
         repository:
-          not_whitelisted: is not allowed by the configuration
-          no_directory: is not a directory
+          not_whitelisted: "は設定で許可されていません。"
+          no_directory: "はファルダーではありません。"
         work_package:
           is_not_a_valid_target_for_time_entries: "作業時間を再割り当てるには、作業項目#%{id}は対象外である。"
           attributes:
@@ -204,7 +203,7 @@ ja:
               not_a_valid_parent: "は不正な値です。"
               does_not_exist: "は存在しません。"
             status_id:
-              status_transition_invalid: "ユーザーの現在の役割では旧ステータスから新ステータスへの有効な遷移がないため無効"
+              status_transition_invalid: "ユーザの現在のロールでは旧ステータスから新ステータスへの有効な遷移がないため無効"
             priority_id:
               only_active_priorities_allowed: "は有効である必要があります。"
             category:
@@ -215,8 +214,7 @@ ja:
         user:
           attributes:
             password:
-              weak: 'Must contain characters of the following classes (at least %{min_count}
-                of %{all_count}): %{rules}'
+              weak: "次の文字の種類を含まれるようにしてください。（%{all_count})つのうちに%{min_count}つ以上：%{rules}）"
               lowercase: "アルファベット小文字 (例: 'a')"
               uppercase: "アルファベット大文字 (例: ' A')"
               numeric: "数値 (例: '1')"
@@ -226,12 +224,11 @@ ja:
                   your last one.
                 other: "は以前に使用されています。前回の%{count}つと異なるものを選択してください。"
               match:
-                confirm: Confirm new password.
-                description: "'Password confirmation' should match the input in the
-                  'New password' field."
+                confirm: "新しいパスワードの確認"
+                description: "「パスワードの確認」は、「新しいパスワード」フィールドの入力と一致する必要があります。"
         member:
-          principal_blank: "一つ以上のユーザーまたはグループを選択してください。"
-          role_blank: 1つ以上の役割を選択してください。
+          principal_blank: "一つ以上のユーザまたはグループを選択してください。"
+          role_blank: 1つ以上のロールを選択してください。
       template:
         body: "次のフィールドをチェックしてください："
         header:
@@ -249,32 +246,32 @@ ja:
       member: "メンバー"
       news: "ニュース"
       project: "プロジェクト"
-      query: "ユーザーのクエリ"
+      query: "ユーザのクエリ"
       role:
         one: Role
         other: "ロール"
       type: "種別"
       planning_element: "計画の要素"
       project_type: "プロジェクトの種類"
-      user: "ユーザー"
+      user: "ユーザ"
       version: "バージョン"
       wiki: Wiki
       wiki_page: Wiki ページ
       workflow: "ワークフロー"
-      work_package: "ワーク パッケージ"
+      work_package: "作業項目"
   errors:
     header_invalid_fields: "次のフィールドに問題がありました："
   activity:
     created: "作成: %{title}"
     updated: "更新: %{title}"
   attributes:
-    active: "アクティブ"
+    active: "有効"
     assigned_to: "担当者"
     assignee: "担当者"
     attachments: "添付ファイル"
     author: "作成者"
     base: "一般的なエラー:"
-    blocks_ids: IDs of blocked work packages
+    blocks_ids: "ブロックされている作業項目のID"
     category: "カテゴリ"
     comment: "コメント"
     comments: "コメント"
@@ -295,7 +292,7 @@ ja:
     is_default: "デフォルト値"
     is_for_all: "全プロジェクト向け"
     is_public: "公開"
-    issue: "ワーク パッケージ"
+    issue: "作業項目"
     lastname: "苗字"
     login: "ログイン名"
     mail: "電子メールアドレス"
@@ -304,7 +301,7 @@ ja:
     priority: "優先度"
     project: "プロジェクト"
     responsible: "責任者"
-    role: "役割"
+    role: "ロール"
     start_date: "開始日"
     status: "ステータス"
     subject: "題名"
@@ -313,9 +310,9 @@ ja:
     type: "種別"
     updated_at: "更新日時"
     updated_on: "更新日時"
-    user: "ユーザー"
+    user: "ユーザ"
     version: "バージョン"
-    work_package: "ワーク パッケージ"
+    work_package: "作業項目"
   button_add: "追加"
   button_add_watcher: "ウォッチャーを追加"
   button_annotate: "注釈を付ける"
@@ -440,7 +437,7 @@ ja:
         other: "約%{count}時間"
       about_x_months:
         one: about 1 month
-        other: "約%{count}ヶ月"
+        other: "約%{count}ヶ月間"
       about_x_years:
         one: about 1 year
         other: "約%{count}年間"
@@ -462,10 +459,10 @@ ja:
         other: "%{count}日間"
       x_minutes:
         one: 1 minute
-        other: "%{count}分"
+        other: "%{count}分間"
       x_months:
         one: 1 month
-        other: "%{count}ヶ月"
+        other: "%{count}ヶ月間"
       x_seconds:
         one: 1 second
         other: "%{count}秒"
@@ -476,62 +473,62 @@ ja:
   default_activity_development: "開発作業"
   default_activity_management: "管理"
   default_activity_other: "その他"
-  default_activity_specification: Specification
+  default_activity_specification: "仕様"
   default_activity_support: "サポート"
   default_activity_testing: "テスト中"
-  default_color_black: Black
-  default_color_blue: Blue
-  default_color_blue_dark: Blue (dark)
-  default_color_blue_light: Blue (light)
-  default_color_green_dark: Green (dark)
-  default_color_green_light: Green (light)
-  default_color_grey_dark: Grey (dark)
-  default_color_grey_light: Grey (light)
-  default_color_grey: Grey
-  default_color_magenta: Magenta
-  default_color_orange: Orange
+  default_color_black: "黒"
+  default_color_blue: "青"
+  default_color_blue_dark: "青(濃い)"
+  default_color_blue_light: "青(薄い)"
+  default_color_green_dark: "緑（濃い）"
+  default_color_green_light: "緑（薄い）"
+  default_color_grey_dark: "グレー(濃い)"
+  default_color_grey_light: "グレー(薄い)"
+  default_color_grey: "グレー"
+  default_color_magenta: "赤紫"
+  default_color_orange: "オレンジ"
   default_color_red: "赤"
-  default_color_white: White
-  default_color_yellow: Yellow
+  default_color_white: "白"
+  default_color_yellow: "黄"
   default_status_closed: "終了"
-  default_status_confirmed: Confirmed
-  default_status_developed: Developed
-  default_status_in_development: In development
-  default_status_in_progress: In progress
-  default_status_in_specification: In specification
-  default_status_in_testing: In testing
+  default_status_confirmed: "確認済み"
+  default_status_developed: "開発済み"
+  default_status_in_development: "開発中"
+  default_status_in_progress: "進行中"
+  default_status_in_specification: "仕様で"
+  default_status_in_testing: "テスト中"
   default_status_new: "新しく作成"
-  default_status_on_hold: On hold
-  default_status_rejected: Rejected
-  default_status_scheduled: Scheduled
-  default_status_specified: Specified
-  default_status_tested: Tested
-  default_status_test_failed: Test failed
-  default_status_to_be_scheduled: To be scheduled
+  default_status_on_hold: "保留中"
+  default_status_rejected: "却下"
+  default_status_scheduled: "スケジュール済"
+  default_status_specified: "指定済み"
+  default_status_tested: "テスト済み"
+  default_status_test_failed: "テスト失敗"
+  default_status_to_be_scheduled: "未スケジュール"
   default_priority_low: "低め"
   default_priority_normal: "通常"
   default_priority_high: "高め"
   default_priority_immediate: "急いで"
-  default_project_type_scrum: Scrum team
-  default_project_type_standard: Standard project
+  default_project_type_scrum: "スクラムチーム"
+  default_project_type_standard: "標準プロジェクト"
   default_reported_project_status_green: "緑"
   default_reported_project_status_amber: "アンバー"
   default_reported_project_status_red: "赤"
-  default_role_anonymous: "匿名ユーザー"
+  default_role_anonymous: "匿名ユーザ"
   default_role_developer: "開発者"
-  default_role_project_admin: Project admin
+  default_role_project_admin: "プロジェクト管理者"
   default_role_non_member: "非メンバー"
   default_role_reader: "リーダー"
   default_role_member: "メンバー"
   default_type: "作業項目"
   default_type_bug: "不具合"
   default_type_deliverable: "要素成果物"
-  default_type_epic: Epic
+  default_type_epic: "エピック"
   default_type_feature: "機能"
   default_type_milestone: "マイルストーン"
   default_type_phase: "工程"
   default_type_task: "タスク"
-  default_type_user_story: User story
+  default_type_user_story: "ユーザストーリー"
   description_active: "有効？"
   description_attachment_toggle: "添付ファイルの表示/非表示"
   description_autocomplete: "このフィールドは、オートコンプリートを使用します。作業項目のタイトルを入力中は可能な候補のリストが表示されます。矢印キーを利用していずれかを選んで、タブキーかエンターキーで選択できます。または作業項目の番号を直接入力もできます。"
@@ -572,9 +569,9 @@ ja:
   error_can_not_delete_custom_field: "カスタムフィールドを削除できません。"
   error_can_not_delete_type: "この型の作業項目が存在しています。削除できません。"
   error_can_not_delete_standard_type: "標準型は削除できません。"
-  error_can_not_remove_role: "この役割は使用されています。削除できません。"
+  error_can_not_remove_role: "このロールは使用されています。削除できません。"
   error_can_not_reopen_work_package_on_closed_version: "終了したバージョンにひも付けされた作業項目は再度開けません。"
-  error_check_user_and_role: "ユーザーと役割を選択してください。"
+  error_check_user_and_role: "ユーザとロールを選択してください。"
   error_work_package_done_ratios_not_updated: "作業項目の進捗率が更新できません。"
   error_work_package_not_found_in_project: "作業項目が見つからないか、このプロジェクトに属してないかです。"
   error_must_be_project_member: "プロジェクトのメンバーである必要があります。"
@@ -590,7 +587,7 @@ ja:
     Please select another default work package status before deleting the current
     one.
   error_unable_to_connect: "接続できません。 （%{value}）"
-  error_workflow_copy_source: "コピー元となる型または役割を選択してください。"
+  error_workflow_copy_source: "コピー元となる型またはロールを選択してください。"
   error_workflow_copy_target: "コピー先となる型と役割を選択してください。"
   error_menu_item_not_created: "メニュー項目を追加できませんでした。"
   error_menu_item_not_saved: "メニュー項目を保存できませんでした。"
@@ -631,8 +628,8 @@ ja:
   label_add_subtask: "子タスクを追加"
   label_added: "追加"
   label_added_time_by: "%{author}が%{age}前に追加"
-  label_additional_workflow_transitions_for_assignee: "ユーザーが担当者であれば、追加で許可する遷移"
-  label_additional_workflow_transitions_for_author: "ユーザーが作成者であれば、追加で許可する遷移"
+  label_additional_workflow_transitions_for_assignee: "ユーザが担当者である場倍、追加遷移を許可する"
+  label_additional_workflow_transitions_for_author: "ユーザが作成者である場倍、追加遷移を許可する"
   label_administration: "管理"
   label_age: "経過"
   label_ago: "○日前"
@@ -708,7 +705,7 @@ ja:
   label_date_from_to: "%{start} ～%{end}"
   label_date_range: "期間"
   label_date_to: "から"
-  label_day_plural: "日"
+  label_day_plural: " 日"
   label_default: "既定の項目"
   label_deleted: "削除された"
   label_deleted_custom_field: "（削除されたカスタムフィールド）"
@@ -748,12 +745,12 @@ ja:
   label_filter_plural: "フィルタ"
   label_float: "小数"
   label_follows: "次の項目に後続"
-  label_force_user_language_to_default: "ユーザーの言語設定が利用許可されてない場合、デフォルト言語にリセットする"
+  label_force_user_language_to_default: "ユーザの言語設定が利用許可されていない場合、デフォルト言語を利用する"
   label_general: "概要"
   label_generate_key: "キーを生成する"
   label_git_path: ".gitディレクトリへのパス"
   label_greater_or_equal: ">="
-  label_group_by: "グループ"
+  label_group_by: "グループ化"
   label_group_new: "新規グループ"
   label_group_plural: "グループ"
   label_help: "ヘルプ"
@@ -792,7 +789,7 @@ ja:
   label_work_package_watchers: "ウォッチャー"
   label_journal_diff: "説明の比較"
   label_jump_to_a_project: "プロジェクトへ移動..."
-  label_language_based: "ユーザーの言語設定に基づく"
+  label_language_based: "ユーザの言語設定に基づく"
   label_last_changes: "最新の変更%{count}件"
   label_last_login: "最終ログイン日時"
   label_last_month: "先月"
@@ -928,14 +925,14 @@ ja:
   label_roadmap_due_in: "期日まで %{value}"
   label_roadmap_no_work_packages: "このバージョンに関する作業項目はありません。"
   label_roadmap_overdue: "%{value}遅れ"
-  label_role_and_permissions: "役割と権限"
-  label_role_new: "新しい役割"
+  label_role_and_permissions: "ロールと権限"
+  label_role_new: "新しいロール"
   label_role_plural: "ロール"
-  label_role_search: "役割を検索"
+  label_role_search: "ロールを検索"
   label_scm: "バージョン管理システム"
   label_search: "検索"
   label_search_titles_only: "題名のみを検索"
-  label_send_information: "アカウント情報をユーザーに送信"
+  label_send_information: "アカウント情報をユーザに送信"
   label_send_test_email: "テスト電子メールを送信"
   label_settings: "設定"
   label_show_completed_versions: "終了したバージョンを表示"
@@ -967,7 +964,7 @@ ja:
   label_this_week: "今週"
   label_this_year: "今年"
   label_time_entry_plural: "作業時間の記録"
-  label_time_sheet_menu: Time sheet
+  label_time_sheet_menu: "タイムシート"
   label_time_tracking: "作業時間の記録"
   label_today: "今日"
   label_top_menu: "トップメニュー"
@@ -975,14 +972,14 @@ ja:
   label_total: "合計"
   label_type_new: "新しい型"
   label_type_plural: "作業項目の型"
-  label_ui: UI（ユーザーインターフェイス）
+  label_ui: UI（ユーザインターフェイス）
   label_update_work_package_done_ratios: "進捗率の更新"
   label_updated_time: "%{value}前に更新"
   label_updated_time_at: "%{author} %{age}"
   label_updated_time_by: "%{author}が%{age}前に更新"
   label_used_by: "使用中"
   label_user_activity: "%{value}の活動"
-  label_user_anonymous: "匿名ユーザー"
+  label_user_anonymous: "匿名ユーザ"
   label_user_mail_no_self_notified: "自分自身による変更の通知は不要"
   label_user_mail_option_all: "参加しているプロジェクトの全イベント"
   label_user_mail_option_none: "通知しない"
@@ -990,9 +987,9 @@ ja:
   label_user_mail_option_only_my_events: "ウォッチまたは関連している事柄のみ"
   label_user_mail_option_only_owner: "自分が作成した事柄のみ"
   label_user_mail_option_selected: "選択したプロジェクトの全イベント..."
-  label_user_new: "新規ユーザー"
-  label_user_plural: "ユーザー"
-  label_user_search: "ユーザーの検索:"
+  label_user_new: "新規ユーザ"
+  label_user_plural: "ユーザ"
+  label_user_search: "ユーザを検索:"
   label_version_new: "新しいバージョン"
   label_version_plural: "バージョン"
   label_version_sharing_descendants: "子プロジェクト単位"
@@ -1018,7 +1015,7 @@ ja:
   label_wiki_show_menu_item: "プロジェクトのメニューで項目として表示"
   label_wiki_show_new_page_link: "下位のメニューで「子ページを新規作成」の項目を表示"
   label_wiki_show_submenu_item: "上位のメニュー項目"
-  label_work_package: "ワーク パッケージ"
+  label_work_package: "作業項目"
   label_workflow: "ワークフロー"
   label_workflow_plural: "ワークフロー"
   label_workflow_summary: "サマリー"
@@ -1076,7 +1073,7 @@ ja:
     ldap_auth_failed: Could not authenticate at the LDAP-Server.
   macro_execution_error: "マクロ%{macro_name}を実行中にエラーが発生しました。"
   macro_unavailable: "マクロ%{macro_name}を表示できません。"
-  mail_body_account_activation_request: "新しいユーザー%{value}が登録されました。このアカウントは承認待ちです："
+  mail_body_account_activation_request: "新しいユーザ%{value}が登録されました。このアカウントは承認待ちです："
   mail_body_account_information: "アカウント情報"
   mail_body_account_information_external: "%{value} アカウントを使ってログインできます。"
   mail_body_lost_password: "パスワードを変更するには、以下のリンクをクリックしてください:"
@@ -1095,15 +1092,15 @@ ja:
   noscript_heading: JavaScriptは無効されています。
   noscript_learn_more: "もっと詳しく"
   notice_account_activated: "アカウントが有効になりました。ログインできます。"
-  notice_account_invalid_credentials: "ユーザー名もしくはパスワードが無効です。"
-  notice_account_invalid_credentials_or_blocked: "ユーザー名もしくはパスワードが無効です。それともログイン試行の失敗回数によりロックされているアカウントです。もしそうなら、しばらくの時間で自動的にブロック解除されます。"
+  notice_account_invalid_credentials: "ユーザ名もしくはパスワードが無効です。"
+  notice_account_invalid_credentials_or_blocked: "ユーザ名もしくはパスワードが無効です。それともログイン試行の失敗回数によりロックされているアカウントです。もしそうであれば、しばらくの時間で自動的にロック解除されます。"
   notice_account_lost_email_sent: "新しいパスワードの設定方法が記載されたメールを送信しました。"
   notice_account_new_password_forced: "新しいパスワードが必要です。"
   notice_account_password_expired: "パスワードが%{days}日後に期限切れます。新しいパスワードを設定してください。"
   notice_account_password_updated: "パスワードが正常に更新されました。"
   notice_account_pending: "アカウントを作成しました。システム管理者の承認待ちです。"
   notice_account_register_done: "アカウントが正常に作成されました。アカウントを有効にするには、送信された電子メール内のリンクをクリックします。"
-  notice_account_unknown_email: "ユーザーが存在しません。"
+  notice_account_unknown_email: "ユーザが存在しません。"
   notice_account_update_failed: "アカウントの設定は保存できませんでした。個人ページをご確認ください。"
   notice_account_updated: "アカウントが正常に更新されました。"
   notice_account_wrong_password: "パスワードが正しくありません。"
@@ -1119,8 +1116,8 @@ ja:
   notice_forced_logout: "%{ttl_time}分間の非活動のために、自動的にログアウトされました。"
   notice_internal_server_error: "アクセスしようとしたページでエラーが発生しました。継続して問題が発生している場合、%{app_title}の管理者にお問い合わせください。"
   notice_work_package_done_ratios_updated: "作業項目の進捗率を更新しました。"
-  notice_locking_conflict: "別のユーザーがデータを同時に更新しています。"
-  notice_locking_conflict_additional_information: "ユーザー%{users}により更新されました。"
+  notice_locking_conflict: "別のユーザがデータを同時に更新しています。"
+  notice_locking_conflict_additional_information: "ユーザ%{users}により更新されました。"
   notice_locking_conflict_reload_page: "ページをリロードして、変更を確認してから再適用してください。"
   notice_no_principals_found: "結果がありません。"
   notice_bad_request: "不正な要求です。"
@@ -1198,7 +1195,7 @@ ja:
   permission_manage_members: "メンバーの管理"
   permission_manage_news: "ニュースの管理"
   permission_manage_project_activities: "プロジェクト活動の管理"
-  permission_manage_public_queries: "公開クエリの管理"
+  permission_manage_public_queries: "共有クエリの管理"
   permission_manage_repository: "リポジトリの管理"
   permission_manage_subtasks: "子タスクの管理"
   permission_manage_versions: "バージョンの管理"
@@ -1232,7 +1229,7 @@ ja:
   project_module_timelines: "タイムライン"
   project_module_wiki: Wiki
   query_fields:
-    assigned_to_role: "担当者の役割"
+    assigned_to_role: "担当者のロール"
     member_of_group: "担当者のグループ"
     subproject_id: "子プロジェクト"
   search_input_placeholder: "検索..."
@@ -1244,8 +1241,8 @@ ja:
   setting_autologin: "自動ログイン"
   setting_available_languages: "利用できる言語"
   setting_bcc_recipients: "宛先を非表示(bcc)"
-  setting_brute_force_block_after_failed_logins: "ログインの際に、ユーザーがブロックされる失敗回数（0はブロック無効）"
-  setting_brute_force_block_minutes: "ユーザーがブロックされる期間 (分)"
+  setting_brute_force_block_after_failed_logins: "ログインの際に、ユーザがブロックされる失敗回数（0はブロック無効）"
+  setting_brute_force_block_minutes: "ユーザがブロックされる期間 (分)"
   setting_cache_formatted_text: "書式化されたテキストをキャッシュする"
   setting_column_options: "作業項目一覧の表示をカスタマイズする"
   setting_commit_fix_keywords: "修正用キーワード"
@@ -1268,7 +1265,7 @@ ja:
   setting_feeds_limit: "フィードの項目数の上限"
   setting_file_max_size_displayed: "画面表示するテキストファイルの最大サイズ"
   setting_gravatar_default: "デフォルトのグラバター画像"
-  setting_gravatar_enabled: "グラバターのユーザーアイコンを使用する"
+  setting_gravatar_enabled: "グラバターのユーザアイコンを使用する"
   setting_host_name: "ホスト名"
   setting_work_package_done_ratio: "進捗率の算出方法"
   setting_work_package_done_ratio_field: "作業項目のフィールドを使用する"
@@ -1279,7 +1276,7 @@ ja:
   setting_work_package_properties: "項目名"
   setting_work_package_startdate_is_adddate: "今日の日付を新しい作業項目の開始日とする"
   setting_work_packages_export_limit: "エクスポートする項目数の上限"
-  setting_log_requesting_user: "全てのリクエストに対し、ユーザーのログイン名、名前、メールアドレスをログに記録する"
+  setting_log_requesting_user: "全てのリクエストに対し、ユーザのログイン名、名前、メールアドレスをログに記録する"
   setting_login_required: "認証が必要"
   setting_mail_from: "送信元のメールアドレス"
   setting_mail_handler_api_enabled: Enable incoming email web service
@@ -1288,7 +1285,7 @@ ja:
     (e.g., to create and update work packages).
   setting_mail_handler_api_key: APIキー
   setting_mail_handler_body_delimiters: "メール本文から一致する行以降を切り捨てる"
-  setting_new_project_user_role_id: "システム管理者以外のプロジェクト作成者に設定する役割"
+  setting_new_project_user_role_id: "システム管理者以外のプロジェクト作成者に設定するロール"
   setting_password_active_rules: "有効な文字種類"
   setting_password_count_former_banned: "再利用を禁止される最近使用済みパスワードの数"
   setting_password_days_valid: "パスワードを強制変更させる経過日数（０は無効にする）"
@@ -1301,7 +1298,7 @@ ja:
   setting_repository_authentication_caching_enabled: "バージョン管理ソフトウェアの認証要求に対してキャッシュを有効"
   setting_repository_log_display_limit: "ログファイルに出力されるリビジョンの最大数"
   setting_rest_api_enabled: RESTによるWebサービスを有効にする
-  setting_self_registration: "ユーザーによるアカウント登録"
+  setting_self_registration: "ユーザーよるアカウント登録"
   setting_sequential_project_identifiers: "プロジェクト識別子を連番で生成する"
   setting_session_ttl: "無操作タイムアウト"
   setting_session_ttl_hint: 5未満の値は無効にすると同様
@@ -1313,11 +1310,11 @@ ja:
   setting_text_formatting: "テキストの書式"
   setting_time_format: "時刻の形式"
   setting_ui_theme: "テーマ"
-  setting_user_may_override_theme: "ユーザーが個々のテーマを選択できる"
-  setting_accessibility_mode_for_anonymous: "匿名ユーザー向けにアクセシビリティモードを有効"
-  setting_user_format: "ユーザー情報の形式"
-  setting_users_deletable_by_admins: "管理者によるユーザーアカウントが削除可能"
-  setting_users_deletable_by_self: "ユーザーによる自分のアカウント削除を許可"
+  setting_user_may_override_theme: "ユーザが個々のテーマを選択できる"
+  setting_accessibility_mode_for_anonymous: "匿名ユーザ向けにアクセシビリティモードを有効"
+  setting_user_format: "ユーザ情報の形式"
+  setting_users_deletable_by_admins: "管理者によるユーザアカウントが削除可能"
+  setting_users_deletable_by_self: "ユーザによる自分のアカウント削除を許可"
   setting_welcome_text: "ようこそのメッセージ"
   setting_wiki_compression: Wiki履歴を圧縮する
   setting_work_package_group_assignment: "グループへの割り当てを許可する"
@@ -1326,9 +1323,9 @@ ja:
     other: "その他"
     passwords: "パスワード"
     session: "セッション"
-    brute_force_prevention: "自動的にユーザーをロック"
+    brute_force_prevention: "自動的にユーザをロック"
   show_hide_project_menu: Show/Hide project menu
-  status_active: "アクティブ"
+  status_active: "有効"
   support:
     array:
       sentence_connector: "及び"
@@ -1374,7 +1371,7 @@ ja:
   text_load_default_configuration: "デフォルト設定をロード"
   text_min_max_length_info: 0だと無制限になります。
   text_no_configuration_data: |
-    役割種類、作業項目のステータスと型、ワークフローがまだ設定されていません。
+    ロール、作業項目のステータスと型、ワークフローが未設定です。
     デフォルト設定のロードを強くお勧めします。ロードした後、それを修正することができます。
   text_notice_too_many_values_are_inperformant: "注: 1ページあたり100以上の項目を表示すると読み込み時間が増加することがあります。"
   text_own_membership_delete_confirmation: |
@@ -1388,8 +1385,8 @@ ja:
   text_reassign_to: "作業項目："
   text_regexp_info: "例) ^[A-Z0-9]+$"
   text_repository_usernames_mapping: |
-    リポジトリのログから検出されたユーザー名をどのOpenProjectユーザーに関連づけるのか選択してください。
-    ログ上のユーザー名またはメールアドレスがOpenProjectのユーザーと一致する場合は自動的に関連づけられます。
+    リポジトリのログから検出されたユーザ名をどのOpenProjectユーザに関連づけるのか選択してください。
+    ログ上のユーザ名またはメールアドレスがOpenProjectのユーザと一致する場合は自動的に関連づけられます。
   text_select_mail_notifications: "電子メール通知の送信対象とする操作を選択してください。"
   text_select_project_modules: "このプロジェクトで有効にするモジュールを選択してください："
   text_status_changed_by_changeset: "変更履歴%{value}で適用されました。"
@@ -1499,9 +1496,9 @@ ja:
         compare_relative_suffix: "前"
         compare_absolute: "現在計画を%{date}と比較する"
       time_relative:
-        days: "日"
-        weeks: "週"
-        months: "月"
+        days: " 日"
+        weeks: "週間"
+        months: "ヶ月間"
       exclude_own_work_packages: "このプロジェクトで作業項目を非表示"
       exclude_reporters: "他プロジェクトを非表示"
       exclude_empty: "空のプロジェクトを非表示"
@@ -1601,18 +1598,18 @@ ja:
   total_progress: "全体の進行状況"
   user:
     all: "全て"
-    active: "アクティブ"
+    active: "有効"
     activate: "有効にする"
     activate_and_reset_failed_logins: "有効にして、ログリン失敗回数をリセットする"
     authentication_provider: "認証プロバイダー"
-    authentication_settings_disabled_due_to_external_authentication: "外部認証プロバイダー経由でこのユーザーを認証しますので、OpenProjectではパスワードの変更ができません。"
-    assign_random_password: "ランダムパスワードを設定 (電子メールを通じてユーザーに送信されます)"
+    authentication_settings_disabled_due_to_external_authentication: "外部認証プロバイダー経由でこのユーザを認証しますので、OpenProjectではパスワードの変更ができません。"
+    assign_random_password: "ランダムパスワードを設定 (電子メールを通じてユーザに送信されます)"
     blocked: "一時的ロック"
     blocked_num_failed_logins:
       one: locked temporarily (one failed login attempt)
       other: "一時的にロックされている （%{count}回失敗したログイン試行）"
     deleted: "削除されたユーザ"
-    error_status_change_failed: "次のエラーによりユーザーのステータスの変更が失敗しました：%{errors}"
+    error_status_change_failed: "次のエラーによりユーザのステータスの変更が失敗しました：%{errors}"
     lock: "永続ロックする"
     locked: "永続ロック"
     registered: "登録済み"
@@ -1620,7 +1617,7 @@ ja:
     status_user_and_brute_force: "%{user}かつ%{brute_force}"
     unlock: "ロックを解除"
     unlock_and_reset_failed_logins: "ロックを解除して、失敗したログイン数をリセットする"
-    no_login: "このユーザーは、パスワードを使用してログイン認証します。パスワードによってのログインは無効なので、ユーザーがログインできません。"
+    no_login: "このユーザは、パスワードを使用してログイン認証します。パスワードによってのログインは無効なので、ユーザがログインできません。"
     password_change_unsupported: "パスワードの変更はサポートされていません。"
     authorization_rejected: "ログインすることはできません。"
   version_status_closed: "完了"
@@ -1671,7 +1668,7 @@ ja:
         done_ratio: "完了率はそのステータスにより推定または無効にされている場合、親ワークパッケージにセットすることはできません。"
         due_date: "締切日は親ワークパッケージに設定することはできません。"
         estimated_hours: "推定時間は、親ワークパッケージに設定できません。"
-        invalid_user_assigned_to_work_package: "選ばれたユーザーは、この作業項目の'%{property}' にすることはできません。"
+        invalid_user_assigned_to_work_package: "選択されたユーザは、この作業項目の'%{property}' にすることはできません。"
         start_date: "開始日は、親ワークパッケージに設定できません。"
     resources:
       schema: "スキーマ"

@@ -80,7 +80,7 @@ lv:
       member:
         roles: Lomas
       project:
-        homepage: Sākumlapa
+        homepage: Mājaslapa
         identifier: Identifikators
         work_packages: Pieteikuma tipi
         parent: Apakšprojekts
@@ -98,7 +98,7 @@ lv:
       role:
         assignable: Pieteikuma tipi, kas var būt piesaistīti šai lomai
       time_entry:
-        activity: Darbība
+        activity: Activity
         hours: Stundas
         spent_on: Datums
         type: Veids
@@ -150,10 +150,10 @@ lv:
         reported_project_status_comment: Statusa komentārs
         reporting_to_project: Projekta pārskati
         reported_project_status: Projekta statuss
-        created_at: Created
+        created_at: Izveidots
       work_package:
         done_ratio: "% done"
-        fixed_version: Version
+        fixed_version: Versija
         parent: Parent
         parent_issue: Parent
         parent_work_package: Parent
@@ -238,37 +238,37 @@ lv:
             password:
               weak: 'Must contain characters of the following classes (at least %{min_count}
                 of %{all_count}): %{rules}'
-              lowercase: lowercase (e.g. 'a')
-              uppercase: uppercase (e.g. 'A')
-              numeric: numeric (e.g. '1')
-              special: special (e.g. '%')
+              lowercase: mazaie burti (piemēram 'a')
+              uppercase: lielaie burti (piemēram, ' A')
+              numeric: cipari (piemēram, "1")
+              special: speciālie simboli (piemēram, '%')
               reused:
-                one: iepriekš jau lietota. Lūdzu, izvēlieties vienu, kas atšķiras
-                  no Jūsu pēdējās.
-                other: iepriekš jau lietots. Lūdzu, izvēlieties vienu, kas atšķiras
-                  no jūsu pēdējā %{count}.
-                zero: iepriekš jau lietots. Lūdzu, izvēlieties vienu, kas atšķiras
-                  no jūsu pēdējā %{count}.
+                one: has been used before. Please choose one that is different from
+                  your last one.
+                other: has been used before. Please choose one that is different from
+                  your last %{count}.
+                zero: has been used before. Please choose one that is different from
+                  your last %{count}.
               match:
-                confirm: Confirm new password.
-                description: "'Password confirmation' should match the input in the
-                  'New password' field."
+                confirm: Apstipriniet jauno paroli.
+                description: Lauka vērtībai "Paroles apstiprinājums" jāsakrīt ar lauku
+                  "Jaunā parole".
         member:
           principal_blank: Please choose at least one user or group.
           role_blank: Please choose at least one role.
       template:
         body: 'Please check the following fields:'
         header:
-          one: Modelī %{model} ir kļūda kas neļauj to saglabāt
-          other: Modelī %{model} ir %{count} kļūdas, kas neļauj to saglabāt
-          zero: Modelī %{model} ir %{count} kļūdas, kas neļauj to saglabāt
+          one: 1 error prohibited this %{model} from being saved
+          other: "%{count} errors prohibited this %{model} from being saved"
+          zero: "%{count} errors prohibited this %{model} from being saved"
     models:
       attachment: Fails
       board: Forum
       comment: Comment
       custom_field: Custom field
       group: Group
-      issue: Issue
+      issue: Kļūda
       category: Category
       status: Work package status
       member: Member
@@ -283,7 +283,7 @@ lv:
       planning_element: Planning element
       project_type: Projekta tips
       user: User
-      version: Version
+      version: Versija
       wiki: Wiki
       wiki_page: Wiki page
       workflow: Workflow
@@ -295,10 +295,10 @@ lv:
     updated: 'Updated: %{title}'
   attributes:
     active: Active
-    assigned_to: Atbildīgais
-    assignee: Atbildīgais
+    assigned_to: Pašreizējais atbildīgais
+    assignee: Pašreizējais atbildīgais
     attachments: Attachments
-    author: Author
+    author: Autors
     base: 'General Error:'
     blocks_ids: IDs of blocked work packages
     category: Category
@@ -319,14 +319,14 @@ lv:
     groupname: Group name
     id: Nr
     is_default: Noklusējuma vērtība
-    is_for_all: For all projects
+    is_for_all: Visiem projektiem
     is_public: Public
     issue: Work package
     lastname: Uzvārds
     login: Lietotājs
     mail: E-Pasts
     name: Name
-    password: Password
+    password: Parole
     priority: Prioritāte
     project: Project
     responsible: Atbildīgais
@@ -340,9 +340,9 @@ lv:
     updated_at: Updated on
     updated_on: Updated on
     user: User
-    version: Version
+    version: Versija
     work_package: Work package
-  button_add: Add
+  button_add: Pievienot
   button_add_watcher: Add watcher
   button_annotate: Annotate
   button_apply: Apstiprināt
@@ -358,7 +358,7 @@ lv:
   button_configure: Configure
   button_copy: Copy
   button_copy_and_follow: Copy and follow
-  button_create: Create
+  button_create: Izveidot
   button_create_and_continue: Create and continue
   button_delete: Dzēst
   button_delete_watcher: Delete watcher %{name}
@@ -373,16 +373,16 @@ lv:
   button_login: Sign in
   button_move: Move
   button_move_and_follow: Move and follow
-  button_quote: Quote
-  button_remove_widget: Remove widget
+  button_quote: Citēt
+  button_remove_widget: Noņemt logrīku
   button_rename: Rename
-  button_reply: Reply
-  button_reset: Atiestatīt
+  button_reply: Pievienot atbildi
+  button_reset: Atjaunot
   button_rollback: Rollback to this version
   button_save: Saglabāt
   button_show: Rādīt
   button_sort: Sort
-  button_submit: Submit
+  button_submit: Publicēt
   button_test: Test
   button_unarchive: Unarchive
   button_uncheck_all: Uncheck all
@@ -390,7 +390,7 @@ lv:
   button_unwatch: Unwatch
   button_update: Update
   button_view: View
-  button_watch: Watch
+  button_watch: Sekot
   button_manage_menu_entry: Configure menu item
   button_add_menu_entry: Add menu item
   button_configure_menu_entry: Configure menu item
@@ -463,55 +463,55 @@ lv:
   datetime:
     distance_in_words:
       about_x_hours:
-        one: aptuveni 1 stunda
+        one: aptuveni %{count} stundas
         other: aptuveni %{count} stundas
-        zero: apmēram %{count} stundas
+        zero: aptuveni %{count} stundas
       about_x_months:
-        one: about 1 month
-        other: about %{count} months
-        zero: about %{count} months
+        one: aptuveni1 mēneša
+        other: aptuveni %{count} mēnešiem
+        zero: aptuveni %{count} mēnešiem
       about_x_years:
-        one: about 1 year
-        other: about %{count} years
-        zero: about %{count} years
+        one: "%{count} gada"
+        other: "%{count} gadiem"
+        zero: "%{count} gadiem"
       almost_x_years:
-        one: almost 1 year
-        other: almost %{count} years
-        zero: almost %{count} years
+        one: gandrīz 1 gadu
+        other: gandrīz %{count} gadi
+        zero: gandrīz %{count} gadi
       half_a_minute: half a minute
       less_than_x_minutes:
-        one: less than a minute
-        other: less than %{count} minutes
-        zero: less than %{count} minutes
+        one: mazāk nekā %{count} minūtēs
+        other: mazāk nekā %{count} minūtēm
+        zero: mazāk nekā %{count} minūtēm
       less_than_x_seconds:
-        one: less than 1 second
-        other: less than %{count} seconds
-        zero: less than %{count} seconds
+        one: mazāk nekā %{count} sekundes
+        other: mazāk nekā %{count} sekundēm
+        zero: mazāk nekā %{count} sekundēm
       over_x_years:
-        one: over 1 year
-        other: over %{count} years
-        zero: over %{count} years
+        one: senāk kā %{count} gada
+        other: senāk kā %{count} gadiem
+        zero: senāk kā %{count} gadiem
       x_days:
-        one: 1 day
-        other: "%{count} days"
-        zero: "%{count} days"
+        one: "%{count} dienas"
+        other: "%{count} dienām"
+        zero: "%{count} dienām"
       x_minutes:
-        one: 1 minute
-        other: "%{count} minutes"
-        zero: "%{count} minutes"
+        one: 1 minūte
+        other: "%{count} minūtēm"
+        zero: "%{count} minūtēm"
       x_months:
-        one: 1 month
-        other: "%{count} months"
-        zero: "%{count} months"
+        one: "%{count} mēneša"
+        other: "%{count} mēnešiem"
+        zero: "%{count} mēnešiem"
       x_seconds:
-        one: 1 second
-        other: "%{count} seconds"
-        zero: "%{count} seconds"
+        one: 1 sekunde
+        other: "%{count} sekundes"
+        zero: "%{count} sekundes"
     units:
       hour:
-        one: hour
-        other: hours
-        zero: hours
+        one: stunda
+        other: stundas
+        zero: stundas
   default_activity_development: Development
   default_activity_management: Management
   default_activity_other: Other
@@ -578,7 +578,7 @@ lv:
     the arrow up and arrow down key and select it with tab or enter. Alternatively
     you can enter the work package number directly.
   description_available_columns: Available Columns
-  description_choose_project: Projects
+  description_choose_project: Projekti
   description_compare_from: Compare from version
   description_compare_to: Compare to version
   description_current_position: 'Jūs esat šeit:'
@@ -591,7 +591,7 @@ lv:
   description_filter: Filtrēt
   description_filter_toggle: Show/Hide filter
   description_category_reassign: Choose category
-  description_message_content: Message content
+  description_message_content: Ziņas saturs
   description_my_project: You are member
   description_notes: Piezīmes
   description_parent_work_package: Parent work package of current
@@ -647,14 +647,14 @@ lv:
   events:
     project: Project edited
     changeset: Changeset edited
-    message: Message edited
+    message: Ziņojums rediģēts
     news: News
     reply: Replied
     time_entry: Timelog edited
     wiki_page: Wiki page edited
     work_package_closed: Slēgtie pieteikumi
     work_package_edit: Labotie pieteikumi
-    work_package_note: Work Package note added
+    work_package_note: Pieteikumam pievienotā piezīme
   general_csv_decimal_separator: "."
   general_csv_encoding: UTF-8
   general_csv_separator: ","
@@ -673,15 +673,15 @@ lv:
   instructions_after_error: You can try to sign in again by clicking %{signin}. If
     the error persists, ask your admin for help.
   label_account: Konts
-  label_activity: Darbība
-  label_add_another_file: Pievienot vēlvienu failu
+  label_activity: Activity
+  label_add_another_file: Pievienot citu failu
   label_add_columns: Add selected columns
   label_add_note: Add a note
   label_add_related_issues: Add related issue
   label_add_related_work_packages: Add related work packages
   label_add_subtask: Add subtask
   label_added: added
-  label_added_time_by: Added by %{author} %{age} ago
+  label_added_time_by: Pievienoja %{author} pirms %{age}
   label_additional_workflow_transitions_for_assignee: Additional transitions allowed
     when the user is the assignee
   label_additional_workflow_transitions_for_author: Additional transitions allowed
@@ -697,7 +697,7 @@ lv:
   label_api_access_key_created_on: 'API piekļuves atslēga izveidota pirms %{value} '
   label_applied_status: Applied status
   label_ascending: Ascending
-  label_assigned_to_me_work_packages: Work packages assigned to me
+  label_assigned_to_me_work_packages: Man piešķirtie pieteikumi
   label_associated_revisions: Associated revisions
   label_attachment_delete: Delete file
   label_attachment_new: New file
@@ -710,15 +710,15 @@ lv:
   label_authentication: Authentication
   label_blocked_by: blocked by
   label_blocks: blocks
-  label_board_locked: Locked
+  label_board_locked: Slēgts
   label_board_new: New forum
   label_board_plural: Forums
-  label_board_sticky: Sticky
+  label_board_sticky: Svarīgi
   label_boolean: Boolean
   label_branch: Branch
   label_browse: Browse
   label_bulk_edit_selected_work_packages: Bulk edit selected work packages
-  label_calendar: Calendar
+  label_calendar: Kalendārs
   label_calendar_show: Show Calendar
   label_category: Category
   label_wiki_menu_item: Wiki menu item
@@ -793,7 +793,7 @@ lv:
   label_f_hour_plural: "%{value} hours"
   label_feed_plural: Feeds
   label_feeds_access_key: RSS piekļuves atslēga
-  label_feeds_access_key_created_on: RSS access key created %{value} ago
+  label_feeds_access_key_created_on: API piekļuves atslēga izveidota pirms %{value}
   label_file_added: File added
   label_file_plural: Faili
   label_filesystem_path: Root directory
@@ -836,14 +836,16 @@ lv:
   label_work_package_priority_updated: Work package priority updated
   label_work_package_status_new: New status
   label_work_package_status_plural: Work package statuses
-  label_work_package_tracking: Work package tracking
+  label_work_package_tracking: Pieteikumi
   label_work_package_updated: Work package updated
-  label_work_package_view_all: View all work packages
-  label_work_package_view_all_assigned_to_me: View all work packages assigned to me
-  label_work_package_view_all_reported_by_me: View all work packages reported by me
-  label_work_package_view_all_responsible_for: View all work packages I am responsible
-    for
-  label_work_package_view_all_watched: View all watched work packages
+  label_work_package_view_all: Skatīt visus pieteikumus
+  label_work_package_view_all_assigned_to_me: Apskatīt visus pieteikumus, kuros esmu
+    pašreizējais atbildīgais
+  label_work_package_view_all_reported_by_me: Apskatīt visus pieteikumus, kurus esmu
+    izveidojis
+  label_work_package_view_all_responsible_for: Apskatīt visus pieteikumus, kuros es
+    esmu Atbildīgais
+  label_work_package_view_all_watched: Skatīt visus pieteikumus, kuriem sekoju
   label_work_package_watchers: Watchers
   label_journal_diff: Description Comparison
   label_jump_to_a_project: Jump to a project...
@@ -867,10 +869,10 @@ lv:
   label_max_size: Maksimālais izmērs
   label_me: me
   label_member_new: New member
-  label_member_plural: Members
+  label_member_plural: Dalībnieki
   label_menu_item_name: Name of menu item
-  label_message_last: Last message
-  label_message_new: New message
+  label_message_last: Pēdējā ziņa
+  label_message_new: Jauna tēma
   label_message_plural: Ziņojumi
   label_message_posted: Message added
   label_min_max_length: Min - Max length
@@ -879,8 +881,8 @@ lv:
   label_modification: "%{count} change"
   label_modification_plural: "%{count} changes"
   label_modified: modified
-  label_module_plural: Modules
-  label_modules: Modules
+  label_module_plural: Moduļi
+  label_modules: Moduļi
   label_month: Month
   label_months_from: months from
   label_more: More
@@ -890,18 +892,18 @@ lv:
   label_my_account_data: Mana konta dati
   label_my_page: Mana lapa
   label_my_page_block: My page block
-  label_my_projects: My projects
+  label_my_projects: Mani projekti
   label_my_queries: My custom queries
   label_new: New
   label_new_statuses_allowed: New statuses allowed
   label_news_added: News added
   label_news_comment_added: Comment added to a news
-  label_news_latest: Latest news
+  label_news_latest: Jaunākās ziņas
   label_news_new: Add news
   label_news_edit: Edit news
   label_news_plural: News
   label_news_view_all: View all news
-  label_next: Nākošais
+  label_next: Nākošā
   label_next_week: Next week
   label_no_change_option: "(No change)"
   label_no_data: Nav dati
@@ -925,29 +927,29 @@ lv:
   label_password_rule_uppercase: Uppercase
   label_path_encoding: Path encoding
   label_pdf_with_descriptions: PDF with Descriptions
-  label_per_page: Per page
+  label_per_page: Katrā lappusē
   label_permissions: Permissions
   label_permissions_report: Permissions report
-  label_personalize_page: Personalize this page
+  label_personalize_page: Personalizēt šo lapu
   label_planning: Planning
   label_please_login: Please log in
   label_plugins: Plugins
   label_precedes: precedes
   label_preferences: Iestatījumi
-  label_preview: Preview
-  label_previous: Iepriekšējais
+  label_preview: Priekšskatīt
+  label_previous: Iepriekšējā
   label_previous_week: Previous week
-  label_principal_search: Search for users or groups
+  label_principal_search: Meklēt lietotājus vai grupas
   label_profile: Profile
-  label_project_all: All Projects
+  label_project_all: Visi projekti
   label_project_copy_notifications: Send email notifications during the project copy
-  label_project_latest: Latest projects
+  label_project_latest: Jaunākie projekti
   label_project_default_type: Allow empty type
   label_project_new: New project
-  label_project_plural: Projects
+  label_project_plural: Projekti
   label_project_settings: Project settings
   label_project_view_all: Skatīt visus projektus
-  label_public_projects: Public projects
+  label_public_projects: Publiskie projekti
   label_query_new: New query
   label_query_plural: Custom queries
   label_query_menu_item: Query menu item
@@ -964,15 +966,15 @@ lv:
   label_relation_new: New relation
   label_remove_columns: Remove selected columns
   label_renamed: renamed
-  label_reply_plural: Replies
+  label_reply_plural: Atbildes
   label_report: Report
   label_report_plural: Reports
-  label_reported_work_packages: Reported work packages
+  label_reported_work_packages: Mani iesniegtie pieteikumi
   label_reporting: Reporting
   label_reporting_plural: Reportings
   label_repository: Repository
   label_repository_plural: Repositories
-  label_responsible_for_work_packages: Work packages I am responsible for
+  label_responsible_for_work_packages: Pieteikumi, kuros es esmu atbildīgais
   label_result_plural: Results
   label_reverse_chronological_order: Apgrieztā hronoloģiskā secībā
   label_revision: Revision
@@ -986,7 +988,7 @@ lv:
   label_role_and_permissions: Roles and permissions
   label_role_new: New role
   label_role_plural: Lomas
-  label_role_search: Search for roles
+  label_role_search: Meklēt lomas
   label_scm: SCM
   label_search: Meklēšana
   label_search_titles_only: Search titles only
@@ -1017,7 +1019,7 @@ lv:
   label_table_of_contents: Satura rādītājs
   label_tag: Tag
   label_text: Long text
-  label_theme: Tēma
+  label_theme: Dizaina veidne
   label_this_month: this month
   label_this_week: this week
   label_this_year: this year
@@ -1026,7 +1028,7 @@ lv:
   label_time_tracking: Time tracking
   label_today: "šodien"
   label_top_menu: Augšējā izvēlne
-  label_topic_plural: Topics
+  label_topic_plural: Tēmas
   label_total: Kopā
   label_type_new: New type
   label_type_plural: Veidi
@@ -1041,26 +1043,26 @@ lv:
   label_user_mail_no_self_notified: Es nevēlos, lai tiktu informēts par izmaiņām,
     kuras veicu es pats
   label_user_mail_option_all: Par jebkuru notikumu, visos manos projektos
-  label_user_mail_option_none: Nav notikumu
+  label_user_mail_option_none: Nevēlos saņemt e-pasta paziņojumus
   label_user_mail_option_only_assigned: Tikai par lietām kas piešķirtas man
   label_user_mail_option_only_my_events: Tikai par lietām, es skatos, vai es esmu
     iesaistīts
-  label_user_mail_option_only_owner: Tikai par lietām, es esmu īpašnieks
-  label_user_mail_option_selected: For any event on the selected projects only...
+  label_user_mail_option_only_owner: Tikai par lietām, kuras es esmu izveidojis
+  label_user_mail_option_selected: Par jebkuru notikumu tikai atlasītajos projektos...
   label_user_new: New user
-  label_user_plural: Users
+  label_user_plural: Lietotāji
   label_user_search: Search for user
   label_version_new: New version
   label_version_plural: Versijas
-  label_version_sharing_descendants: With subprojects
+  label_version_sharing_descendants: Ar apakšprojektiem
   label_version_sharing_hierarchy: With project hierarchy
   label_version_sharing_none: Not shared
-  label_version_sharing_system: With all projects
+  label_version_sharing_system: Ar visiem projektiem
   label_version_sharing_tree: With project tree
   label_view_all_revisions: View all revisions
   label_view_diff: View differences
   label_view_revisions: View revisions
-  label_watched_work_packages: Watched work packages
+  label_watched_work_packages: Pieteikumi, kuriem tiek sekots
   label_week: Week
   label_wiki_content_added: Wiki page added
   label_wiki_content_updated: Wiki page updated
@@ -1088,9 +1090,9 @@ lv:
     other: "%{count} comments"
     zero: "%{count} comments"
   label_x_open_work_packages_abbr:
-    one: "%{count} atvērts"
-    other: "%{count} atvērti"
-    zero: "%{count} atvērts"
+    one: 1 open
+    other: "%{count} open"
+    zero: "%{count} open"
   label_x_open_work_packages_abbr_on_total:
     one: 1 open / %{total}
     other: "%{count} open / %{total}"
@@ -1129,7 +1131,7 @@ lv:
     lists only)
   label_keyboard_shortcut_focus_next_item: Focus next list element (on some lists
     only)
-  label_visible_elements: Visible elements
+  label_visible_elements: Redzamie elementi
   auth_source:
     using_abstract_auth_source: Can't use an abstract authentication source.
     ldap_error: 'LDAP-Error: %{error_message}'
@@ -1167,7 +1169,7 @@ lv:
   notice_account_new_password_forced: A new password is required.
   notice_account_password_expired: Your password expired after %{days} days. Please
     set a new one.
-  notice_account_password_updated: Password was successfully updated.
+  notice_account_password_updated: Parole veiksmīgi atjaunināta.
   notice_account_pending: Your account was created and is now pending administrator
     approval.
   notice_account_register_done: Account was successfully created. To activate your
@@ -1187,7 +1189,7 @@ lv:
   notice_failed_to_save_work_packages: 'Failed to save %{count} work package(s) on
     %{total} selected: %{ids}.'
   notice_failed_to_save_members: 'Failed to save member(s): %{errors}.'
-  notice_feeds_access_key_reseted: Your RSS access key was reset.
+  notice_feeds_access_key_reseted: RSS piekļuves atslēga veiksmīgi nomainīta.
   notice_file_not_found: Lapa, kuru mēģinat atvērt, neeksīstē vai ir pārvietota.
   notice_forced_logout: You have been automatically logged out after %{ttl_time} minutes
     of inactivity.
@@ -1232,9 +1234,9 @@ lv:
         format: "%n %u"
         units:
           byte:
-            one: Baits
-            other: Baiti
-            zero: Baiti
+            one: Byte
+            other: Bytes
+            zero: Bytes
           gb: GB
           kb: kB
           mb: MB
@@ -1243,13 +1245,13 @@ lv:
   permission_add_work_packages: Add work packages
   permission_add_messages: Post messages
   permission_add_project: Create project
-  permission_add_subprojects: Create subprojects
+  permission_add_subprojects: Apakšprojekta izveide
   permission_add_work_package_watchers: Add watchers
   permission_browse_repository: Browse repository
   permission_change_wiki_parent_page: Change parent wiki page
   permission_comment_news: Comment news
   permission_commit_access: Submit commits
-  permission_copy_projects: Copy projects
+  permission_copy_projects: Kopēt projektus
   permission_delete_work_package_watchers: Delete watchers
   permission_delete_work_packages: Delete work packages
   permission_delete_messages: Delete messages
@@ -1291,7 +1293,7 @@ lv:
   permission_protect_wiki_pages: Protect wiki pages
   permission_rename_wiki_pages: Rename wiki pages
   permission_save_queries: Save queries
-  permission_select_project_modules: Select project modules
+  permission_select_project_modules: Atlasiet projekta moduļus
   permission_manage_types: Select types
   permission_view_calendar: View calendar
   permission_view_changesets: View changesets
@@ -1305,10 +1307,10 @@ lv:
   permission_view_timelines: View timelines
   permission_view_wiki_edits: View wiki history
   permission_view_wiki_pages: View wiki
-  project_module_activity: Darbība
+  project_module_activity: Activity
   project_module_boards: Forums
-  project_module_calendar: Calendar
-  project_module_work_package_tracking: Work package tracking
+  project_module_calendar: Kalendārs
+  project_module_work_package_tracking: Pieteikumi
   project_module_news: News
   project_module_repository: Repository
   project_module_time_tracking: Time tracking
@@ -1341,7 +1343,7 @@ lv:
   setting_date_format: Date format
   setting_default_language: Default language
   setting_default_notification_option: Default notification option
-  setting_default_projects_modules: Default enabled modules for new projects
+  setting_default_projects_modules: Pēc noklusējuma aktivizētie moduļi jauniem projektiem
   setting_default_projects_public: New projects are public by default
   setting_diff_max_lines_displayed: Max number of diff lines displayed
   setting_display_subprojects_work_packages: Display subprojects work packages on
@@ -1402,7 +1404,7 @@ lv:
     and user authorization for accessing repositories.
   setting_text_formatting: Palīdzība
   setting_time_format: Time format
-  setting_ui_theme: Tēma
+  setting_ui_theme: Dizaina veidne
   setting_user_may_override_theme: Users may choose their own themes
   setting_accessibility_mode_for_anonymous: Enable accessibility mode for anonymous
     users
@@ -1429,7 +1431,7 @@ lv:
   text_are_you_sure_with_children: Delete work package and all child work packages?
   text_assign_to_project: Assign to the project
   text_caracters_maximum: "%{count} characters maximum."
-  text_caracters_minimum: Must be at least %{count} characters long.
+  text_caracters_minimum: Jābūt vismaz %{count} rakstzīmes garai.
   text_comma_separated: Multiple values allowed (comma separated).
   text_custom_field_possible_values_info: One line for each value
   text_default_administrator_account_changed: Default administrator account changed
@@ -1458,10 +1460,10 @@ lv:
   text_work_packages_ref_in_commit_messages: Referencing and fixing work packages
     in commit messages
   text_journal_added: "%{label} %{value} added"
-  text_journal_changed: "%{label} changed from %{old} to %{new}"
+  text_journal_changed: "%{label} nomainīts no %{old} uz %{new}"
   text_journal_changed_no_detail: "%{label} updated"
   text_journal_changed_with_diff: "%{label} changed (%{link})"
-  text_journal_deleted: "%{label} deleted (%{old})"
+  text_journal_deleted: "%{label} nodzēsts (%{old})"
   text_journal_deleted_with_diff: "%{label} deleted (%{link})"
   text_journal_set_to: "%{label} set to %{value}"
   text_journal_set_with_diff: "%{label} set (%{link})"
@@ -1491,7 +1493,7 @@ lv:
     Users with the same OpenProject and repository username or email are automatically mapped.
   text_select_mail_notifications: Select actions for which email notifications should
     be sent.
-  text_select_project_modules: 'Select modules to enable for this project:'
+  text_select_project_modules: 'Atlasiet moduļus, kuri būs šim projektam:'
   text_status_changed_by_changeset: Applied in changeset %{value}.
   text_subprojects_destroy_warning: 'Its subproject(s): %{value} will be also deleted.'
   text_time_logged_by_changeset: Applied in changeset %{value}.
@@ -1523,7 +1525,7 @@ lv:
       long: "%B %d, %Y %H:%M"
       short: "%d %b %H:%M"
       time: "%I:% M %p"
-    pm: pm
+    pm: PM
   timeframe:
     show: Show timeframe
     end: to
@@ -1555,9 +1557,9 @@ lv:
     delete_thing: Dzēst
     duration: Duration
     duration_days:
-      one: 1 diena
-      other: "%{count} dienas"
-      zero: "%{count} dienas"
+      one: 1 day
+      other: "%{count} days"
+      zero: "%{count} days"
     edit_color: Edit color
     edit_project_type: Edit project type
     edit_thing: Labot
@@ -1592,11 +1594,11 @@ lv:
         sortation: Sort by
         alphabet: alphabet
         explicit_order: explicit order
-        project_sortation: Sort projects by
+        project_sortation: Kārtot projektus pēc
         date: date
         default: default
       column:
-        assigned_to: Atbildīgais
+        assigned_to: Pašreizējais atbildīgais
         type: Veids
         due_date: End date
         name: Name
@@ -1617,8 +1619,8 @@ lv:
         weeks: weeks
         months: months
       exclude_own_work_packages: Hide work packages from this project
-      exclude_reporters: Hide other projects
-      exclude_empty: Hide empty projects
+      exclude_reporters: Paslēpt citus projektus
+      exclude_empty: Paslēpt tukšos projektus
       grouping: Grouping
       grouping_hide_group: Hide group "%{group}"
       grouping_one: First grouping criterion
@@ -1630,7 +1632,7 @@ lv:
       noneElement: "(none)"
       noneSelection: "(none)"
       outline: Initial outline expansion
-      parent: Show subprojects of
+      parent: Rādīt apakšprojektus no
       work_package_filters: Filter work packages
       work_package_responsible: Show work packages with responsible
       work_package_assignee: Show work packages with assignee
@@ -1644,7 +1646,7 @@ lv:
       project_time_filter_historical: "%{start_label} %{startdate} %{end_label} %{enddate}"
       project_time_filter_relative: "%{start_label} %{startspan}%{startspanunit} ago,
         %{end_label} %{endspan}%{endspanunit} from now"
-      project_filters: Filter projects
+      project_filters: Filtrēt projektus
       project_responsible: Show projects with responsible
       project_status: Show project status
       project_types: Show project types
@@ -1734,9 +1736,9 @@ lv:
     assign_random_password: Assign random password (sent to user via e-mail)
     blocked: locked temporarily
     blocked_num_failed_logins:
-      one: bloķēts īslaicīgi (viens neizdevies pieteikšanās mēģinājums)
-      other: bloķēts īslaicīgi (%{count} neizdevušies pieteikšanās mēģinājumi)
-      zero: bloķēts īslaicīgi (%{count} neizdevušies pieteikšanās mēģinājumi)
+      one: locked temporarily (one failed login attempt)
+      other: locked temporarily (%{count} failed login attempts)
+      zero: locked temporarily (%{count} failed login attempts)
     deleted: Deleted user
     error_status_change_failed: 'Changing the user status failed due to the following
       errors: %{errors}'

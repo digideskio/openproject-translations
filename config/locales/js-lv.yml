@@ -2,7 +2,7 @@
 lv:
   js:
     ajax:
-      hide: Hide
+      hide: Paslēpt
       loading: Notiek ielāde...
     close_popup_title: Aizvērt logu
     button_add_watcher: Add watcher
@@ -20,7 +20,7 @@ lv:
     button_more: More
     button_move: Move
     button_open_details: Atvērt detalizēto skatu
-    button_quote: Quote
+    button_quote: Citēt
     button_save: Saglabāt
     button_settings: Settings
     button_uncheck_all: Uncheck all
@@ -38,15 +38,15 @@ lv:
     label_activate: Activate
     label_add_columns: Add selected columns
     label_add_comment: Pievienot komentāru
-    label_add_comment_title: Pievienot savus komentārus šeit
+    label_add_comment_title: Pievienot komentāru
     label_added_by: Pievienoja
     label_added_time_by: Pievienoja %{author} %{age}
     label_ago: days ago
     label_all: all
     label_all_work_packages: visu darbu pakotnes
     label_ascending: Ascending
-    label_board_locked: Locked
-    label_board_sticky: Sticky
+    label_board_locked: Slēgts
+    label_board_sticky: Svarīgi
     label_date: Datums
     label_deactivate: Deaktivizēt
     label_descending: Descending
@@ -55,7 +55,7 @@ lv:
     label_collapse: Collapse
     label_collapsed: sakļauts
     label_collapse_all: Collapse all
-    label_commented_on: commented on
+    label_commented_on: pievienots
     label_contains: contains
     label_equals: is
     label_expand: Izvērst
@@ -84,7 +84,7 @@ lv:
     label_menu_collapse: sakļaut
     label_menu_expand: izvērst
     label_more_than_ago: more than days ago
-    label_next: Nākošais
+    label_next: Nākošā
     label_no_data: Nav dati
     label_no_due_date: bez beigu datuma
     label_no_start_date: bez sākuma datuma
@@ -94,7 +94,7 @@ lv:
     label_on: " "
     label_open_menu: Open menu
     label_open_work_packages: aktīvi
-    label_previous: Iepriekšējais
+    label_previous: Iepriekšējā
     label_per_page: 'Katrā lappusē:'
     label_remove_columns: Remove selected columns
     label_save_as: Saglabāt kā
@@ -120,21 +120,21 @@ lv:
     label_work_package_details_you_are_here: Tu esi %{type} %{subject} %{tab} cilnē.
     label_unwatch_work_package: Unwatch work package
     label_uploaded_by: Uploaded by
-    label_global_queries: Shared queries
-    label_custom_queries: Private queries
+    label_global_queries: Koplietotie skati
+    label_custom_queries: Privātie skati
     label_columns: Kolonnas
     label_click_to_enter_description: Click to enter description...
     text_are_you_sure: Are you sure?
     filter_labels:
-      assigned_to: Atbildīgais
+      assigned_to: Pašreizējais atbildīgais
       assigned_to_role: Assignee's role
-      author: Author
+      author: Autors
       category: Category
       created_at: Created on
       done_ratio: "% done"
       due_date: Izpildes datums
       estimated_hours: Estimated time
-      fixed_version: Version
+      fixed_version: Versija
       member_of_group: Assignee's group
       parent: Parent
       parent_issue: Parent
@@ -151,7 +151,7 @@ lv:
       time_entries: Log time
       type: Veids
       updated_at: Updated on
-      version: Version
+      version: Versija
       watcher: Watcher
     relation_labels:
       parent: Parent
@@ -181,9 +181,9 @@ lv:
         zero: Lūdzu, ievadiet vēl {{count}} simbolus
       load_more: Loading more results ...
       no_matches: No matches found
-      searching: Searching ...
+      searching: Notiek meklēšana...
       selection_too_big:
-        one: Var atlasīt tikai vienu vienumu
+        one: Var atlasīt {{limit}} vienumu
         other: Var atlasīt {{limit}} vienumus
         zero: Var atlasīt {{limit}} vienumus
     text_work_packages_destroy_confirmation: Are you sure you want to delete the selected
@@ -207,7 +207,7 @@ lv:
           time.
       filter:
         column:
-          assigned_to: Atbildīgais
+          assigned_to: Pašreizējais atbildīgais
           type: Veids
           due_date: End date
           name: Name
@@ -246,7 +246,7 @@ lv:
         slider: Tālummaiņas slīdnis
     tl_toolbar:
       zooms: Tālummaiņas līmenis
-      outlines: Hierarchy level
+      outlines: Hierarhijas līmenis
     unsupported_browser:
       title: Your browser version is not supported
       message: The browser version you are using is no longer supported by OpenProject.
@@ -263,7 +263,7 @@ lv:
       heading3: Virsraksts 3
       unordered_list: Nenumurēts saraksts
       ordered_list: Numurēts saraksts
-      quote: Quote
+      quote: Citēt
       unquote: Samazināt atkāpi
       preformatted_text: Pre
       wiki_link: Saite uz Wiki lapu
@@ -291,12 +291,12 @@ lv:
           filtered out.</p>"
       property_groups:
         details: Details
-        people: People
+        people: Iesaistītie
         estimatesAndTime: Estimates & Time
         other: Other
       properties:
-        assignee: Atbildīgais
-        author: Author
+        assignee: Pašreizējais atbildīgais
+        author: Autors
         createdAt: Created on
         description: Description
         date: Datums
@@ -314,8 +314,8 @@ lv:
         title: Title
         type: Veids
         updatedAt: Updated on
-        versionName: Version
-        version: Version
+        versionName: Versija
+        version: Versija
       query:
         column_names: Kolonnas
         group_by: Grupēt rezultātus pēc
@@ -332,7 +332,7 @@ lv:
           unretrievable_query: Unable to retrieve query from URL
       tabs:
         overview: Pārskats
-        activity: Darbība
+        activity: Activity
         relations: Saistītie
         watchers: Watchers
         attachments: Attachments
@@ -351,7 +351,7 @@ lv:
         save_as: Saglabāt kā ...
         export: Eksportēt...
         share: Kopīgot...
-        page_settings: Pārsaukt vaicājumu...
+        page_settings: Pārsaukt skatu...
         delete: Dzēst
       filter: Filtrēt
       unselected_title: Pieteikumi
@@ -361,7 +361,7 @@ lv:
       label_delete_page: Delete current page
       button_apply: Apstiprināt
       button_save: Saglabāt
-      button_submit: Submit
+      button_submit: Publicēt
       button_cancel: Atcelt
     notice_successful_create: Successful creation.
     notice_successful_delete: Successful deletion.
@@ -376,7 +376,7 @@ lv:
       button_save_and_send: "%{attribute}: Save and send email"
       button_cancel: "%{attribute}: Cancel"
       link_formatting_help: Palīdzība
-      btn_preview_enable: Preview
+      btn_preview_enable: Priekšskatīt
       btn_preview_disable: Disable preview
       null_value_label: No value
       clear_value_label: "-"
@@ -388,5 +388,5 @@ lv:
     units:
       hour:
         one: 1 stunda
-        other: "%{count} stundu laikā"
-        zero: "%{count} stundu laikā"
+        other: "%{count} stundas"
+        zero: "%{count} stundas"
