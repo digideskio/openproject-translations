@@ -612,8 +612,8 @@ pt-BR:
   error_work_package_not_found_in_project: O pacote de trabalho não foi encontrado
     ou não pertence a este projeto
   error_must_be_project_member: deve ser membro do projeto
-  error_no_default_work_package_status: Nenhum estado padrão de pacote de trabalho
-    foi definido. Por favor, verifique sua configuração (vá em "Administração-> Situação
+  error_no_default_work_package_status: Nenhuma situação padrão de pacote de trabalho
+    foi definida. Por favor, verifique sua configuração (vá em "Administração-> Situação
     de pacotes de trabalho").
   error_no_type_in_project: Nenhum tipo está associado a este projeto. Por favor,
     verifique as Configurações do Projeto.
@@ -1378,13 +1378,13 @@ pt-BR:
   setting_mail_handler_body_delimiters: Truncar e-mails depois de uma dessas linhas
   setting_new_project_user_role_id: Papel dado a um usuário não administrador que
     cria um projeto
-  setting_password_active_rules: Classes de ator ativo
+  setting_password_active_rules: Caracteres válidos
   setting_password_count_former_banned: Número de senhas usadas mais recentemente
     banidas para reutilização
   setting_password_days_valid: Número de dias, após os quais será imposta a mudança
     de senha (desabilitar com 0)
   setting_password_min_length: Tamanho mínimo
-  setting_password_min_adhered_rules: Número mínimo de classes obrigatórias
+  setting_password_min_adhered_rules: Número mínimo de classes de caracteres obrigatórias
   setting_per_page_options: Opções de objetos por página
   setting_plain_text_mail: Mensagens de texto simples (sem HTML)
   setting_protocol: Protocolo

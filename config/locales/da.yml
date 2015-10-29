@@ -245,9 +245,9 @@ da:
               numeric: tal (fx "1")
               special: Speciel (fx "%")
               reused:
-                one: er blevet benyttet før. Vælg venligst et, der er forskelligt
+                one: er blevet benyttet tidligere. Vælg venligst et, der er forskelligt
                   fra dit seneste.
-                other: er blevet benyttet før. Vælg venligst et, der er forskelligt
+                other: er blevet benyttet tidligere. Vælg venligst et, der er forskelligt
                   fra dine seneste %{count}.
               match:
                 confirm: Bekræft ny adgangskode.
@@ -259,8 +259,8 @@ da:
       template:
         body: 'Kontroller venligst følgende felter:'
         header:
-          one: 1 fejl forhindrede at denne %{model} blev gemt
-          other: "%{count} fejl forhindrede at denne %{model} blev gemt"
+          one: 1 fejl forhindrede, at denne %{model} blev gemt
+          other: "%{count} fejl forhindrede, at denne %{model} blev gemt"
     models:
       attachment: Fil
       board: Forum
@@ -276,7 +276,7 @@ da:
       query: Selvvalgt forespørgsel
       role:
         one: Rolle
-        other: Rollee
+        other: Roller
       type: Type
       planning_element: Planlægningselement
       project_type: Projekttype
@@ -471,8 +471,8 @@ da:
         one: ca. 1 år
         other: ca. %{count} år
       almost_x_years:
-        one: næsten 1 år
-        other: næsten %{count} år
+        one: knap 1 år
+        other: knap %{count} år
       half_a_minute: et halvt minut
       less_than_x_minutes:
         one: under ét minut
@@ -538,7 +538,7 @@ da:
   default_priority_normal: Normal
   default_priority_high: Høj
   default_priority_immediate: Straks
-  default_project_type_scrum: Scrum team
+  default_project_type_scrum: Scrum-team
   default_project_type_standard: Standardprojekt
   default_reported_project_status_green: Grøn
   default_reported_project_status_amber: Gul
@@ -1074,11 +1074,11 @@ da:
     other: "%{count} lukket"
     zero: 0 closed
   label_x_comments:
-    one: 1 kommentar
-    other: "%{count} kommentarer"
+    one: 1 kommetar
+    other: "%{count} kommetarer"
     zero: no comments
   label_x_open_work_packages_abbr:
-    one: 1 åben
+    one: 1 åbne
     other: "%{count} åbne"
     zero: 0 open
   label_x_open_work_packages_abbr_on_total:
@@ -1722,8 +1722,8 @@ da:
     assign_random_password: Tildel tilfældig adgangskode (sendt til bruger med e-mail)
     blocked: Midlertid spærret
     blocked_num_failed_logins:
-      one: låst midlertidigt (ét mislykket log ind-forsøg)
-      other: låst midlertidigt (%{count} mislykkede log ind-forsøg)
+      one: midlertidigt låst (ét mislykket log ind-forsøg)
+      other: midlertidigt låst (%{count} mislykkede log ind-forsøg)
     deleted: Slettet bruger
     error_status_change_failed: 'Det lykkedes ikke at ændre brugerens status på grund
       af denne fejl: %{errors}'

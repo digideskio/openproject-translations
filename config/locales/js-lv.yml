@@ -2,7 +2,7 @@
 lv:
   js:
     ajax:
-      hide: Paslēpt
+      hide: Hide
       loading: Notiek ielāde...
     close_popup_title: Aizvērt logu
     button_add_watcher: Add watcher
@@ -22,7 +22,7 @@ lv:
     button_open_details: Atvērt detalizēto skatu
     button_quote: Citēt
     button_save: Saglabāt
-    button_settings: Settings
+    button_settings: Iestatījumi
     button_uncheck_all: Uncheck all
     button_update: Update
     description_available_columns: Available Columns
@@ -131,7 +131,7 @@ lv:
       author: Autors
       category: Category
       created_at: Created on
-      done_ratio: "% done"
+      done_ratio: "% paveikti"
       due_date: Izpildes datums
       estimated_hours: Estimated time
       fixed_version: Versija
@@ -140,7 +140,7 @@ lv:
       parent_issue: Parent
       parent_work_package: Parent
       priority: Prioritāte
-      progress: "% done"
+      progress: "% paveikti"
       project: Project
       responsible: Atbildīgais
       spent_time: Spent time
@@ -176,7 +176,7 @@ lv:
     field_value_enter_prompt: Enter a value for '%{field}'
     select2:
       input_too_short:
-        one: Lūdzu, ievadiet vēl 1 simbolu
+        one: Lūdzu, ievadiet vēl {{count}} simbolu
         other: Lūdzu, ievadiet vēl {{count}} simbolus
         zero: Lūdzu, ievadiet vēl {{count}} simbolus
       load_more: Loading more results ...
@@ -377,8 +377,8 @@ lv:
       button_cancel: "%{attribute}: Cancel"
       link_formatting_help: Palīdzība
       btn_preview_enable: Priekšskatīt
-      btn_preview_disable: Disable preview
-      null_value_label: No value
+      btn_preview_disable: Atslēgt priekšskatījumu
+      null_value_label: Nav vērtības
       clear_value_label: "-"
       errors:
         required: "%{field} cannot be empty"
@@ -387,6 +387,6 @@ lv:
     error_could_not_resolve_user_name: Couldn't resolve user name
     units:
       hour:
-        one: 1 stunda
+        one: "%{count} stunda"
         other: "%{count} stundas"
         zero: "%{count} stundas"

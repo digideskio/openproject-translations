@@ -490,7 +490,7 @@ de:
         one: weniger als 1 Sekunde
         other: weniger als %{count} Sekunden
       over_x_years:
-        one: mehr als 1 Jahr
+        one: mehr als ein Jahr
         other: mehr als %{count} Jahre
       x_days:
         one: 1 Tag
